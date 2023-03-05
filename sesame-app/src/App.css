@@ -1,10 +1,11 @@
 .App {
   text-align: left;
   background-color: #232D2F;
+  color:white
 }
 
 
-.App-header {
+.app-header {
   display: flex;
   font-size: calc(10px + 2vmin);
   color: white;
@@ -15,6 +16,6 @@
   padding: 8px 24px;
 }
 
-.App-link {
+.app-link {
   color: #61dafb;
 }

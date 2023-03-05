@@ -4,16 +4,6 @@
     background-color: #232D2F;
 }
 
-/*.bottom-nav {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    z-index: 999;
-    background-color: #232D2F;
-    border-top: 1px solid #E4E4E4;
-
-}
-*/
 .MuiBottomNavigation-root {
     position: fixed;
     bottom: 0;
@@ -21,8 +11,6 @@
     z-index: 999;
     background-color: #232D2F;
     border-top: 1px solid #E4E4E4;
+
 }
 
-.MuiButtonBase-root {
-    color: white;
-}
