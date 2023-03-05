@@ -8,16 +8,14 @@ import './SesameBottomNavigation.css'
 
 function SesameBottomNavigation({ value, onChange }) {
     return (
-        <StyledEngineProvider injectFirst>
-            <div className='bottom-nav-container'>
+
+        <div className='bottom-nav-container'>
+            <StyledEngineProvider injectFirst>
                 <BottomNavigation
                     value={value}
                     onChange={onChange}
-
-                //className='bottom-nav' ?Do I need this className?
                 >
                     <BottomNavigationAction
-                        label="Add"
                         icon={<AddBox />}
                         component={Link} to="/"
                     />
@@ -28,16 +26,17 @@ function SesameBottomNavigation({ value, onChange }) {
                         component={Link} to='/your-bills' />
 
                     <BottomNavigationAction
-                        label="Profile"
+                        label="Account"
                         icon={<AccountCircle />}
-                        component={Link} to='/profile' />
+                        component={Link} to='/account' />
 
                     <BottomNavigationAction
                         label="More"
                         icon={<MoreHoriz />} />
                 </BottomNavigation>
-            </div >
-        </StyledEngineProvider>
+            </StyledEngineProvider>
+        </div >
+
     );
 }
 

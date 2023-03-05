@@ -1,20 +1,24 @@
 import React from 'react';
 import SesameBottomNavigation from '../../components/SesameBottomNavigation';
+import Box from '@mui/material/Box';
 import PropTypes from 'prop-types';
 
-function ImportBills({ value, handleChange }) {
+
+
+function Account({ value, handleChange }) {
     return (
         <div>
-            <h1 className='app-header'>Add Bills</h1>
+            <h1 className='app-header'>Account</h1>
+
             {/* Page content */}
             <SesameBottomNavigation value={value} onChange={handleChange} />
         </div>
     );
 }
 
-ImportBills.propTypes = {
+Account.propTypes = {
     value: PropTypes.number.isRequired,
     handleChange: PropTypes.func.isRequired,
 };
 
-export default ImportBills;
+export default Account;
