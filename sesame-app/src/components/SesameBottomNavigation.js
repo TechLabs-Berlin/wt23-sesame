@@ -15,22 +15,22 @@ function SesameBottomNavigation({ value, onChange }) {
                     value={value}
                     onChange={onChange}
                 >
-                    <BottomNavigationAction
+                    <BottomNavigationAction className='icon'
                         icon={<AddBox />}
                         component={Link} to="/"
                     />
 
-                    <BottomNavigationAction
+                    <BottomNavigationAction className='icon'
                         label="Bills"
                         icon={<ReceiptLong />}
                         component={Link} to='/your-bills' />
 
-                    <BottomNavigationAction
+                    <BottomNavigationAction className='icon'
                         label="Account"
                         icon={<AccountCircle />}
                         component={Link} to='/account' />
 
-                    <BottomNavigationAction
+                    <BottomNavigationAction className='icon'
                         label="More"
                         icon={<MoreHoriz />} />
                 </BottomNavigation>
