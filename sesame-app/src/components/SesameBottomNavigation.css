@@ -1,16 +1,14 @@
-.bottom-nav-container {
-    position: relative;
-    min-height: 100vh;
-    background-color: #232D2F;
-}
-
-.MuiBottomNavigation-root {
+.bottom-navigation-root .MuiBottomNavigation-root{
     position: fixed;
     bottom: 0;
     width: 100%;
-    z-index: 999;
-    background-color: #232D2F;
     border-top: 1px solid #E4E4E4;
-
+    background-color: #232D2F; 
+}
+.bottom-navigation-root .MuiBottomNavigationAction-iconOnly {
+    color: white;
 }
 
+.bottom-navigation-root .Mui-selected {
+    color: aqua;
+}

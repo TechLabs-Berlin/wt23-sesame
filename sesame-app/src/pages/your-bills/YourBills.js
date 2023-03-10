@@ -19,7 +19,7 @@ function YourBills({ value, handleChange }) {
                     <Tab label="Tab 3" value={2} />
                 </Tabs>
             </Box>
-            <Box sx={{ marginTop: 2, padding: 2, bgcolor: 'background.paper' }}>
+            <Box sx={{ color: 'black', marginTop: 2, padding: 2, bgcolor: 'background.paper' }}>
                 <h2>Chart Title</h2>
                 <p>Chart description goes here</p>
 
@@ -33,7 +33,7 @@ function YourBills({ value, handleChange }) {
 }
 
 YourBills.propTypes = {
-    value: PropTypes.number.isRequired,
+    value: PropTypes.string.isRequired,
     handleChange: PropTypes.func.isRequired,
 };
 

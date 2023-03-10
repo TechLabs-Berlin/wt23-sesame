@@ -6,8 +6,6 @@ import ReactDOM from 'react-dom/client';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
-//import css filles
-import './index.css';
 
 //get a reference to the div with the ID root
 //tell React to take control of that root element

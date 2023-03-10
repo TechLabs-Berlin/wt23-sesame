@@ -5,6 +5,7 @@ import PropTypes from 'prop-types';
 function ImportBills({ value, handleChange }) {
     return (
         <div>
+        
             <h1 className='app-header'>Add Bills</h1>
             {/* Page content */}
             <SesameBottomNavigation value={value} onChange={handleChange} />
@@ -13,7 +14,7 @@ function ImportBills({ value, handleChange }) {
 }
 
 ImportBills.propTypes = {
-    value: PropTypes.number.isRequired,
+    value: PropTypes.string.isRequired,
     handleChange: PropTypes.func.isRequired,
 };
 
