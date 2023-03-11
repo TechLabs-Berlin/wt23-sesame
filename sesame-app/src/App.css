@@ -1,14 +1,19 @@
+body {
+  margin: 0
+}
+
 .App {
   text-align: left;
-  background-color: #232D2F;
-  color:white
+  /*background-color: #232D2F;*/
+  /*color: white*/
+  font-family: 'Roboto', sans-serif;
+  
 }
 
 
 .app-header {
   display: flex;
   font-size: calc(10px + 2vmin);
-  color: white;
   text-align: left;
   align-items: center;
   width: auto;

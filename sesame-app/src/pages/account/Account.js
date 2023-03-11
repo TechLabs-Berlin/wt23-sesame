@@ -1,6 +1,5 @@
 import React from 'react';
 import SesameBottomNavigation from '../../components/SesameBottomNavigation';
-import Box from '@mui/material/Box';
 import PropTypes from 'prop-types';
 
 
@@ -17,7 +16,7 @@ function Account({ value, handleChange }) {
 }
 
 Account.propTypes = {
-    value: PropTypes.number.isRequired,
+    value: PropTypes.string.isRequired,
     handleChange: PropTypes.func.isRequired,
 };
 
