@@ -14,7 +14,7 @@ function App() {
   };
 
   return (
-    <div className='App'>
+    <div>
       <Router>
         <Routes>
           <Route path="/import-bills" element={<ImportBills value={value} handleChange={handleChange} />} />
@@ -23,7 +23,6 @@ function App() {
           <Route path="*" element={<Navigate to="/import-bills" />} />
         </Routes>
       </Router>
-    
     </div>
   );
 }
