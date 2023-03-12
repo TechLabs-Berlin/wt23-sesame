@@ -7,7 +7,9 @@ import PropTypes from 'prop-types';
 function Account({ value, handleChange }) {
     return (
         <div>
-            <h1 className='app-header'>Account</h1>
+            <section className="app-header">
+                <h1>Account</h1>
+            </section>
 
             {/* Page content */}
             <SesameBottomNavigation value={value} onChange={handleChange} />

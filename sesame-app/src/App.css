@@ -1,24 +1,51 @@
 body {
-  margin: 0
-}
-
-.App {
-  text-align: left;
-  /*background-color: #232D2F;*/
-  /*color: white*/
+  margin: 0;
   font-family: 'Roboto', sans-serif;
-  
+  font-style: normal;
 }
 
+/* Typography */ 
+
+h1 {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 140%;
+}
+
+h2 {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+label {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.display {
+  font-weight: 400;
+  font-size: 45px;
+  line-height: 52px;
+}
+
+/* section Header */ 
 
 .app-header {
   display: flex;
-  font-size: calc(10px + 2vmin);
   text-align: left;
   align-items: center;
   width: auto;
   height: 56px;
   padding: 8px 24px;
+  color: #A0A1A5;
 }
 
 .app-link {

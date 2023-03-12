@@ -8,12 +8,12 @@ import './SesameBottomNavigation.css'
 
 function SesameBottomNavigation() {
 
-    const [value, setValue] = React.useState('recents');
-    const handleChange = (event, newValue) => {
+  const [value, setValue] = React.useState('recents');
+  const handleChange = (event, newValue) => {
       setValue(newValue);
     };
   
-    return (
+  return (
     <div className='bottom-navigation-root'>
       <BottomNavigation     
       value={value} 
@@ -40,8 +40,8 @@ function SesameBottomNavigation() {
         />
       </BottomNavigation>
     </div>
-    );
-  }
+  );
+}
 
 
 export default SesameBottomNavigation;

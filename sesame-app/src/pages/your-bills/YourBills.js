@@ -5,6 +5,7 @@ import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
 import PropTypes from 'prop-types';
 import CalendarMonthIcon from '@mui/icons-material/CalendarMonth';
+import YourBillsSpendings from '../../components/YourBills_Spendings';
 
 
 
@@ -17,8 +18,11 @@ import CalendarMonthIcon from '@mui/icons-material/CalendarMonth';
 
     return (
         <div>
-            <h1 className='app-header'>Your Bills</h1>
-  
+            <section className="app-header">
+                <h1>Your Bills</h1>
+            </section>
+
+            {/*tab bar*/} 
             <Box sx={{backgroundColor: '#232D2F', padding: '8px', display: 'flex', alignItems: 'center', justifyContent: 'center'}}>
                 <Tabs value={selectedTab} onChange={handleTabChange} sx={{borderRadius: 2}}>
                     <Tab label="Weekly View" value={0} sx={{ backgroundColor: 'white', textTransform: "none", fontSize: 12,}}/>
@@ -27,6 +31,8 @@ import CalendarMonthIcon from '@mui/icons-material/CalendarMonth';
                 
                 </Tabs>
             </Box>
+
+            <YourBillsSpendings/>
 
             <Box sx={{ color: 'black', marginTop: 2, padding: 2, bgcolor: 'background.paper' }}>
                 <h2>Chart Title</h2>
