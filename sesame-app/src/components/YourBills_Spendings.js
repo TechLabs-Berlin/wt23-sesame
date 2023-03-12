@@ -18,10 +18,10 @@ function YourBillsSpendings() {
 
     <div style={boxStyles}>
       <p style={{opacity: 0.6}}>Your Total Spending 01.–07. Jan. 2023</p>
-      <p style={{fontSize: '36px'}}>1.234567,89€</p>
+      <p style={{fontSize: '36px', lineHeight: '44px'}}>1.234567,89€</p>
       <p style={{opacity: 0.6}}>Ø12345,67 € </p>
-      here comes the bar chart
-      <p className='label' style={{opacity: 0.6}}>Top 5 Spendings:</p>
+      <div style={{padding: '24px 0px'}}>Here comes the bar charts, please help!</div>
+      <p className='label' style={{opacity: 0.6, padding: '16px 0px 8px', borderTop: '1px solid #E8DEF8'}}>Top 5 Spendings:</p>
     </div>
       
   );

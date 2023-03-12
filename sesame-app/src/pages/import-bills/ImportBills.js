@@ -5,9 +5,12 @@ import PropTypes from 'prop-types';
 function ImportBills({ value, handleChange }) {
     return (
         <div>
-        
-            <h1 className='app-header'>Add Bills</h1>
+            <section className="app-header">
+                <h1>Add Bills</h1>
+            </section>
+
             {/* Page content */}
+            
             <SesameBottomNavigation value={value} onChange={handleChange} />
         </div>
     );

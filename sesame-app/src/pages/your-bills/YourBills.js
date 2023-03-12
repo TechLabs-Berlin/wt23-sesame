@@ -5,6 +5,7 @@ import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
 import PropTypes from 'prop-types';
 import CalendarMonthIcon from '@mui/icons-material/CalendarMonth';
+import YourBillsSpendings from '../../components/YourBills_Spendings';
 
 
 
@@ -22,21 +23,17 @@ import CalendarMonthIcon from '@mui/icons-material/CalendarMonth';
             </section>
 
             {/*tab bar*/} 
-            <Box sx={{backgroundColor: '#232D2F', padding: '8px', display: 'flex', alignItems: 'center', justifyContent: 'center'}}>
-                <Tabs value={selectedTab} onChange={handleTabChange} sx={{borderRadius: 2}}>
-                    <Tab label="Weekly View" value={0} sx={{ backgroundColor: 'white', textTransform: "none", fontSize: 12,}}/>
-                    <Tab label="Monthly View" value={1} sx={{ backgroundColor: 'white', textTransform: "none", fontSize: 12, }}/>
-                    <Tab icon={<CalendarMonthIcon />} aria-label="calendar" sx={{backgroundColor: 'white' }}/>
-                
+            <Box sx={{display: 'flex', justifyContent: 'center', padding: '8px 8px 24px' }}>
+                <Tabs value={selectedTab} onChange={handleTabChange} sx={{background: '#FBFBFF', borderRadius: '8px', padding: '4px'}}>
+                    <Tab label="Weekly View" value={0} sx={{ textTransform: "none", fontSize: 12, backgroundColor: selectedTab === 0 ? 'white' : 'transparent', borderRadius: '8xpx',}}/>
+                    <Tab label="Monthly View" value={1} sx={{ textTransform: "none", fontSize: 12, backgroundColor: selectedTab === 1 ? 'white' : 'transparent', borderRadius: '8xpx', }}/>
+                    <Tab icon={<CalendarMonthIcon />} aria-label="calendar" sx={{backgroundColor: selectedTab === 2 ? 'white' : 'transparent', borderRadius: '8xpx',}}/>
                 </Tabs>
             </Box>
 
-            <YourBillsSpendings/>
-
-            <Box sx={{ color: 'black', marginTop: 2, padding: 2, bgcolor: 'background.paper' }}>
-                <h2>Chart Title</h2>
-                <p>Chart description goes here</p>
-
+            {/* Find YourBillsSpending under src/components/YourBill_Spendings.js */}
+            <Box sx={{padding: '8px 24px'}}>
+                <YourBillsSpendings/>
             </Box>
 
             {/* Find SesameBottomNavigation under src/components/SesameBottomNavigation.js */}
