@@ -7,7 +7,39 @@ body {
   /*background-color: #232D2F;*/
   /*color: white*/
   font-family: 'Roboto', sans-serif;
-  
+  font-style: normal;
+}
+
+/* Typography */ 
+
+h1 {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 140%;
+}
+
+h2 {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+label {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.display {
+  font-weight: 400;
+  font-size: 45px;
+  line-height: 52px;
 }
 
 
