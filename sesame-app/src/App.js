@@ -1,5 +1,6 @@
 import './App.css';
 import React from 'react';
+import SignIn from './pages/SignIn/SignIn'
 import ImportBills from './pages/import-bills/ImportBills';
 import YourBills from './pages/your-bills/YourBills';
 import Account from './pages/account/Account';
@@ -17,6 +18,7 @@ function App() {
     <div>
       <Router>
         <Routes>
+          <Route path="/SignIn" element={<SignIn />} />
           <Route path="/import-bills" element={<ImportBills value={value} handleChange={handleChange} />} />
           <Route path="/your-bills" element={<YourBills value={value} handleChange={handleChange} />} />
           <Route path="/account" element={<Account value={value} handleChange={handleChange} />} />
