@@ -1,9 +1,21 @@
 import React from 'react';
 import { BottomNavigation, BottomNavigationAction } from '@mui/material';
 import { AccountCircle, AddBox, MoreHoriz, ReceiptLong } from '@mui/icons-material';
-import './SesameBottomNavigation.css'
+import { Link, } from 'react-router-dom';
+import { styled } from "@mui/material/styles";
+//import './SesameBottomNavigation.css'
 
-
+const StyledBottomNavigationAction = styled(BottomNavigationAction)(() => ({
+  padding: '16px 0px 32px',
+  gap: '8px',
+  color: 'white',
+  '& .MuiSvgIcon-root': {
+    fontSize: '1.5rem',
+  },
+  '&.Mui-selected':{ 
+      background: 'linear-gradient(180deg, #57EEAF 0%, #26FFE5 100%)'
+  },
+}));
 
 function SesameBottomNavigation() {
 
@@ -14,26 +26,38 @@ function SesameBottomNavigation() {
   
   return (
     <div className='bottom-navigation-root'>
-      <BottomNavigation     
+      <BottomNavigation sx={{
+        bottom: '0', 
+        position: 'fixed', 
+        width: '100%', 
+        height: '96px',
+
+        borderTop: '1px solid #E4E4E4', 
+        backgroundColor: '#232D2F', 
+        color: 'white', 
+      }}    
       value={value} 
       onChange={handleChange}
       >
-        <BottomNavigationAction
+        <StyledBottomNavigationAction sx={{color: 'white',}}
             label='Add Bill'
             icon={<AddBox />}
+            component={Link} to='/import-bills'
             />
 
-        <BottomNavigationAction
+        <StyledBottomNavigationAction
             label='Bills'
             icon={<ReceiptLong />}
+            component={Link} to='/your-bills'
             />
 
-        <BottomNavigationAction
+        <StyledBottomNavigationAction
             label='Account'
             icon={<AccountCircle />}
+            component={Link} to='/account'
             />
 
-        <BottomNavigationAction
+        <StyledBottomNavigationAction
             label='More'
             icon={<MoreHoriz />} 
         />
