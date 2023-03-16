@@ -3,6 +3,7 @@ import { BottomNavigation, BottomNavigationAction } from '@mui/material';
 import { AccountCircle, AddBox, MoreHoriz, ReceiptLong } from '@mui/icons-material';
 import { Link, } from 'react-router-dom';
 import { styled } from "@mui/material/styles";
+import LoginIcon from '@mui/icons-material/Login';
 //import './SesameBottomNavigation.css'
 
 const StyledBottomNavigationAction = styled(BottomNavigationAction)(() => ({
@@ -39,7 +40,12 @@ function SesameBottomNavigation() {
       value={value} 
       onChange={handleChange}
       >
-        <StyledBottomNavigationAction sx={{color: 'white',}}
+          <StyledBottomNavigationAction sx={{color: 'white',}}
+            label='SignIn'
+            icon={<LoginIcon />}
+            component={Link} to='/SignIn'
+        />
+        <StyledBottomNavigationAction 
             label='Add Bill'
             icon={<AddBox />}
             component={Link} to='/import-bills'

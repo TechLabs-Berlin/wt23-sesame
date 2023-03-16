@@ -31,7 +31,7 @@ function Copyright(props) {
 
 const theme = createTheme();
 
-export default function SignIn() {
+export default function SignIn({ value, handleChange }) {
   const handleSubmit = (event) => {
     event.preventDefault();
     const data = new FormData(event.currentTarget);
@@ -43,6 +43,7 @@ export default function SignIn() {
 
   return ( 
     <ThemeProvider theme={theme}>
+      <SesameBottomNavigation value={value} onChange={handleChange} />
       <Container component="main" maxWidth="xs">
         <CssBaseline />
         <Box
