@@ -1,29 +1,30 @@
 import React from 'react';
 import { BottomNavigation, BottomNavigationAction } from '@mui/material';
 import { AccountCircle, AddBox, MoreHoriz, ReceiptLong } from '@mui/icons-material';
-import { Link, } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import { styled } from "@mui/material/styles";
 import LoginIcon from '@mui/icons-material/Login';
-//import './SesameBottomNavigation.css'
 
 const StyledBottomNavigationAction = styled(BottomNavigationAction)(() => ({
   padding: '16px 0px 32px',
-  gap: '8px',
+  gap: '6px',
   color: 'white',
-  '& .MuiSvgIcon-root': {
-    fontSize: '1.5rem',
-  },
+ 
   '&.Mui-selected':{ 
-      background: 'linear-gradient(180deg, #57EEAF 0%, #26FFE5 100%)'
+      //cannot set icon color with: background: 'linear-gradient(180deg, #57EEAF 0%, #26FFE5 100%)'
+      color: '#57EEAF',
   },
+
+  '& .MuiSvgIcon-root': {
+    width: '32px',
+    height: 'auto',
+  }
 }));
+
 
 function SesameBottomNavigation() {
 
-  const [value, setValue] = React.useState('recents');
-  const handleChange = (event, newValue) => {
-      setValue(newValue);
-    };
+  const location = useLocation();
   
   return (
     <div className='bottom-navigation-root'>
@@ -37,35 +38,41 @@ function SesameBottomNavigation() {
         backgroundColor: '#232D2F', 
         color: 'white', 
       }}    
-      value={value} 
-      onChange={handleChange}
+      showLabels 
+      value={location.pathname.replace('/', '') || 'import-bills'}  
       >
           <StyledBottomNavigationAction sx={{color: 'white',}}
             label='SignIn'
             icon={<LoginIcon />}
             component={Link} to='/SignIn'
+            value='SignIn'
+
         />
         <StyledBottomNavigationAction 
             label='Add Bill'
             icon={<AddBox />}
             component={Link} to='/import-bills'
+            value='import-bills'
             />
 
         <StyledBottomNavigationAction
             label='Bills'
             icon={<ReceiptLong />}
             component={Link} to='/your-bills'
+            value='your-bills'
             />
 
         <StyledBottomNavigationAction
             label='Account'
             icon={<AccountCircle />}
             component={Link} to='/account'
+            value='account'
             />
 
         <StyledBottomNavigationAction
             label='More'
-            icon={<MoreHoriz />} 
+            icon={<MoreHoriz />}
+            value='more'
         />
       </BottomNavigation>
     </div>
