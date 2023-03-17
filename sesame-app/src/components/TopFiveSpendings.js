@@ -5,7 +5,7 @@ import TableCell from '@mui/material/TableCell';
 import TableContainer from '@mui/material/TableContainer';
 import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
-import Paper from '@mui/material/Paper';
+import { lineHeight } from '@mui/system';
 
 function createData(name, spending) {
   return { name, spending};
@@ -21,18 +21,34 @@ const rows = [
 
 function TopFiveSpendings() {
   return (
-    <TableContainer sx={{color: 'white'}}>
+
+    //The '&' character refers to the current component and '.MuiTableCell-root' is a class name used by the TableCell component.
+    <TableContainer sx={{ '& .MuiTableCell-root': { color: 'white', border: 'none', } }}>
       <Table 
         size="small" 
         aria-label="a dense table"
       >
-        <TableHead>
-          <TableRow>
+        <TableHead sx={{ '& .MuiTableCell-root':{
+                opacity: '0.6', 
+                padding: '16px 0px 8px',
+                fontSize: '12px', 
+                lineHeight: '16px',
+                borderTop: '1px solid #E8DEF8',
+                }       
+                }}
+        >
+          <TableRow >
             <TableCell>Top 5 Spendings</TableCell>
             <TableCell align="right">€</TableCell>
           </TableRow>
         </TableHead>
-        <TableBody>
+
+        <TableBody sx={{ '& .MuiTableCell-root': {   
+                padding: '0px',
+                fontSize: '14px',
+                lineHeight: '20px'
+                } 
+                }}>
           {rows.map((row) => (
             <TableRow key={row.name}>
               <TableCell component="th" scope="row">
