@@ -25,7 +25,13 @@ import YourBillsSpendings from '../../components/YourBills_Spendings';
             {/*tab bar*/} 
             <Box sx={{display: 'flex', justifyContent: 'center', padding: '8px 8px 24px' }}>
                 <Tabs value={selectedTab} onChange={handleTabChange} sx={{background: '#FBFBFF', borderRadius: '8px', padding: '4px'}}>
-                    <Tab label="Weekly View" value={0} sx={{ textTransform: "none", fontSize: 12, backgroundColor: selectedTab === 0 ? 'white' : 'transparent', borderRadius: '8xpx',}}/>
+                    <Tab label="Weekly View" value={0} sx={{ 
+                        textTransform: "none", 
+                        fontSize: 12, 
+                        backgroundColor: selectedTab === 0 ? 'white' : 'transparent', 
+                        borderRadius: '8px',
+                       }}
+                    />
                     <Tab label="Monthly View" value={1} sx={{ textTransform: "none", fontSize: 12, backgroundColor: selectedTab === 1 ? 'white' : 'transparent', borderRadius: '8xpx', }}/>
                     <Tab icon={<CalendarMonthIcon />} aria-label="calendar" sx={{backgroundColor: selectedTab === 2 ? 'white' : 'transparent', borderRadius: '8xpx',}}/>
                 </Tabs>
