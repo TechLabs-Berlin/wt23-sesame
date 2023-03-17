@@ -1,5 +1,6 @@
 import React from 'react';
 import BarChartComponent from './BarChart';
+import TopFiveSpendings from './TopFiveSpendings';
 
 function YourBillsSpendings() {
 
@@ -17,9 +18,12 @@ function YourBillsSpendings() {
       <p style={{ fontSize: '36px', lineHeight: '44px' }}>1.234567,89€</p>
       <p style={{ opacity: 0.6 }}>Ø12345,67 € </p>
       <div style={{ padding: '24px 0px' }}>
-        <BarChartComponent />
+        <BarChartComponent/>
       </div>
-      <p className='label' style={{ opacity: 0.6, padding: '16px 0px 8px', borderTop: '1px solid #E8DEF8' }}>Top 5 Spendings:</p>
+      {/*<p className='label' style={{ opacity: 0.6, padding: '16px 0px 8px', borderTop: '1px solid #E8DEF8' }}>Top 5 Spendings:</p>*/}
+      <div>
+        <TopFiveSpendings/>
+      </div>
     </div>
   );
 
