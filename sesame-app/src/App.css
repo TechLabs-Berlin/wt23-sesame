@@ -1,11 +1,13 @@
 body {
   margin: 0;
+  margin-bottom: 100px;
   font-family: 'Roboto', sans-serif;
   font-style: normal;
   }
 
 :-webkit-any(article, aside, nav, section) {
     margin: 0;
+    
     margin-block-start: 0;
     margin-block-end: 0;
 }
