@@ -2,8 +2,6 @@ import React from 'react';
 import SesameBottomNavigation from '../../components/SesameBottomNavigation';
 import PropTypes from 'prop-types';
 
-
-
 function Account({ value, handleChange }) {
     return (
         <div>
@@ -12,6 +10,7 @@ function Account({ value, handleChange }) {
             </section>
 
             {/* Page content */}
+            
             <SesameBottomNavigation value={value} onChange={handleChange} />
         </div>
     );
