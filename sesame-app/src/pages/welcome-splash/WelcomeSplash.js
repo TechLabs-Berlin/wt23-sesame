@@ -24,7 +24,7 @@ function WelcomeSplash() {
 
         (<GridLoader size={30} color={'#36d698'} loading={loading} />) : (
 
-        <motion.div animate={{ y: -50 }}> <a href="/SignIn"><img src={logo} alt="Logo" className="logo" /></a> </motion.div>)}
+        <motion.div animate={{ y: -50 }}> <a href="/Account"><img src={logo} alt="Logo" className="logo" /></a> </motion.div>)}
     </section>
 
 
