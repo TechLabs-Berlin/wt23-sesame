@@ -41,14 +41,8 @@ function SesameBottomNavigation() {
       showLabels 
       value={location.pathname.replace('/', '') || 'import-bills'}  
       >
-          <StyledBottomNavigationAction sx={{color: 'white',}}
-            label='SignIn'
-            icon={<LoginIcon />}
-            component={Link} to='/SignIn'
-            value='SignIn'
-
-        />
-        <StyledBottomNavigationAction 
+         
+        <StyledBottomNavigationAction sx={{color: 'white',}}
             label='Add Bill'
             icon={<AddBox />}
             component={Link} to='/import-bills'
@@ -65,8 +59,8 @@ function SesameBottomNavigation() {
         <StyledBottomNavigationAction
             label='Account'
             icon={<AccountCircle />}
-            component={Link} to='/account'
-            value='account'
+            component={Link} to='/signin'
+            value='signin'
             />
 
         <StyledBottomNavigationAction
@@ -78,6 +72,5 @@ function SesameBottomNavigation() {
     </div>
   );
 }
-
 
 export default SesameBottomNavigation;
