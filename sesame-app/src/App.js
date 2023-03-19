@@ -4,6 +4,7 @@ import SignIn from './components/SignIn'
 import ImportBills from './pages/import-bills/ImportBills';
 import YourBills from './pages/your-bills/YourBills';
 import Account from './pages/account/Account';
+import LogIn from './components/LogIn';
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import WelcomeSplash from './pages/welcome-splash/WelcomeSplash'
 
@@ -19,7 +20,7 @@ function App() {
       <Router>
         <Routes>
           <Route path="/WelcomeSplash" element={<WelcomeSplash value={value} handleChange={handleChange} />} />
-          <Route path="/SignIn" element={<SignIn value={value} handleChange={handleChange} />} />
+          <Route path="/LogIn" element={<LogIn value={value} handleChange={handleChange} />} />
           <Route path="/import-bills" element={<ImportBills value={value} handleChange={handleChange} />} />
           <Route path="/your-bills" element={<YourBills value={value} handleChange={handleChange} />} />
           <Route path="/account" element={<Account value={value} handleChange={handleChange} />} />
