@@ -6,9 +6,6 @@ import React, { useState, useEffect } from 'react';
 import GridLoader from "react-spinners/GridLoader";
 //npm install framer-motion  run in terminal if it doesn't install automaticaly
 import { motion } from "framer-motion";
-import Button from '@mui/material/Button';
-import ButtonUnstyled from '@mui/base/ButtonUnstyled';
-
 
 function WelcomeSplash() {
 
@@ -22,42 +19,12 @@ function WelcomeSplash() {
   }, []);
 
   return (
-    <section animate={{ y: 100 }} className="welcome-splash-container" >
+    <section animate={{ y: 100 }} className="welcome-splash-container">
       {loading ?
 
         (<GridLoader size={30} color={'#36d698'} loading={loading} />) : (
 
-      <motion.div className ='logo' animate={{ y: -50, display:'flex',flexDirection :'column', flexWrap:'wrap', justifyContent: 'center'}}> <img src={logo}  alt="Logo"/> 
-        <motion.div  animate={{ y: 80, }}>
-        <a style={{textDecoration: 'none'}}href="/SignIn"><Button 
-               type="submit"
-               variant="contained"
-               sx={{ mt: 20, mb: 2,      
-               borderRadius: 35, 
-               height: 50,
-               width: 311, 
-             // background: 'linear-gradient(269.39deg, #57AEFE 49.47%, #6B71FF 95.75%)', 
-               background: 'linear-gradient(269.39deg, #A057FE 49.47%, #916BFF 95.75%)',}}>
-               Sign Up / Log In
-          </Button></a><br></br>
-          <Button 
-               type="submit"
-            variant="outlined"
-               sx={{mt: 1,
-               borderRadius: 35, 
-               height: 50,
-               width: 311, 
-               border: 1,
-               color: 'white',
-
-             // background: 'linear-gradient(269.39deg, #57AEFE 49.47%, #6B71FF 95.75%)', 
-              //  background: 'linear-gradient(269.39deg, #A057FE 49.47%, #916BFF 95.75%)',
-               }}>
-               Guest Account
-          </Button>
-         </motion.div>
-      </motion.div>)}
-      
+        <motion.div animate={{ y: -50 }}> <a href="/SignIn"><img src={logo} alt="Logo" className="logo" /></a> </motion.div>)}
     </section>
 
 
