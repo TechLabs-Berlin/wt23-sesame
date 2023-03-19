@@ -13,8 +13,7 @@ import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import SesameBottomNavigation from '../../components/SesameBottomNavigation';
-import'./SignIn.css';
-
+import PropTypes from 'prop-types';
 
 function Copyright(props) {
   return (
@@ -43,48 +42,44 @@ export default function SignIn({ value, handleChange }) {
   };
 
   return ( 
-    <ThemeProvider theme={theme} >
+    <ThemeProvider theme={theme}>
       <SesameBottomNavigation value={value} onChange={handleChange} />
       <Container component="main" maxWidth="xs">
-
+        <CssBaseline />
         <Box
           sx={{
-            padding: 8,
-            marginTop: 0,
+            marginTop: 8,
             display: 'flex',
             flexDirection: 'column',
             alignItems: 'center',
           }}
         >
-          <Avatar  sx={{ m: 2, bgcolor: '#A057FE' }}>i</Avatar>
-          
+          <Avatar sx={{ m: 1, bgcolor: 'secondary.main' }}>
+            <LockOutlinedIcon />
+          </Avatar>
           <Typography component="h1" variant="h5">
-            <p>
-               You are currently using a guest account.
-               Sign up or log in to manage your personal
-               information and settings.
-            </p>
+            Sign in
           </Typography>
-          <Box component="form" onSubmit={handleSubmit} noValidate display='flex'flexDirection='column'sx={{ mt: 5}}>
-            <TextField      
+          <Box component="form" onSubmit={handleSubmit} noValidate sx={{ mt: 1 }}>
+            <TextField
               margin="normal"
               required
+              fullWidth
               id="email"
               label="Email Address"
               name="email"
               autoComplete="email"
               autoFocus
-              
             />
             <TextField
               margin="normal"
-              required        
+              required
+              fullWidth
               name="password"
               label="Password"
               type="password"
               id="password"
               autoComplete="current-password"
-              
             />
             <FormControlLabel
               control={<Checkbox value="remember" color="primary" />}
@@ -92,25 +87,21 @@ export default function SignIn({ value, handleChange }) {
             />
             <Button
               type="submit"
+              fullWidth
               variant="contained"
-              sx={{ mt: 3, mb: 2,
-                    borderRadius: 35, 
-                    height: 50,
-                    width: 311, 
-                    // background: 'linear-gradient(269.39deg, #57AEFE 49.47%, #6B71FF 95.75%)', 
-                    background: 'linear-gradient(269.39deg, #A057FE 49.47%, #916BFF 95.75%)',}}
+              sx={{ mt: 3, mb: 2 }}
             >
-              Log in
+              Sign In
             </Button>
-            <Grid container >
-              <Grid item xs >
-                <Link href="#" variant="body2" fontSize={12} sx={{ color: '#A057FE', textDecoration: 'none'}}>
+            <Grid container>
+              <Grid item xs>
+                <Link href="#" variant="body2">
                   Forgot password?
                 </Link>
               </Grid>
-              <Grid item >
-                <Link href="#" variant="body2" fontSize={12} sx={{ color: '#A057FE', textDecoration: 'none'}}>
-                  {"No account? Sign Up"}
+              <Grid item>
+                <Link href="#" variant="body2">
+                  {"Don't have an account? Sign Up"}
                 </Link>
               </Grid>
             </Grid>
