@@ -12,7 +12,10 @@ body {
     margin-block-end: 0;
 }
 
+.SesameTextField {
 
+  color: 'white';
+}
 /* Typography */ 
 
 h1 {
