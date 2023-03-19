@@ -5,7 +5,7 @@ import TableCell from '@mui/material/TableCell';
 import TableContainer from '@mui/material/TableContainer';
 import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
-import { lineHeight } from '@mui/system';
+
 
 function createData(name, spending) {
   return { name, spending};
@@ -13,7 +13,7 @@ function createData(name, spending) {
 
 const rows = [
   createData('Category 1', 159),
-  createData('Category 3', 237),
+  createData('Category 2', 237),
   createData('Category 3', 262),
   createData('Category 4', 305),
   createData('Category 5', 356),
