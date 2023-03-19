@@ -1,6 +1,6 @@
 import './App.css';
 import React from 'react';
-import SignIn from './pages/SignIn/SignIn'
+import SignIn from './components/SignIn'
 import ImportBills from './pages/import-bills/ImportBills';
 import YourBills from './pages/your-bills/YourBills';
 import Account from './pages/account/Account';
