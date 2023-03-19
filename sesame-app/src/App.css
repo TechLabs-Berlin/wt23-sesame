@@ -3,7 +3,6 @@ body {
   margin-bottom: 100px;
   font-family: 'Roboto', sans-serif;
   font-style: normal;
-  background-color: #232D2F;
   }
 
 :-webkit-any(article, aside, nav, section) {
@@ -65,9 +64,6 @@ p {
   height: 56px;
   padding: 8px 24px;
   color: #A0A1A5;
-  display: flex;
-  align-items: center; 
-  justify-content: space-between;
 }
 
 .app-link {
