@@ -1,0 +1,14 @@
+WeekofYear,DayofWeek,Category,Cost
+35,Monday,Investment,10.0
+35,Monday,Rent + Bills,4.94
+35,Tuesday,Groceries,43.28
+35,Tuesday,Investment,10.0
+35,Wednesday,Travel,26.15
+35,Thursday,Rent + Bills,501.77
+35,Thursday,Transport,63.42
+35,Friday,Investment,50.0
+35,Saturday,Groceries,20.94
+35,Saturday,Healthcare,12.5
+35,Sunday,Eating Out,13.5
+35,Sunday,Rent + Bills,1.88
+35,Sunday,Travel,64.75
