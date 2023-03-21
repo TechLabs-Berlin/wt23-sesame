@@ -2,7 +2,7 @@ import React from 'react';
 import SesameBottomNavigation from '../../components/SesameBottomNavigation';
 import PropTypes from 'prop-types';
 import LogIn from '../../components/LogIn';
-import SignIn from '../../components/SignIn';
+
 
 
 

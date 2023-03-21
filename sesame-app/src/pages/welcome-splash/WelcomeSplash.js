@@ -15,7 +15,7 @@ function WelcomeSplash() {
     setLoading(true);
     setTimeout(() => {
       setLoading(false);
-    }, 3000);
+    }, 1000);
   }, []);
 
   return (
@@ -26,7 +26,7 @@ function WelcomeSplash() {
 
       <motion.div className ='logo' animate={{ y: -50, display:'flex',flexDirection :'column', flexWrap:'wrap', justifyContent: 'center'}}> <img src={logo}  alt="Logo"/> 
         <motion.div  animate={{ y: 80, }}>
-        <a style={{textDecoration: 'none'}}href="/Account"><Button 
+        <a style={{textDecoration: 'none'}}href="/account"><Button 
                type="submit"
                variant="contained"
                sx={{ mt: 20, mb: 2,      
@@ -37,7 +37,7 @@ function WelcomeSplash() {
                background: 'linear-gradient(269.39deg, #A057FE 49.47%, #916BFF 95.75%)',}}>
                Sign Up / Log In
           </Button></a><br></br>
-          <Button 
+          <a style={{textDecoration: 'none'}}href="/import-bills"><Button 
                type="submit"
             variant="outlined"
                sx={{mt: 1,
@@ -51,7 +51,7 @@ function WelcomeSplash() {
               //  background: 'linear-gradient(269.39deg, #A057FE 49.47%, #916BFF 95.75%)',
                }}>
                Guest Account
-          </Button>
+          </Button></a>
          </motion.div>
       </motion.div>)}
       

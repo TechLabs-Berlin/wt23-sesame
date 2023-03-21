@@ -1,7 +1,6 @@
 import React from 'react';
 import { Avatar } from '@mui/material';
 import Typography from '@mui/material/Typography';
-import LockOutlinedIcon from '@mui/icons-material/LockOutlined';
 import Box from '@mui/material/Box';
 import TextField from '@mui/material/TextField';
 import FormControlLabel from '@mui/material/FormControlLabel';
@@ -36,6 +35,7 @@ function LogIn() {
        
         "& label.Mui-focused": {
             color: "white"
+            
         },
         "& .MuiInput-underline:after": {
             borderBottomColor: "white"
@@ -43,14 +43,14 @@ function LogIn() {
         
         "& .MuiOutlinedInput-root": {
             "& fieldset": {
-              borderColor: "white"
+              borderColor: "#7A7A7A"
             },
             "&:hover fieldset": {
-              borderColor: "white",
+              borderColor: "#A057FE",
               borderWidth: 2
             },
             "&.Mui-focused fieldset": {
-              borderColor: "white"
+              borderColor: "#A057FE"
             }
         }
       });
@@ -66,15 +66,17 @@ function LogIn() {
                 alignItems: 'center',
                 }}>  
                 
-                <Avatar sx={{bgcolor: 'secondary.main' }}>
-                    <LockOutlinedIcon />
-                </Avatar>
+                <Avatar sx={{bgcolor: '#A057FE' }}>i</Avatar>
 
-                <Typography variant="h5" sx={{color: 'white'}}>
-                Sign in
+                <Typography sx={{color: 'white', textAlign: 'center'}}>
+                   <p>
+                     You are currently using a guest account. <br></br>
+                     Sign up or log in to manage your personal <br></br>
+                     information and settings.
+                  </p>
                 </Typography>
 
-                <Box component="form" onSubmit={handleSubmit} noValidate>
+                <Box component="form" onSubmit={handleSubmit} noValidate display='flex'flexDirection='column'sx={{ mt: 5}} >
                     
                     <StyledTextField 
                         margin="normal"
@@ -100,28 +102,32 @@ function LogIn() {
                     />
 
                     <FormControlLabel
-                        control={<Checkbox value="remember" sx={{color:'white'}} />}
+                        control={<Checkbox value="remember" sx={{color:'#A057FE'}} />}
                         label="Remember me"
                         sx={{color: 'white'}}
                     />
                     <Button
-                        type="submit"
-                        fullWidth
-                        variant="contained"
-                        sx={{ mt: 3, mb: 2 }}
-                    >
-                        Sign In
+                       type="submit"
+                       variant="contained"
+                       sx={{ mt: 3, mb: 2,
+                       borderRadius: 35, 
+                       height: 50,
+                       width: 311, 
+                    // background: 'linear-gradient(269.39deg, #57AEFE 49.47%, #6B71FF 95.75%)', 
+                       background: 'linear-gradient(269.39deg, #A057FE 49.47%, #916BFF 95.75%)',}}
+                     >
+                        Log in
                     </Button>
 
                     <Grid container>
                         <Grid item xs>
-                            <Link href="#" variant="body2">
+                            <Link href="#" fontSize={12} sx={{ color: '#A057FE', textDecoration: 'none'}} >
                                 Forgot password?
                             </Link>
                         </Grid>
                         <Grid item>
-                            <Link href="#" variant="body2">
-                                {"Don't have an account? Sign Up"}
+                            <Link href="#" fontSize={12} sx={{ color: '#A057FE', textDecoration: 'none'}} >
+                              {"No account? Sign Up"}
                             </Link>
                         </Grid>
                     </Grid>
@@ -129,10 +135,10 @@ function LogIn() {
                 </Box>
                 
                 <div style={{margin: '40px'}}>
-                    <Typography variant="body2" color='white' align="center">
+                    <Typography variant="body2" color='#7A7A7A' align="center">
                         {'Copyright © '}
-                        <Link href="https://mui.com/" color='inherit'>
-                            Your Website
+                        <Link href="/welcome-splash" color='#7A7A7A'>
+                            sesame
                          </Link>{' '}
                         {new Date().getFullYear()}
                         {'.'}
