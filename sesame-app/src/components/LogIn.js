@@ -112,8 +112,7 @@ function LogIn() {
                        sx={{ mt: 3, mb: 2,
                        borderRadius: 35, 
                        height: 50,
-                       width: 311, 
-                    // background: 'linear-gradient(269.39deg, #57AEFE 49.47%, #6B71FF 95.75%)', 
+                       width: 311,  
                        background: 'linear-gradient(269.39deg, #A057FE 49.47%, #916BFF 95.75%)',}}
                      >
                         Log in
