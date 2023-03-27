@@ -12,11 +12,9 @@ import LockOutlinedIcon from '@mui/icons-material/LockOutlined';
 import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
-import SesameBottomNavigation from '../../components/SesameBottomNavigation';
-import PropTypes from 'prop-types';
 
 function Copyright(props) {
-  return (
+    return (
     <Typography variant="body2" color="text.secondary" align="center" {...props}>
       {'Copyright © '}
       <Link color="inherit" href="https://mui.com/">
@@ -31,7 +29,7 @@ function Copyright(props) {
 
 const theme = createTheme();
 
-export default function SignIn() {
+export default function SignIn({ value, handleChange }) {
   const handleSubmit = (event) => {
     event.preventDefault();
     const data = new FormData(event.currentTarget);
@@ -105,8 +103,8 @@ export default function SignIn() {
               </Grid>
             </Grid>
           </Box>
-        </Box>
-        <Copyright sx={{ mt: 8, mb: 4 }} />
+          <Copyright sx={{ mt: 8, mb: 4 }} />
+        </Box>   
       </Container>
     </ThemeProvider>
     

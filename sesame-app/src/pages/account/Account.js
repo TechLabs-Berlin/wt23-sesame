@@ -1,17 +1,20 @@
 import React from 'react';
 import SesameBottomNavigation from '../../components/SesameBottomNavigation';
 import PropTypes from 'prop-types';
+import LogIn from '../../components/LogIn';
+
 
 
 
 function Account({ value, handleChange }) {
     return (
         <div>
+            
             <section className="app-header">
                 <h1>Account</h1>
             </section>
 
-            {/* Page content */}
+            <LogIn/>
             <SesameBottomNavigation value={value} onChange={handleChange} />
         </div>
     );
