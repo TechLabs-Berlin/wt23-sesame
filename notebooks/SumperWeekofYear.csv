@@ -1,0 +1,274 @@
+WeekofYear,DayofWeek,Category,Cost
+1,1,Groceries,7.5
+1,2,Rent + Bills,1.88
+1,6,Groceries,4.66
+2,1,Student Loan,82.95
+2,2,Selfcare,85.12
+2,4,Rent + Bills,19.68
+2,4,Selfcare,24.0
+2,5,Groceries,7.67
+3,3,Hobbies,35.0
+3,4,Groceries,14.25
+3,4,Healthcare,3.62
+3,4,Selfcare,39.0
+3,5,Eating Out,7.0
+3,5,Transport,22.9
+3,6,Eating Out,4.0
+3,6,Groceries,23.509999999999998
+3,6,Shopping,24.5
+3,6,Transport,20.01
+4,0,Selfcare,36.05
+4,0,Transport,79.86
+4,2,Groceries,29.45
+4,2,Rent + Bills,25.0
+4,2,Shopping,5.7
+4,4,Groceries,4.18
+4,4,Healthcare,13.52
+4,4,Hobbies,18.82
+4,4,Transport,9.95
+4,4,Travel,74.63
+4,6,Shopping,75.97
+5,1,Groceries,18.96
+5,2,Eating Out,31.799999999999997
+5,2,Rent + Bills,39.94
+5,2,Shopping,73.83
+5,3,Groceries,1.44
+5,3,Healthcare,53.59
+5,3,Shopping,94.5
+5,3,Transport,79.41
+5,4,Eating Out,32.0
+5,4,Groceries,8.94
+5,4,Travel,34.5
+5,5,Rent + Bills,1.88
+5,5,Shopping,15.7
+6,0,Transport,30.19
+6,4,Student Loan,82.43
+6,5,Groceries,10.0
+7,0,Rent + Bills,10.0
+7,0,Transport,30.5
+7,1,Groceries,2.51
+7,1,Shopping,21.8
+7,3,Eating Out,15.85
+7,3,Rent + Bills,30.9
+7,5,Groceries,68.88
+7,6,Eating Out,11.49
+7,6,Travel,181.49
+8,0,Eating Out,1.92
+8,0,Groceries,31.21
+8,0,Transport,30.72
+8,1,Eating Out,9.59
+8,1,Groceries,8.26
+8,1,Shopping,222.26
+8,2,Groceries,27.25
+8,3,Groceries,13.69
+8,4,Eating Out,4.31
+8,4,Rent + Bills,4.5
+30,0,Eating Out,15.0
+30,0,Investment,6.0
+30,0,Shopping,144.5
+30,2,Eating Out,2.0
+30,2,Groceries,52.050000000000004
+30,2,Hobbies,130.0
+30,3,Rent + Bills,14.18
+30,4,Eating Out,2.2
+30,4,Groceries,39.95
+30,4,Rent + Bills,4.94
+30,6,Rent + Bills,17.78
+31,0,Groceries,65.17
+31,0,Investment,6.0
+31,0,Rent + Bills,501.77
+31,0,Transport,9.0
+31,1,Rent + Bills,30.9
+31,2,Eating Out,1.0
+31,2,Groceries,39.08
+31,3,Rent + Bills,1.88
+31,4,Hobbies,39.0
+31,5,Eating Out,25.3
+31,5,Groceries,18.62
+32,0,Hobbies,5.34
+32,0,Investment,10.0
+32,0,Rent + Bills,46.3
+32,0,Transport,11.5
+32,1,Groceries,30.62
+32,2,Student Loan,86.4
+32,3,Groceries,31.3
+32,4,Groceries,18.99
+32,4,Rent + Bills,20.0
+32,5,Eating Out,38.0
+33,0,Eating Out,2.7
+33,0,Groceries,14.759999999999998
+33,0,Investment,10.0
+33,1,Groceries,5.16
+33,1,Investment,60.0
+33,2,Eating Out,10.0
+33,3,Groceries,1.43
+33,4,Groceries,11.21
+33,5,Groceries,33.73
+33,6,Eating Out,20.2
+33,6,Shopping,31.0
+34,0,Investment,10.0
+34,0,Travel,1.0
+34,1,Shopping,25.79
+34,2,Healthcare,17.72
+34,2,Travel,9.4
+34,3,Healthcare,82.35
+34,4,Groceries,37.0
+34,4,Healthcare,7.65
+34,4,Shopping,25.75
+35,0,Investment,10.0
+35,0,Rent + Bills,4.94
+35,1,Groceries,43.28
+35,1,Investment,10.0
+35,2,Travel,26.15
+35,3,Rent + Bills,501.77
+35,3,Transport,63.42
+35,4,Investment,50.0
+35,5,Groceries,20.94
+35,5,Healthcare,12.5
+35,6,Eating Out,13.5
+35,6,Rent + Bills,1.88
+35,6,Travel,64.75
+36,0,Groceries,8.79
+36,0,Investment,10.0
+36,0,Travel,128.79
+36,1,Hobbies,120.0
+36,3,Eating Out,18.5
+36,4,Travel,118.02000000000001
+36,5,Student Loan,86.4
+37,0,Groceries,16.97
+37,0,Investment,10.0
+37,0,Rent + Bills,25.19
+37,0,Transport,1.8
+37,1,Investment,10.0
+37,1,Rent + Bills,10.0
+37,1,Transport,1.8
+37,2,Healthcare,65.0
+37,2,Rent + Bills,4.0
+37,2,Shopping,1.5
+37,4,Investment,50.0
+38,0,Groceries,0.72
+38,0,Investment,10.0
+38,1,Shopping,6.75
+38,2,Groceries,22.06
+38,2,Shopping,33.15
+38,3,Groceries,0.64
+38,4,Eating Out,14.8
+38,4,Groceries,6.24
+38,5,Groceries,10.86
+38,5,Healthcare,8.69
+38,6,Shopping,100.0
+39,0,Groceries,40.0
+39,0,Investment,10.0
+39,1,Eating Out,10.0
+39,2,Groceries,8.69
+39,2,Transport,1.8
+39,3,Rent + Bills,4.94
+39,5,Rent + Bills,501.77
+39,5,Transport,29.0
+39,6,Transport,4.15
+39,6,Travel,143.0
+40,0,Investment,70.0
+40,1,Rent + Bills,1.88
+40,2,Groceries,54.87
+40,2,Transport,21.97
+40,2,Travel,46.99
+40,3,Shopping,11.36
+40,4,Eating Out,25.3
+40,5,Groceries,40.45
+40,5,Shopping,30.0
+41,0,Investment,10.0
+41,0,Student Loan,86.4
+41,1,Eating Out,14.5
+41,2,Groceries,24.85
+41,2,Rent + Bills,25.19
+41,3,Rent + Bills,10.0
+41,3,Transport,3.45
+41,4,Shopping,39.9
+41,5,Groceries,3.16
+41,5,Shopping,11.5
+42,0,Investment,125.0
+42,2,Eating Out,5.84
+42,2,Transport,1.8
+42,3,Groceries,43.34
+42,3,Healthcare,15.44
+42,4,Groceries,8.06
+42,5,Groceries,28.72
+43,0,Investment,10.0
+43,0,Rent + Bills,7.9
+43,1,Eating Out,6.0
+43,2,Eating Out,10.0
+43,3,Transport,3.8
+43,6,Transport,1.8
+44,1,Rent + Bills,539.94
+44,1,Transport,28.58
+44,2,Eating Out,14.25
+44,2,Groceries,1.72
+44,2,Transport,7.6
+44,4,Eating Out,75.9
+44,4,Rent + Bills,1.88
+44,6,Groceries,23.59
+45,1,Eating Out,11.0
+45,3,Groceries,21.08
+45,3,Student Loan,86.4
+45,4,Eating Out,28.3
+45,5,Groceries,24.66
+45,5,Rent + Bills,52.790000000000006
+45,6,Rent + Bills,10.0
+46,1,Eating Out,6.2
+46,3,Groceries,11.82
+46,4,Groceries,7.34
+46,4,Rent + Bills,28.19
+46,6,Transport,1.8
+47,0,Eating Out,7.95
+47,0,Transport,8.0
+47,1,Groceries,6.65
+47,1,Healthcare,10.0
+47,1,Shopping,22.0
+47,1,Transport,7.95
+47,2,Groceries,2.49
+47,3,Eating Out,23.85
+47,3,Shopping,5.0
+47,4,Eating Out,15.38
+47,4,Shopping,49.59
+47,5,Groceries,54.14
+47,5,Transport,7.95
+48,0,Eating Out,5.5
+48,0,Groceries,23.05
+48,1,Groceries,39.01
+48,1,Healthcare,49.97
+48,2,Transport,1.8
+48,3,Rent + Bills,539.94
+48,3,Transport,28.58
+48,5,Eating Out,10.0
+48,5,Groceries,17.51
+48,6,Rent + Bills,1.88
+49,1,Groceries,48.6
+49,2,Eating Out,10.0
+49,3,Eating Out,15.8
+49,4,Eating Out,2.8
+49,4,Groceries,12.52
+49,5,Eating Out,6.95
+49,5,Groceries,11.46
+49,5,Shopping,6.26
+49,5,Student Loan,86.4
+49,6,Eating Out,19.5
+50,0,Eating Out,16.0
+50,0,Rent + Bills,9.16
+50,1,Rent + Bills,10.0
+50,2,Groceries,28.95
+50,3,Shopping,126.91
+50,4,Eating Out,10.0
+50,5,Groceries,25.38
+51,2,Rent + Bills,20.15
+51,3,Transport,1.8
+51,4,Eating Out,4.79
+51,4,Groceries,27.01
+51,4,Transport,1.8
+51,5,Shopping,27.55
+51,6,Eating Out,10.0
+51,6,Rent + Bills,25.0
+51,6,Shopping,18.53
+52,0,Hobbies,19.0
+52,1,Groceries,4.02
+52,1,Hobbies,18.82
+52,6,Rent + Bills,539.94
