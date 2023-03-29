@@ -3,7 +3,7 @@ const addBillRoutes = require("./billsRoute");
 const viewExpenseBarChart = require("./expenseOverviewBarChart");
 const viewExpenseTopSpend = require("./expenseOverviewTopSpend");
 const app = express();
-const port = 3000;
+const port = 4000;
 
 app.get("/", (req, res) => {
   res.send("Our express server is up and running");
