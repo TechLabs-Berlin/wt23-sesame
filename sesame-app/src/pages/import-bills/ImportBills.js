@@ -10,7 +10,7 @@ import AddAPhotoIcon from '@mui/icons-material/AddAPhoto';
 import Switch from '@mui/material/Switch';
 import FormGroup from '@mui/material/FormGroup';
 import FormControlLabel from '@mui/material/FormControlLabel';
-
+import Camera from '../../components/Camera';
 
 
 function ImportBills({ value, handleChange }) {
@@ -29,7 +29,7 @@ function ImportBills({ value, handleChange }) {
         minWidth: '70px',
         padding: '8px',
         borderRadius: '8px',
-        margin: '10px 30px',
+        margin: '10px 10px',
         
         '& .MuiSvgIcon-root': {fontSize: '30px'},
 
@@ -62,11 +62,12 @@ function ImportBills({ value, handleChange }) {
                        flexDirection: 'row-reverse' ,
                      }}
 
-             control={<Switch defaultUnchecked />}
+             control={<Switch defaultunchecked="true" />}
              label="Show me QR Code" />
           </FormGroup>
         );
-      }
+      } 
+      
     
     return (
         <div>
@@ -77,7 +78,7 @@ function ImportBills({ value, handleChange }) {
                 <Tabs value={selectedTab} onChange={handleTabChange}  sx={{ ...tabsStyles }}>
                     <Tab icon={<QrCodeIcon />} label="QR Code"  sx={{ ...singleTabStyles }} />                
                     <Tab icon={<TapAndPlayIcon />} label="NFC"  sx={{ ...singleTabStyles }}/>                
-                    <Tab icon={<AddAPhotoIcon />} label="Import" sx={{ ...singleTabStyles }} /> 
+                    <Tab icon={<AddAPhotoIcon />} label="Import" sx={{ ...singleTabStyles }}/> 
                 </Tabs>
             </Box>
             <div style= {{display: 'flex',
@@ -88,7 +89,9 @@ function ImportBills({ value, handleChange }) {
                             borderRadius: '16px',
                             backgroundColor: '#ffffff'
                             }}>
-                <QRCodeWebcam  />
+                <QRCodeWebcam />
+                <Camera />
+                
             </div>
                 <SwitchLabels />
                <SesameBottomNavigation value={value} onChange={handleChange} />

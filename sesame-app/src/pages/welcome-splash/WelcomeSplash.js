@@ -24,7 +24,13 @@ function WelcomeSplash() {
 
      (<GridLoader size={30} color={'#36d698'} loading={loading} />) : (
 
-      <motion.div className ='logo' animate={{ y: -50, display:'flex',flexDirection :'column', flexWrap:'wrap', justifyContent: 'center'}}> <img src={logo}  alt="Logo"/> 
+      <motion.div className ='logo'
+      animate={{ y: -50,
+               display:'flex',
+               flexDirection :'column', 
+               flexWrap:'wrap',
+               justifyContent: 'center'}}> 
+               <img src={logo}  alt="Logo"/> 
         <motion.div  animate={{ y: 80, }}>
         <a style={{textDecoration: 'none'}}href="/account"><Button 
                type="submit"
