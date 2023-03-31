@@ -1,10 +1,12 @@
 body {
-  margin: 0;
   margin-bottom: 120px;
   font-family: 'Roboto', sans-serif;
   font-style: normal;
   background-color: #232D2F;
+  max-width: 1024px; /* Set a max width for desktop devices */
+  margin: 0 auto; /* Center the content */
   }
+
 
 :-webkit-any(article, aside, nav, section) {
     margin: 0;

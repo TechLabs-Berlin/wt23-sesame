@@ -26,7 +26,7 @@ function SesameBottomNavigation() {
   const location = useLocation();
   
   return (
-    <div>
+    <div style={{ display: 'flex', justifyContent: 'center' }}>>
       <BottomNavigation sx={{
         bottom: '0', 
         position: 'fixed', 
