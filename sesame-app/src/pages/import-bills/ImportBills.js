@@ -54,7 +54,7 @@ function ImportBills({ value, handleChange }) {
 
     };
 
-    const  SwitchLabels = () => {
+    /*const  SwitchLabels = () => {
         return (
           <FormGroup >
             <FormControlLabel
@@ -68,33 +68,39 @@ function ImportBills({ value, handleChange }) {
              label="Show me QR Code" />
           </FormGroup>
         );
-      }
+      }*/
     
     return (
         <div>
+            
             <section className="app-header">
                 <h1>Add Bills</h1>
             </section>
+
             <Box sx={{ display: 'flex', justifyContent: 'center', padding: '8px 30px 24px' }}>
                 <Tabs value={selectedTab} onChange={handleTabChange}  sx={{ ...tabsStyles }}>
                     <Tab icon={<QrCodeIcon />} label="QR Code"  sx={{ ...singleTabStyles }} />                
-                    {/* <Tab icon={<TapAndPlayIcon />} label="NFC"  sx={{ ...singleTabStyles }}/>                 */}
                     <Tab icon={<AddAPhotoIcon />} label="Import" sx={{ ...singleTabStyles }} /> 
                 </Tabs>
             </Box>
+            
+            
             <div style= {{display: 'flex',
-                            flexDirection: 'column',
-                            justifyContent:'center',
-                            margin: '20px 24px 20px',
-                            padding: '30px 20px 20px 20px',
-                            borderRadius: '16px',
-                            backgroundColor: '#ffffff'
-                            }}>
+                        flexDirection: 'column',
+                        justifyContent:'center',
+                        alignItems: 'center',
+                        margin: '20px 0px 80px',
+                        background: 'white',
+                        //padding: '30px 20px 20px 20px',//
+                        //borderRadius: '16px',//
+                        }}>
                 {selectedTab === 0 && <QRCodeWebcam />}
                 {selectedTab === 1 && <Camera />}
             </div>
-                <SwitchLabels />
-               <SesameBottomNavigation value={value} onChange={handleChange} />
+
+            {/*<SwitchLabels />*/}
+               
+            <SesameBottomNavigation value={value} onChange={handleChange} />
         </div>
     );
 }
