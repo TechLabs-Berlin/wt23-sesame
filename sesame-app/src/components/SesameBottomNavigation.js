@@ -41,6 +41,7 @@ function SesameBottomNavigation() {
         height: '96px',
         borderTop: '1px solid #E4E4E4', 
         backgroundColor: '#232D2F', 
+        opacity: '0.95',
       }}    
       showLabels 
       value={location.pathname.replace('/', '') || 'import-bills'}  
