@@ -4,7 +4,8 @@ import Box from '@mui/material/Box';
 import { Tabs, Tab } from '@mui/material';
 import PropTypes from 'prop-types';
 import CalendarMonthIcon from '@mui/icons-material/CalendarMonth';
-import YourBillsSpendings from '../../components/YourBills_Spendings';
+import WeeklySpendings from '../../components/WeeklySpendings';
+import MonthlySpendings from '../../components/MonthlySpendings';
 import RefreshIcon from '@mui/icons-material/Refresh';
 import IconButton from '@mui/material/IconButton';
 
@@ -84,9 +85,21 @@ import IconButton from '@mui/material/IconButton';
                 </Tabs>
             </Box>
 
-            <Box sx={{ padding: '8px 24px' }}>
-                <YourBillsSpendings />
-            </Box>
+
+            {/*tab bar selected*/} 
+            {selectedTab === 0 && (
+                <Box sx={{ padding: '8px 24px' }}>
+                    <WeeklySpendings />
+                </Box>
+            )}
+
+            {selectedTab === 1 && (
+                <Box sx={{ padding: '8px 24px' }}>
+                    <MonthlySpendings />
+                </Box>
+            )}
+
+        
 
             <SesameBottomNavigation value={value} onChange={onChange} />
         </div>
