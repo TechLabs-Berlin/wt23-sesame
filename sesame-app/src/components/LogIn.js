@@ -76,7 +76,11 @@ function LogIn() {
                   </p>
                 </Typography>
 
-                <Box component="form" onSubmit={handleSubmit} noValidate display='flex'flexDirection='column'sx={{ mt: 5}} >
+                <Box component="form"
+                     onSubmit={handleSubmit}
+                     noValidate display='flex'
+                     flexDirection='column'
+                     sx={{ mt: 5}} >
                     
                     <StyledTextField 
                         margin="normal"
