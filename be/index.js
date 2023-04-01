@@ -7,7 +7,6 @@ const viewExpenseTopSpend = require("./expenseOverviewTopSpend");
 const app = express();
 const port = 4000;
 
-// Enable CORS middleware
 app.use(cors());
 
 app.get("/", (req, res) => {

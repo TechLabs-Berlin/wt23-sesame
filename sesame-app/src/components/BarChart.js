@@ -4,6 +4,7 @@ import { useEffect, useState } from 'react';
 import { BarChart, Bar, Cell, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
 
 //example data to feed the barchart without fetching from external sources:
+
 /*const data = [
     { day: 'Mon', spending: 200 },
     { day: 'Tue', spending: 100 },
@@ -63,5 +64,4 @@ const BarChartComponent = () => {
     );
   
 };
-
 export default BarChartComponent;

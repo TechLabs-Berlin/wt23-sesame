@@ -3,11 +3,11 @@ main().catch((err) => console.log("Mongo connection ERROR", err));
 
 async function main() {
   await mongoose.connect("mongodb://127.0.0.1:27017/sesame");
-  console.log("Mongo connection OPENED - from expenditure.js");
+  console.log("Mongo connection OPENED - from topexpenses.js");
 }
 
-const expenditureSchema = new mongoose.Schema({
-  day: {
+const expenseCatSchema = new mongoose.Schema({
+  category: {
     type: String,
     required: true,
     maxlength: 20,
@@ -19,10 +19,10 @@ const expenditureSchema = new mongoose.Schema({
   },
 });
 
-const Expenditure = mongoose.model("Expenditure", expenditureSchema);
+const ExpenseCat = mongoose.model("ExpenseCat", expenseCatSchema);
 
-const findAllExpenditures = async () => {
-  return await Expenditure.find();
+const findAllExpenseCats = async () => {
+  return await ExpenseCat.find();
 };
 
-module.exports = { findAllExpenditures };
+module.exports = { findAllExpenseCats };
