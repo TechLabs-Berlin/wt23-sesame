@@ -19,7 +19,7 @@ const QRCodeWebcam = () => {
     return (
         <div>
         <div>
-            {/* <h3>Webcam Image</h3> */}
+            <h3>Hold QR in red square</h3>
         </div>
       <div>
       <QrReader

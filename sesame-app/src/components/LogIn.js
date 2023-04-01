@@ -78,7 +78,9 @@ function LogIn() {
             </p>
                
 
+
             <Box component="form" onSubmit={handleSubmit} noValidate display='flex'flexDirection='column' sx={{ mt: '24px'}} >
+
                     
                 <StyledTextField 
                     id="email"
