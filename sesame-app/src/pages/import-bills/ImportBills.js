@@ -10,6 +10,7 @@ import AddAPhotoIcon from '@mui/icons-material/AddAPhoto';
 import Switch from '@mui/material/Switch';
 import FormGroup from '@mui/material/FormGroup';
 import FormControlLabel from '@mui/material/FormControlLabel';
+import Camera from '../../components/Camera';
 
 
 
@@ -25,7 +26,7 @@ function ImportBills({ value, handleChange }) {
         fontWeight: 500,
         color: 'white',
         minHeight: '32px',
-        height: '70px',
+        height: '50px',
         minWidth: '70px',
         padding: '8px',
         borderRadius: '8px',
@@ -60,6 +61,7 @@ function ImportBills({ value, handleChange }) {
               style={{ color: 'white',
                        display: 'flex',
                        flexDirection: 'row-reverse' ,
+                       paddingTop: '0px'
                      }}
 
              control={<Switch defaultUnchecked />}
@@ -76,7 +78,7 @@ function ImportBills({ value, handleChange }) {
             <Box sx={{ display: 'flex', justifyContent: 'center', padding: '8px 30px 24px' }}>
                 <Tabs value={selectedTab} onChange={handleTabChange}  sx={{ ...tabsStyles }}>
                     <Tab icon={<QrCodeIcon />} label="QR Code"  sx={{ ...singleTabStyles }} />                
-                    <Tab icon={<TapAndPlayIcon />} label="NFC"  sx={{ ...singleTabStyles }}/>                
+                    {/* <Tab icon={<TapAndPlayIcon />} label="NFC"  sx={{ ...singleTabStyles }}/>                 */}
                     <Tab icon={<AddAPhotoIcon />} label="Import" sx={{ ...singleTabStyles }} /> 
                 </Tabs>
             </Box>
@@ -84,11 +86,12 @@ function ImportBills({ value, handleChange }) {
                             flexDirection: 'column',
                             justifyContent:'center',
                             margin: '20px 24px 20px',
-                            padding: '60px 40px 40px 40px',
+                            padding: '30px 20px 20px 20px',
                             borderRadius: '16px',
                             backgroundColor: '#ffffff'
                             }}>
-                <QRCodeWebcam  />
+                {selectedTab === 0 && <QRCodeWebcam />}
+                {selectedTab === 1 && <Camera />}
             </div>
                 <SwitchLabels />
                <SesameBottomNavigation value={value} onChange={handleChange} />
