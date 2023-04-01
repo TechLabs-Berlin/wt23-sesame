@@ -1,23 +1,30 @@
 import React from 'react';
+import { styled } from "@mui/material/styles";
 import { BottomNavigation, BottomNavigationAction } from '@mui/material';
 import { AccountCircle, AddBox, MoreHoriz, ReceiptLong } from '@mui/icons-material';
 import { Link, useLocation } from 'react-router-dom';
-import { styled } from "@mui/material/styles";
 
 const StyledBottomNavigationAction = styled(BottomNavigationAction)({
-  padding: '16px 0px 32px',
-  gap: '6px',
   color: 'white',
- 
-  '&.Mui-selected':{ 
-      //cannot set icon color with: background: 'linear-gradient(180deg, #57EEAF 0%, #26FFE5 100%)'
-      color: '#57EEAF',
+  gap: '6px', 
+  padding: '8px 0px 24px',
+
+  '&& .MuiBottomNavigationAction-label': {
+    fontSize: '13px',
   },
 
   '& .MuiSvgIcon-root': {
-    width: '32px',
+    width: '30px',
     height: 'auto',
-  }
+  },
+  
+  '&.Mui-selected':{ 
+    //cannot set icon color with: background: 'linear-gradient(180deg, #57EEAF 0%, #26FFE5 100%)'
+    color: '#37FAD3',
+  },
+
+
+  
 });
 
 
@@ -26,7 +33,7 @@ function SesameBottomNavigation() {
   const location = useLocation();
   
   return (
-    <div style={{ display: 'flex', justifyContent: 'center' }}>>
+    <div style={{ display: 'flex', justifyContent: 'center' }}>
       <BottomNavigation sx={{
         bottom: '0', 
         position: 'fixed', 
@@ -34,7 +41,6 @@ function SesameBottomNavigation() {
         height: '96px',
         borderTop: '1px solid #E4E4E4', 
         backgroundColor: '#232D2F', 
-        color: 'white', 
       }}    
       showLabels 
       value={location.pathname.replace('/', '') || 'import-bills'}  

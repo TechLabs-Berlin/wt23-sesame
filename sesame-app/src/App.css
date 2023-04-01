@@ -1,8 +1,9 @@
-body {
+Body{
   margin-bottom: 120px;
   font-family: 'Roboto', sans-serif;
   font-style: normal;
   background-color: #232D2F;
+  color: white;
   max-width: 1024px; /* Set a max width for desktop devices */
   margin: 0 auto; /* Center the content */
   }
@@ -76,6 +77,7 @@ p {
 }
 
 .app-link {
-  color: #61dafb;
+  color: #37FAD3;
 }
+
 

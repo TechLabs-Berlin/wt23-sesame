@@ -15,8 +15,8 @@ function YourBillsSpendings() {
   return (
     <div style={boxStyles}>
       <p style={{ opacity: 0.6, padding: '8px 0px' }}>Your Total Spending 01.–07. Jan. 2023</p>
-      <p style={{ fontSize: '36px', lineHeight: '44px' }}>1.234567,89€</p>
-      <p style={{ opacity: 0.6 }}>Ø12345,67 € </p>
+      <p style={{ fontSize: '36px', lineHeight: '44px' }}>823.14€</p>
+      <p style={{ opacity: 0.6 }}>Ø117,59 € </p>
       <div style={{ padding: '24px 0px 0px' }}>
         <BarChartComponent/>
       </div>
