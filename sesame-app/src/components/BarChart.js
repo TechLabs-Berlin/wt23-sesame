@@ -4,15 +4,14 @@ import { useEffect, useState } from 'react';
 import { BarChart, Bar, Cell, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
 
 //example data to feed the barchart without fetching from external sources:
-
 /*const data = [
-    { day: 'Mon', spending: 200 },
-    { day: 'Tue', spending: 100 },
-    { day: 'Wed', spending: 300 },
-    { day: 'Thu', spending: 400 },
-    { day: 'Fri', spending: 150 },
-    { day: 'Sat', spending: 250 },
-    { day: 'Sun', spending: 350 },
+    { day: 'Mon', spending: 14.95 },
+    { day: 'Tue', spending: 53.28 },
+    { day: 'Wed', spending: 26.15 },
+    { day: 'Thu', spending: 565.19 },
+    { day: 'Fri', spending: 50.00 },
+    { day: 'Sat', spending: 33.44 },
+    { day: 'Sun', spending: 80.13 },
 ];*/
 
 const BarChartComponent = () => {
@@ -45,14 +44,14 @@ const BarChartComponent = () => {
                 <XAxis 
                     dataKey='day' 
                     style={{
-                        fontSize: '12px', 
+                        fontSize: '10px', 
                         fill: 'white',
                     }}
                 />
                 <YAxis 
-                    width={30}
+                    width={24}
                     style={{
-                        fontSize: '12px', 
+                        fontSize: '10px', 
                         fill: 'white',
                     }} 
                 />
@@ -64,4 +63,5 @@ const BarChartComponent = () => {
     );
   
 };
+
 export default BarChartComponent;
