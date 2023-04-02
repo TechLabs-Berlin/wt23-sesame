@@ -64,15 +64,15 @@ import IconButton from '@mui/material/IconButton';
 
     return ( 
         <div>
-            <div>
-                <section className="app-header" >
-                    <h1>Your Bills</h1>
-                    {/*refresh icon*/}
-                    <IconButton aria-label="refresh" onClick={handleRefresh} sx= {{color:'#8F66FF'}}>
-                        <RefreshIcon/>
-                    </IconButton>
-                </section>
-            </div>
+            
+            <section className="app-header" >
+                <h1>Your Bills</h1>
+                 {/*refresh icon*/}
+                <IconButton aria-label="refresh" onClick={handleRefresh} sx= {{color:'#8F66FF'}}>
+                    <RefreshIcon/>
+                </IconButton>
+            </section>
+            
 
             
 

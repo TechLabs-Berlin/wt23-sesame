@@ -80,4 +80,8 @@ p {
   color: #37FAD3;
 }
 
-
+.switch-label {
+  color: #232D2F;
+  display: flex;
+  font-size: 14px;
+}
