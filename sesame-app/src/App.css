@@ -53,6 +53,15 @@ p {
   margin-block-end: 0;
 }
 
+.label-dark {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  color: #232D2F;
+}
+
 .display {
   font-weight: 400;
   font-size: 45px;
@@ -78,10 +87,4 @@ p {
 
 .app-link {
   color: #37FAD3;
-}
-
-.switch-label {
-  color: #232D2F;
-  display: flex;
-  font-size: 14px;
 }
