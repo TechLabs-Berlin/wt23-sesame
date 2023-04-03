@@ -17,7 +17,7 @@ function WeeklySpendings() {
 
   useEffect(() => {
     async function fetchSpendings() {
-      const response = await fetch('/api/spendings');
+      const response = await fetch('/api/spendings'); //need to replace url
       const data = await response.json();
       setTotalSpending(data.totalSpending);
       setDailyAverage(data.dailyAverage);
