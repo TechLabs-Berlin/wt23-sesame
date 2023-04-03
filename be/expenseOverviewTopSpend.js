@@ -9,6 +9,15 @@ function viewExpenseTopSpend(app) {
       })
       .catch((err) => console.error(err));
   });
+
+  // app.post("/expenseCat", (req, res) => {
+  //   expenseCat
+  //     .createExpenseCat(req.body)
+  //     .then((expense) => {
+  //       res.send(expense);
+  //     })
+  //     .catch((err) => console.error(err));
+  // });
   // const rows = [
   //   {
   //     name: "Groceries",
