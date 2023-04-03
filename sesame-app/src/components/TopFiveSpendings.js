@@ -7,8 +7,8 @@ import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
 
 
-function createData(name, spending) {
-  return { name, spending};
+function createData(name, expense) {
+  return {name, expense};
 }
 
 /*const rows = [
@@ -28,7 +28,7 @@ function TopFiveSpendings() {
     fetch('http://localhost:4000/expenseOverviewTopSpend')
       .then(response => response.json())
       .then(data => {
-        const rows = data.map(item => createData(item.name, item.amount));
+        const rows = data.map(item => createData(item.category, item.spending));
         setRows(rows);
       })
       .catch(error => {
@@ -71,7 +71,7 @@ function TopFiveSpendings() {
               <TableCell component="th" scope="row">
                 {row.name}
               </TableCell>
-              <TableCell align="right">{row.spending}</TableCell>
+              <TableCell align="right">{row.expense}</TableCell>
             </TableRow>
           ))}
         </TableBody>
