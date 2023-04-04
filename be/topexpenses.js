@@ -19,11 +19,11 @@ const expenseCatSchema = new mongoose.Schema({
   },
 });
 
-// const ExpenseCat = mongoose.model("ExpenseCat", expenseCatSchema);
+const ExpenseCat = mongoose.model("ExpenseCat", expenseCatSchema);
 
-// const findAllExpenseCats = async () => {
-//   return await ExpenseCat.find();
-// };
+const findAllExpenseCats = async () => {
+  return await ExpenseCat.find();
+};
 
 // const createExpenseCat = async (details) => {
 //   return await ExpenseCat.create(details);
