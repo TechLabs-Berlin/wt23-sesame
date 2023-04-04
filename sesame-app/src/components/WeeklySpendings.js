@@ -14,41 +14,29 @@ function WeeklySpendings() {
   const [totalSpending, setTotalSpending] = useState(0);
   const [dailyAverage, setDailyAverage] = useState(0);
 
-  // useEffect(() => {
-  //   async function fetchSpendings() {
-  //     const response = await fetch('/api/spendings');
-  //     const data = await response.json();
-  //     setTotalSpending(data.totalSpending);
-  //     setDailyAverage(data.dailyAverage);
-  //   }
-  //   fetchSpendings();
-  // }, []);
-
   useEffect(() => {
-    async function fetchSpendings() {
+
+
+    const fetchSpendings = async () => {
       try {
-        const response = await fetch(
-          "http://localhost:4000/expenseOverviewBarChart"
-        );
-        const data = await response.json();
-        
-        setTotalSpending(data.totalSpending);
-        setDailyAverage(data.dailyAverage);
+        const response = await fetch('http://localhost:4000/expenseOverviewBarChart'); //need to replace url
+        const responseData = await response.json();
+        console.log(responseData);
+        setTotalSpending(responseData.totalSpending);
+        setDailyAverage(responseData.dailyAverage);
       } catch (error) {
         console.error(error);
-      }
+
     }
+  }
     fetchSpendings();
   }, []);
 
   return (
     <div style={boxStyles}>
-      <p style={{ opacity: 0.6, padding: "8px 0px" }}>
-        Your Total Spending (01.–07. Jan. 2022)
-      </p>
-      {/*<p style={{ fontSize: '36px', lineHeight: '44px' }}>823.14€</p>*/}
-      <p style={{ fontSize: "36px", lineHeight: "44px" }}>{totalSpending} €</p>
-      {/*<p style={{ opacity: 0.6 }}>Ø117,59 € </p>*/}
+
+      <p style={{ opacity: 0.6, padding: '8px 0px' }}>Your Total Spending (01.–07. Jan. 2022)</p>
+      <p className='display'>{totalSpending} €</p>
       <p style={{ opacity: 0.6 }}>Ø{dailyAverage} € per day </p>
       <div style={{ padding: "24px 0px 0px" }}>
         <BarChartComponent />
