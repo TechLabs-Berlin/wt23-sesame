@@ -13,17 +13,6 @@ import {
   ResponsiveContainer,
 } from "recharts";
 
-//example data to feed the barchart without fetching from external sources:
-/*const data = [
-    { day: 'Mon', spending: 14.95 },
-    { day: 'Tue', spending: 53.28 },
-    { day: 'Wed', spending: 26.15 },
-    { day: 'Thu', spending: 565.19 },
-    { day: 'Fri', spending: 50.00 },
-    { day: 'Sat', spending: 33.44 },
-    { day: 'Sun', spending: 80.13 },
-];*/
-
 const BarChartComponent = () => {
   //using the useState hook to initialize the data state as an empty array.
   const [data, setData] = useState([]);
@@ -32,9 +21,7 @@ const BarChartComponent = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch(
-          "http://localhost:4000/expenseOverviewBarChart"
-        );
+        const response = await fetch('http://localhost:4000/expenseOverviewBarChart');
         const responseData = await response.json();
         console.log(responseData);
         setData(responseData.expenditures); //Once data is retrieved, we update the state using the setData() method.
