@@ -26,7 +26,6 @@ function WeeklySpendings() {
         setDailyAverage(responseData.dailyAverage);
       } catch (error) {
         console.error(error);
-
     }
   }
     fetchSpendings();
