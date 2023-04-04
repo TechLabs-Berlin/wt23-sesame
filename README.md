@@ -4,7 +4,11 @@
 
 What can I do about this if I want to record the information on my receipts in a structured way in order to get an overview of my expenses, to be able to call them up without much effort and to better understand my spending behavior?
 
-## welcome to SESAME! 
+**you can use SESAME**
+
+# SESAME!
+
+## Introduction
 
 SESAME should help you to bundle your expenses in a structured way in one app. With your own account you can keep track of your receipts. You can assign each of your receipts to a category of your choice, such as "Shopping", "Groceries", "Travelling", "Rent" etc., with the value, date and place of issue. 
 
