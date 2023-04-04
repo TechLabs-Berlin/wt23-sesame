@@ -13,3 +13,17 @@ You can enter your receipts manually, or you can import a photo of your receipt 
 The user gets his expenses summarized in a weekly or monthly view. For the selected period, the categories with the largest output values are listed below the view.
 
 This way you can keep track of your expenses in the long run and no longer have to keep piles of paper or worry about not being able to find a receipt.
+
+
+## Group Members
+
+### Web Development
+Lu Tran
+Shalva Bitsadze
+Sneha Ghag
+Linh Nguyen Hoang
+### Data Science
+Cristina Escubós Alegre
+Jihane El Ache
+Oliver von Hoegen
+
