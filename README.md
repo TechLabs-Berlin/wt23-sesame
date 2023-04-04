@@ -18,12 +18,12 @@ This way you can keep track of your expenses in the long run and no longer have 
 ## Group Members
 
 ### Web Development
-Lu Tran
-Shalva Bitsadze
-Sneha Ghag
-Linh Nguyen Hoang
-### Data Science
-Cristina Escubós Alegre
-Jihane El Ache
-Oliver von Hoegen
+Lu Tran  
+Shalva Bitsadze  
+Sneha Ghag  
+Linh Nguyen Hoang  
+### Data Science 
+Cristina Escubós Alegre  
+Jihane El Ache  
+Oliver von Hoegen  
 
