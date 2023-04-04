@@ -1,6 +1,7 @@
 import React from 'react';
-import BarChartComponent from './BarChart';
+import BarChartComponent from './BarChartMonth';
 import TopFiveSpendings from './TopFiveSpendings';
+
 
 function MonthlySpendings() {
 
@@ -14,9 +15,9 @@ function MonthlySpendings() {
 
   return (
     <div style={boxStyles}>
-      <p style={{ opacity: 0.6, padding: '8px 0px' }}>Your Total Spending (January 2022)</p>
-      <p style={{ fontSize: '36px', lineHeight: '44px' }}>1823.14€</p>
-      <p style={{ opacity: 0.6 }}>Ø117,59 € per week </p>
+      <p style={{ opacity: 0.6, padding: '8px 0px' }}>Your Total Spending 2022</p>
+      <p className='display'>24423.14€</p>
+      <p style={{ opacity: 0.6 }}>Ø2035,26 € per month </p>
       <div style={{ padding: '24px 0px 0px' }}>
         <BarChartComponent/>
       </div>
