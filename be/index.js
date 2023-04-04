@@ -3,6 +3,8 @@ const cors = require("cors");
 const addBillRoutes = require("./billsRoute");
 const viewExpenseBarChart = require("./expenseOverviewBarChart");
 const viewExpenseTopSpend = require("./expenseOverviewTopSpend");
+const viewExpenseBarChartMonth = require("./expenseOverviewBarChartMonth");
+const viewExpenseTopSpendMonth = require("./expenseOverviewTopSpendMonth");
 
 const app = express();
 const port = 4000;
@@ -22,3 +24,5 @@ app.listen(port, () => {
 addBillRoutes(app);
 viewExpenseBarChart(app);
 viewExpenseTopSpend(app);
+viewExpenseBarChartMonth(app);
+viewExpenseTopSpendMonth(app);
