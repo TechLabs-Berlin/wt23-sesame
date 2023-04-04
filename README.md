@@ -4,7 +4,7 @@
 
 What can I do about this if I want to record the information on my receipts in a structured way in order to get an overview of my expenses, to be able to call them up without much effort and to better understand my spending behavior?
 
-**you can use SESAME**
+**you can use SESAME.**
 
 # SESAME!
 
@@ -19,6 +19,14 @@ The user gets his expenses summarized in a weekly or monthly view. For the selec
 This way you can keep track of your expenses in the long run and no longer have to keep piles of paper or worry about not being able to find a receipt.
 
 
+## Web Development
+
+
+## Data Science
+
+
+
+
 ## Group Members
 
 ### Web Development
@@ -30,4 +38,10 @@ Linh Nguyen Hoang
 Cristina Escubós Alegre  
 Jihane El Ache  
 Oliver von Hoegen  
+
+
+
+what else could be implemented in the future?
+
+there are 
 
