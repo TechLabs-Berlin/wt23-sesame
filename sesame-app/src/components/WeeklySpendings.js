@@ -19,14 +19,13 @@ function WeeklySpendings() {
 
     const fetchSpendings = async () => {
       try {
-        const response = await fetch('http://localhost:4000/expenseOverviewBarChart'); //need to replace url
+        const response = await fetch('/api/spendings'); //need to replace url
         const responseData = await response.json();
         console.log(responseData);
         setTotalSpending(responseData.totalSpending);
         setDailyAverage(responseData.dailyAverage);
       } catch (error) {
         console.error(error);
-
     }
   }
     fetchSpendings();
