@@ -25,4 +25,4 @@ const findAllExpenditures = async () => {
   return await Expenditure.find();
 };
 
-module.exports = { findAllExpenditures };
+module.exports = { Expenditure, findAllExpenditures };
