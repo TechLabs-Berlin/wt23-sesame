@@ -10,6 +10,7 @@ function viewExpenseTopSpend(app) {
       .catch((err) => console.error(err));
   });
 
+  //*****/ IN CASE WE NEED TO CREAT NEW ENTRY
   // app.post("/expenseCat", (req, res) => {
   //   expenseCat
   //     .createExpenseCat(req.body)
