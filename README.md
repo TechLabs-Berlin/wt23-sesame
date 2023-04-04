@@ -1,4 +1,4 @@
-# wt23-sesame
+# wt23-sesame :clipboard:
 
 *Receipts cause clutter, but contain useful data that is easily lost.*
 
