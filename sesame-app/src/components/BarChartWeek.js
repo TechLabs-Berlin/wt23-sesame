@@ -1,5 +1,4 @@
 import React from "react";
-import { useEffect, useState } from "react";
 //install Recharts in your project, run "npm install recharts"
 import {
   BarChart,
@@ -15,10 +14,10 @@ import {
 
 const BarChartComponent = () => {
   //using the useState hook to initialize the data state as an empty array.
-  const [data, setData] = useState([]);
-  const [error, setError] = useState(null);
+  const [data, setData] = React.useState([]);
+  const [error, setError] = React.useState(null);
   //in the useEffect hook, we are making an asynchronous call to fetch the data from the server using the fetch() method.
-  useEffect(() => {
+  React.useEffect(() => {
     const fetchData = async () => {
       try {
         const response = await fetch('http://localhost:4000/expenseOverviewBarChart');
@@ -34,7 +33,7 @@ const BarChartComponent = () => {
 
   if (error) {
     return <div>Error: {error.message}</div>;
-  }
+  } 
 
   return (
     <ResponsiveContainer width="100%" height={110}>

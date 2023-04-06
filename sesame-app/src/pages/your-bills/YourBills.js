@@ -4,16 +4,15 @@ import Box from '@mui/material/Box';
 import { Tabs, Tab } from '@mui/material';
 import PropTypes from 'prop-types';
 import CalendarMonthIcon from '@mui/icons-material/CalendarMonth';
-import WeeklySpendings from '../../components/WeeklySpendings';
-import MonthlySpendings from '../../components/MonthlySpendings';
+import WeeklySpendings from '../../components/SpendingWeek';
+import MonthlySpendings from '../../components/SpendingMonth';
 import RefreshIcon from '@mui/icons-material/Refresh';
 import IconButton from '@mui/material/IconButton';
 
 
-  function YourBills({ value, onChange }) {
+function YourBills({ value, onChange }) {
 
     const [selectedTab, setSelectedTab] = React.useState(0);
-  
     const handleTabChange = (event, newValue) => setSelectedTab(newValue);
     
     //settings for refresh-icon
@@ -25,7 +24,7 @@ import IconButton from '@mui/material/IconButton';
           setRefresh(false);
           window.location.reload();
         }, 1000);
-      };
+    };
 
     const singleTabStyles = {
         textTransform: 'none',
