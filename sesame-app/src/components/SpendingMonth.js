@@ -1,6 +1,6 @@
 import React from 'react';
 import BarChartComponent from './BarChartMonth';
-import TopFiveSpendings from './TopFiveSpendings';
+import TopFiveSpendings from './TopSpendingsWeek';
 
 
 function MonthlySpendings() {
