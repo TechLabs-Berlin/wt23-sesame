@@ -1,4 +1,4 @@
-# SESAME
+![image](https://user-images.githubusercontent.com/117686913/230657445-ca11b5eb-4374-45e1-9b4a-0a99560ba38f.png)
 
 ## Summary: 
 
