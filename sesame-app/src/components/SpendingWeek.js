@@ -5,7 +5,7 @@ import TopFiveSpendings from "./TopSpendingsWeek";
 function WeeklySpendings() {
   const boxStyles = {
     background: "linear-gradient(269.39deg, #57AEFE 49.47%, #6B71FF 95.75%)",
-    padding: "16px 24px",
+    padding: "24px 24px",
     borderRadius: "16px",
     color: "#fff",
   };
@@ -16,7 +16,7 @@ function WeeklySpendings() {
 
   React.useEffect(() => {
 
-    const fetchSpendings = async () => {
+    const fetchData = async () => {
       try {
         const response = await fetch('http://localhost:4000/expenseOverviewBarChart'); 
         const responseData = await response.json();
@@ -29,13 +29,13 @@ function WeeklySpendings() {
         console.error(error);
       }
     }
-    fetchSpendings();
+    fetchData();
   }, []);
 
   return (
     <div style={boxStyles}>
 
-      <p style={{ opacity: 0.6, padding: '8px 0px' }}>Your Total Spending from {timePeriod}</p>
+      <p style={{ opacity: 0.6}}>Your Total Spending from {timePeriod}</p>
       <p className='display'>{totalSpending} €</p>
       <p style={{ opacity: 0.6 }}>Ø{dailyAverage} € per day </p>
       <div style={{ padding: "24px 0px 0px" }}>
