@@ -1,6 +1,5 @@
 ![image](https://user-images.githubusercontent.com/117686913/230657445-ca11b5eb-4374-45e1-9b4a-0a99560ba38f.png)
 
-## Summary: 
 
 SESAME is an app that is designed to help the user to bundle their receipts in a structured way and to show them their spending behavior using key figures and statistics. Receipt informations can be entered by the user or captured manually via a scanning function combined with an optical character recognition algorithm. By assigning categories, the expenses can be grouped, statistics can be derived and a deeper understanding of one's own spending behavior can be obtained.
 
@@ -12,10 +11,12 @@ SESAME is an app that is designed to help the user to bundle their receipts in a
 - View statistics on spending behavior
 - User authentication and authorization (Signin/Login)
 
+
 ## Prototype: 
 //should we embed a video here that demonstrate our app?
 
-### Technologies used:
+
+## Technologies used:
 - Node.js
 - MongoDB
 - React.js
@@ -23,8 +24,7 @@ SESAME is an app that is designed to help the user to bundle their receipts in a
 - Figma
 
 
-## HOW TO RUN THE APP:
-
+## How to:
 ### Set up 
 
 1. Clone the repository `wt23-sesame` to your local repository: 
