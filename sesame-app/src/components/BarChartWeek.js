@@ -1,5 +1,4 @@
 import React from "react";
-//install Recharts in your project, run "npm install recharts"
 import {
   BarChart,
   Bar,
