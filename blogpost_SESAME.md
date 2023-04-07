@@ -10,10 +10,41 @@ SESAME should help you to bundle your expenses in a structured way in one app. W
 
 ### raw data
 
+![]()
 
 ### processed data
 
+
+![]()
+
 ### insights
+
+barchart of the entire dataset 
+
+![](https://github.com/TechLabs-Berlin/wt23-sesame/blob/DS_Storytelling_FeatureDevelopment/images/DS/StackedBarchart.png)
+
+
+how does it look for Jul/Aug ..
+
+![](https://github.com/TechLabs-Berlin/wt23-sesame/blob/DS_Storytelling_FeatureDevelopment/images/DS/PieChart_JulAug.png)
+
+
+or Aug/Sep ..
+![](https://github.com/TechLabs-Berlin/wt23-sesame/blob/DS_Storytelling_FeatureDevelopment/images/DS/PieChart_AugSep.png)
+
+
+
+chaotic view onto the different categories ..
+
+![](https://github.com/TechLabs-Berlin/wt23-sesame/blob/DS_Storytelling_FeatureDevelopment/images/DS/Lineplot_Chaotic.png)
+
+more ordered view ..
+
+![](https://github.com/TechLabs-Berlin/wt23-sesame/blob/DS_Storytelling_FeatureDevelopment/images/DS/Lineplot_Ordered.png)
+
+
+
+taking a closer look at the differentiation of spendings on weekdays vs. weekend ...
 
 ![](https://github.com/TechLabs-Berlin/wt23-sesame/blob/DS_Storytelling_FeatureDevelopment/images/DS/FacetGrid_WeekdaysWeekend.png)
 
