@@ -8,6 +8,20 @@ SESAME should help you to bundle your expenses in a structured way in one app. W
 
 ## Data Science
 
+### raw data
+
+
+### processed data
+
+### insights
+
+![](\images\DS\Lineplot_Chaotic.png)
+
+
+### OCR
+
+
+
 
 ### open features/points to further improve
 Sesame as an app is at most an MVP at this point in time. The basic functionality can be expanded by a lot, which shows the generally great potential of this tool:
