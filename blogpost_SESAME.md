@@ -15,7 +15,7 @@ SESAME should help you to bundle your expenses in a structured way in one app. W
 
 ### insights
 
-![](\images\DS\Lineplot_Chaotic.png)
+![](https://github.com/TechLabs-Berlin/wt23-sesame/blob/DS_Storytelling_FeatureDevelopment/images/DS/FacetGrid_WeekdaysWeekend.png)
 
 
 ### OCR
