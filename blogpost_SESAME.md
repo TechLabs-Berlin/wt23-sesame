@@ -10,12 +10,16 @@ SESAME should help you to bundle your expenses in a structured way in one app. W
 
 ### raw data
 
-![]()
+the initial dataframe looked as follows ..
+
+![](https://github.com/TechLabs-Berlin/wt23-sesame/blob/DS_Storytelling_FeatureDevelopment/images/DS/initial_dataframe.png)
+
+it included the following processing steps [...]
 
 ### processed data
+the final dataframe looks as follows ..
+![](https://github.com/TechLabs-Berlin/wt23-sesame/blob/DS_Storytelling_FeatureDevelopment/images/DS/processed_dataframe.png)
 
-
-![]()
 
 ### insights
 
