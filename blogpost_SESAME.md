@@ -1,5 +1,5 @@
 # Sesame  
-![]("..\images\Logo.svg")
+![fsdfsdf](images\Logo.svg)
 *Receipts cause clutter, but contain useful data that is easily lost.*  
 What can I do about this if I want to record the information on my receipts in a structured way in order to get an overview of my expenses, to be able to call them up without much effort and to better understand my spending behavior?
 **you can use SESAME.**
