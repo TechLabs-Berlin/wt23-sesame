@@ -67,7 +67,7 @@ const QRCodeWebcam = () => {
         />
 
         <FormControlLabel
-          control={<StyledSwitch defaultUnchecked />}
+          control={<StyledSwitch defaultunchecked="true" />}
           label={<span className='label-dark'>Show my QR Code</span>}
           sx={{margin: '24px'}}
         />

@@ -1,41 +1,41 @@
 import React from "react";
-import { useEffect, useState } from "react";
-import BarChartComponent from "./BarChart";
-import TopFiveSpendings from "./TopFiveSpendings";
+import BarChartComponent from "./BarChartWeek";
+import TopFiveSpendings from "./TopSpendingsWeek";
 
 function WeeklySpendings() {
   const boxStyles = {
     background: "linear-gradient(269.39deg, #57AEFE 49.47%, #6B71FF 95.75%)",
-    padding: "16px 24px",
+    padding: "24px 24px",
     borderRadius: "16px",
     color: "#fff",
   };
 
-  const [totalSpending, setTotalSpending] = useState(0);
-  const [dailyAverage, setDailyAverage] = useState(0);
+  const [totalSpending, setTotalSpending] = React.useState(0);
+  const [dailyAverage, setDailyAverage] = React.useState(0);
+  const [timePeriod, setTimePeriod] = React.useState(0);
 
-  useEffect(() => {
+  React.useEffect(() => {
 
-
-    const fetchSpendings = async () => {
+    const fetchData = async () => {
       try {
-        const response = await fetch('http://localhost:4000/expenseOverviewBarChart'); //need to replace url
+        const response = await fetch('http://localhost:4000/expenseOverviewBarChart'); 
         const responseData = await response.json();
         console.log(responseData);
         setTotalSpending(responseData.totalSpending);
         setDailyAverage(responseData.dailyAverage);
-      } catch (error) {
+        setTimePeriod(responseData.timePeriod);
+      } 
+      catch (error) {
         console.error(error);
-
+      }
     }
-  }
-    fetchSpendings();
+    fetchData();
   }, []);
 
   return (
     <div style={boxStyles}>
 
-      <p style={{ opacity: 0.6, padding: '8px 0px' }}>Your Total Spending (01.–07. Jan. 2022)</p>
+      <p style={{ opacity: 0.6}}>Your Total Spending from {timePeriod}</p>
       <p className='display'>{totalSpending} €</p>
       <p style={{ opacity: 0.6 }}>Ø{dailyAverage} € per day </p>
       <div style={{ padding: "24px 0px 0px" }}>

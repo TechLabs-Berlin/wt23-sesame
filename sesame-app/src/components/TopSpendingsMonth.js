@@ -1,4 +1,4 @@
-import * as React from 'react';
+import React from 'react';
 import Table from '@mui/material/Table';
 import TableBody from '@mui/material/TableBody';
 import TableCell from '@mui/material/TableCell';
@@ -7,12 +7,12 @@ import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
 
 
-function createData(name, expense) {
+const createData = (name, expense) => {
   return {name, expense};
 }
 
 /*const rows = [
-  createData('Category 1', 159),
+  createData('Category 1', 159),  
   createData('Category 2', 237),
   createData('Category 3', 262),
   createData('Category 4', 305),
@@ -21,21 +21,29 @@ function createData(name, expense) {
 
 function TopFiveSpendings() {
 
-
   const [rows, setRows] = React.useState([]);
+  const [error, setError] = React.useState(null);
   
   React.useEffect(() => {
-    fetch('http://localhost:4000/expenseOverviewTopSpend')
-      .then(response => response.json())
-      .then(data => {
+    const fetchSpendings = async () => {
+      try {
+        const response = await fetch('http://localhost:4000/expenseOverviewTopSpendMonth');
+        const data = await response.json();
         const rows = data.map(item => createData(item.category, item.spending));
+        console.log(data);
         setRows(rows);
-      })
-      .catch(error => {
-        console.error('Error fetching data:', error);
-      });
-  }, []);  
+      } 
+      catch (error) {
+        setError(error);
+      }
+    };
+    fetchSpendings();
+  }, []);
 
+  if (error) {
+    return <div>Error: {error.message}</div>;
+  }
+  
 
   return (
 

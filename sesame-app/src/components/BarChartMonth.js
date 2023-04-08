@@ -1,10 +1,8 @@
 import React from 'react';
-import { useEffect, useState } from 'react';
-//install Recharts in your project, run "npm install recharts"
-import { BarChart, Bar, Cell, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
+import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer } from 'recharts';
 
 //example data to feed the barchart without fetching from external sources:
-const data = [
+/*const data = [
     { month: 'Jan', spending: 1114.95 },
     { month: 'Feb', spending: 953.28 },
     { month: 'Mar', spending: 1326.15 },
@@ -17,18 +15,19 @@ const data = [
     { month: 'Okt', spending: 1904.13 },
     { month: 'Nov', spending: 2080.13 },
     { month: 'Dec', spending: 2180.13 },
-];
+];*/
 
-const BarChartComponent = () => {
+const BarChartMonth = () => {
 
     //using the useState hook to initialize the data state as an empty array.
-    /*const [data, setData] = useState([]);
-    const [error, setError] = useState(null);
+    const [data, setData] = React.useState([]);
+    const [error, setError] = React.useState(null);
+
     //in the useEffect hook, we are making an asynchronous call to fetch the data from the server using the fetch() method.
-    useEffect(() => {
+    React.useEffect(() => {
         const fetchData = async () => {
             try {
-                const response = await fetch('http://localhost:4000/expenseOverviewBarChart');
+                const response = await fetch('http://localhost:4000/expenseOverviewBarChartMonth');
                 const responseData = await response.json();
                 console.log(responseData);
                 setData(responseData); //Once data is retrieved, we update the state using the setData() method.
@@ -41,7 +40,7 @@ const BarChartComponent = () => {
 
     if (error) {
         return <div>Error: {error.message}</div>;
-    }*/
+    }
 
     return (
         <ResponsiveContainer width='100%' height={110}>
@@ -62,7 +61,6 @@ const BarChartComponent = () => {
                     }} 
                 />
                 <Tooltip />
-                {/*<Legend /> */}
                 <Bar dataKey='spending' fill='#3A3BFF' />
             </BarChart>
         </ResponsiveContainer>
@@ -70,4 +68,4 @@ const BarChartComponent = () => {
   
 };
 
-export default BarChartComponent;
+export default BarChartMonth;
