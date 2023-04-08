@@ -1,4 +1,4 @@
-# Sesame  ![](https://github.com/TechLabs-Berlin/wt23-sesame/blob/DS_Storytelling_FeatureDevelopment/images/Logo.svg)
+![image](https://user-images.githubusercontent.com/117686913/230675893-733dd9b0-d61f-49ec-a39d-aa6fb611fb28.png)
 *Receipts cause clutter, but contain useful data that is easily lost.*  
 What can I do about this if I want to record the information on my receipts in a structured way in order to get an overview of my expenses, to be able to call them up without much effort and to better understand my spending behavior?
 **you can use SESAME.**
@@ -79,6 +79,43 @@ The expenditure is tracked in such a way that the user is informed when it is ex
 
 **Image quality detection and optimisation** could also be integrated into SESAME. For this, the quality of the scanned image would have to be evaluated internally with regard to certain criteria (contrast, sharpness, brightness etc.). If the quality is assessed as too poor to capture the receipt information, these image characteristics are improved internally before the optical character recognition converts the receipt.
 
-## Frontend (WebDev)
+## Web Developement
 
-## Backend (WebDev)
+### Frontend: 
+
+**Preset arrangements** Due to our limited time, we decided to create a web application using technologies such as `React, HTML, CSS, JavaScript, and the Material UI and Recharts library`. We implemented a mobile-first approach during the design and development process to ensure that the web application looks and functions well on mobile devices, given the application's intended use case.
+
+**File structuring:** After defining the pages that we wanted to include in the app, we created a separate JavaScript file for each page and linked them together in another file. Although we were unsure if it was the best approach, it allowed us to work on each page individually and keep the codes as simple and readable as possible.
+
+To **maintain visual consistency** throughout the app, we created an `App.css` file and defined the first set of `recurring components`, such as the app header and bottom navigation bar, to be implemented across all pages. By using these recurring components, we were able to ensure a consistent look and feel throughout the app, as well as achieve reusability, maintainability, and scalability.
+
+**The Welcome Screen** allows users to go through a typical **login or registration process**. At this stage, we have decided to prioritize building other pages with features that are more relevant to the app. Therefore, we only focused on bulding the Welcome Screen accordingly to the design, and functionality should be added later if time allows. To give users an opportunity to explore the app's main features without committing to creating an account, we include a guest access button that allows users to enter the app.
+![](app-screens/Appscren_1.png) 
+
+
+**Import Receipts** 
+
+
+
+**Bill page** features a bar chart and table displaying expenses incurred by the user when collecting receipts. Although we initially envisioned this page as a collaborative meeting point for the different teams involved in the project, it still took us some time to figure out the dependencies between the data science (DS), backend (BE), and frontend (FE) teams. 
+
+Building and styling the bar chart and table was straightforward thanks to the `MUI and Recharts library`, but learning how to use the `fetch method` and collaborate intensly with BE took up most of our time. We also discovered that since we were running MongoDB locally on port 4000, the frontend team had to set up their own instance of MongoDB, which is not usually necessary when the backend team provides a server API. This added an extra layer of complexity, but we were able to overcome it.
+
+
+**Key take aways for how the data flows between the DS, BE and FE:**
+1. The values displayed in the bar chart and table are based on a dataset curated by the DS team and provided to the BE team. 
+2. The BE team then creates an API to serve the data to the FE team, 
+3. The FE team who builds use this API-URL to retrieve the data for the bar chart and table. 
+
+This collaborative process has been essential in connecting the work of the different teams and helping us work together more closely.
+
+
+
+
+
+
+
+
+
+
+### Backend
