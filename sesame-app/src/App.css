@@ -70,7 +70,6 @@ p {
   margin-block-end: 0;
 }
 
-/* section Header */ 
 
 .app-header {
   display: flex;
@@ -87,4 +86,18 @@ p {
 
 .app-link {
   color: #37FAD3;
+}
+
+
+.welcome-splash-container {
+  background-color: #232D2F;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  max-width: 100%;
+  height: auto;
 }
