@@ -30,7 +30,7 @@ const BarChartMonth = () => {
                 const response = await fetch('http://localhost:4000/expenseOverviewBarChartMonth');
                 const responseData = await response.json();
                 console.log(responseData);
-                setData(responseData); //Once data is retrieved, we update the state using the setData() method.
+                setData(responseData.monthExpenditures); //Once data is retrieved, we update the state using the setData() method.
             }   catch (error) {
                 setError(error);
                 }
