@@ -79,6 +79,8 @@ The expenditure is tracked in such a way that the user is informed when it is ex
 
 **Image quality detection and optimisation** could also be integrated into SESAME. For this, the quality of the scanned image would have to be evaluated internally with regard to certain criteria (contrast, sharpness, brightness etc.). If the quality is assessed as too poor to capture the receipt information, these image characteristics are improved internally before the optical character recognition converts the receipt.
 
+
+
 ## Web Developement
 
 ### Frontend: 
@@ -89,8 +91,11 @@ The expenditure is tracked in such a way that the user is informed when it is ex
 
 To **maintain visual consistency** throughout the app, we created an `App.css` file and defined the first set of `recurring components`, such as the app header and bottom navigation bar, to be implemented across all pages. By using these recurring components, we were able to ensure a consistent look and feel throughout the app, as well as achieve reusability, maintainability, and scalability.
 
-**The Welcome Screen** allows users to go through a typical **login or registration process**. At this stage, we have decided to prioritize building other pages with features that are more relevant to the app. Therefore, we only focused on bulding the Welcome Screen accordingly to the design, and functionality should be added later if time allows. To give users an opportunity to explore the app's main features without committing to creating an account, we include a guest access button that allows users to enter the app.
-![](app-screens/Appscren_1.png) 
+**The Welcome Screen** allows users to go through a typical **login or registration process**. At this stage, we have decided to prioritize building other pages with features that are more relevant to the app. Therefore, we only focused on bulding the Welcome Screen and the Login/Registry page accordingly to the design, and functionality should be added later if time allows. To give users an opportunity to explore the app's main features without committing to creating an account, we include a guest access button that allows users to enter the app.
+<div style="display: flex; justify-content: flex-start; gap: 16px;">
+  <img src="app-screens/Appscren_1.png" alt="Welcome Screen" width="400">
+  <img src="app-screens/Appscren_3.png" alt="Second Image" width="400">
+</div>
 
 
 **Import Receipts** 
@@ -99,10 +104,15 @@ To **maintain visual consistency** throughout the app, we created an `App.css` f
 
 **Bill page** features a bar chart and table displaying expenses incurred by the user when collecting receipts. Although we initially envisioned this page as a collaborative meeting point for the different teams involved in the project, it still took us some time to figure out the dependencies between the data science (DS), backend (BE), and frontend (FE) teams. 
 
+<div style="display: flex; justify-content: flex-start; gap: 16px;">
+  <img src="app-screens/Appscren_7.png" alt="Bill page with barchart" width="400" >
+  <img src="app-screens/Appscren_8.png" alt="Bill page scrolled" width="400">
+</div>
+
 Building and styling the bar chart and table was straightforward thanks to the `MUI and Recharts library`, but learning how to use the `fetch method` and collaborate intensly with BE took up most of our time. We also discovered that since we were running MongoDB locally on port 4000, the frontend team had to set up their own instance of MongoDB, which is not usually necessary when the backend team provides a server API. This added an extra layer of complexity, but we were able to overcome it.
 
 
-**Key take aways for how the data flows between the DS, BE and FE:**
+### Key take aways for how the data flows between the DS, BE and FE:
 1. The values displayed in the bar chart and table are based on a dataset curated by the DS team and provided to the BE team. 
 2. The BE team then creates an API to serve the data to the FE team, 
 3. The FE team who builds use this API-URL to retrieve the data for the bar chart and table. 
