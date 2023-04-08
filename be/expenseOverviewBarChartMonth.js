@@ -15,8 +15,8 @@ const findAllMonthlyExpenditures = async () => {
   const totalSpending = monthExpenditures.reduce((total, monthExpenditure) => {
     return total + monthExpenditure.spending;
   }, 0);
-  const dailyAverage = Number((totalSpending / 7).toFixed(2)); // assuming 7 days of data
-  return { monthExpenditures, totalSpending, dailyAverage };
+  const monthlyAverage = Number((totalSpending / 12).toFixed(2)); // assuming 12 months of data
+  return { monthExpenditures, totalSpending, monthlyAverage };
 };
 
 module.exports = viewExpenseBarChartMonth;

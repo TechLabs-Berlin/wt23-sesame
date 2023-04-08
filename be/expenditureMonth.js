@@ -7,7 +7,7 @@ async function main() {
 }
 
 const monthlyexpenditureSchema = new mongoose.Schema({
-  day: {
+    month: {
     type: String,
     required: true,
     maxlength: 20,
