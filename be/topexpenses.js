@@ -29,6 +29,6 @@ const findAllExpenseCats = async () => {
 //   return await ExpenseCat.create(details);
 // };
 
-module.exports = {
+module.exports = {ExpenseCat,
   findAllExpenseCats, //createExpenseCat//
 };

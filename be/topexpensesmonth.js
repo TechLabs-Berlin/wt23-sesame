@@ -19,16 +19,16 @@ const monthlyExpenseCatSchema = new mongoose.Schema({
   },
 });
 
-const monthlyExpenseCat = mongoose.model("monthlyExpenseCat", monthlyExpenseCatSchema);
+const MonthlyExpenseCat = mongoose.model("monthlyExpenseCat", monthlyExpenseCatSchema);
 
 const findAllMonthlyExpenseCats = async () => {
-  return await monthlyExpenseCat.find();
+  return await MonthlyExpenseCat.find();
 };
 
 // const createMonthlyExpenseCat = async (details) => {
 //   return await monthlyExpenseCat.create(details);
 // };
 
-module.exports = {
+module.exports = {MonthlyExpenseCat,
   findAllMonthlyExpenseCats, //createMonthlyExpenseCat//
 };
