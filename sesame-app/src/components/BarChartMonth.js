@@ -27,7 +27,7 @@ const BarChartMonth = () => {
     React.useEffect(() => {
         const fetchData = async () => {
             try {
-                const response = await fetch('http://localhost:4000//expenseOverviewBarChartMonth');
+                const response = await fetch('http://localhost:4000/expenseOverviewBarChartMonth');
                 const responseData = await response.json();
                 console.log(responseData);
                 setData(responseData); //Once data is retrieved, we update the state using the setData() method.
