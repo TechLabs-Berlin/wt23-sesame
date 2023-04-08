@@ -22,7 +22,7 @@ const monthlyExpenseCatSchema = new mongoose.Schema({
 const MonthlyExpenseCat = mongoose.model("monthlyExpenseCat", monthlyExpenseCatSchema);
 
 const findAllMonthlyExpenseCats = async () => {
-  return await monthlyExpenseCat.find();
+  return await MonthlyExpenseCat.find();
 };
 
 // const createMonthlyExpenseCat = async (details) => {
