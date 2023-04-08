@@ -93,7 +93,12 @@ To **maintain visual consistency** throughout the app, we created an `App.css` f
 ![](app-screens/Appscren_1.png) 
 
 
-**Import Receipts** 
+#### Import Receipts 
+`'react-qr-reader'` @2.2.1 is used for scanning purposes. After some research we found out, that the newest versions of react-qr-reader leads to some unexpected errors. So we stick with the older and stabile version. Though we managed to get scanned data in the FE, we couldn't manage delivering the data to BE server because of the time limit.
+
+`'react-webcam'` 7.0.1 gave us possibility to work on the option to import receipts manually by taking picture. Taking the picture of the receipt was managed, but delievering it to the BE server for the further actions was not possible due to time limit.
+![image](https://user-images.githubusercontent.com/117686913/230718525-8a4f42de-3d4e-4308-a35b-025d345a38c1.png)
+
 
 
 
