@@ -92,9 +92,9 @@ The expenditure is tracked in such a way that the user is informed when it is ex
 To **maintain visual consistency** throughout the app, we created an `App.css` file and defined the first set of `recurring components`, such as the app header and bottom navigation bar, to be implemented across all pages. By using these recurring components, we were able to ensure a consistent look and feel throughout the app, as well as achieve reusability, maintainability, and scalability.
 
 **The Welcome Screen** allows users to go through a typical **login or registration process**. At this stage, we have decided to prioritize building other pages with features that are more relevant to the app. Therefore, we only focused on bulding the Welcome Screen and the Login/Registry page accordingly to the design, and functionality should be added later if time allows. To give users an opportunity to explore the app's main features without committing to creating an account, we include a guest access button that allows users to enter the app.
-<div style="display: flex; justify-content: flex-start; gap: 16px;">
-  <img src="app-screens/Appscren_1.png" alt="Welcome Screen" width="400">
-  <img src="app-screens/Appscren_3.png" alt="Second Image" width="400">
+<div style="display: flex; justify-content: flex-start; gap: 16px; margin: 16px 0px;">
+  <img src="app-screens/Appscren_1.png" alt="Welcome Screen" width="300">
+  <img src="app-screens/Appscren_3.png" alt="Second Image" width="300">
 </div>
 
 
@@ -109,12 +109,23 @@ To **maintain visual consistency** throughout the app, we created an `App.css` f
 
 **Bill page** features a bar chart and table displaying expenses incurred by the user when collecting receipts. Although we initially envisioned this page as a collaborative meeting point for the different teams involved in the project, it still took us some time to figure out the dependencies between the data science (DS), backend (BE), and frontend (FE) teams. 
 
-<div style="display: flex; justify-content: flex-start; gap: 16px;">
-  <img src="app-screens/Appscren_7.png" alt="Bill page with barchart" width="400" >
-  <img src="app-screens/Appscren_8.png" alt="Bill page scrolled" width="400">
+<div style="display: flex; justify-content: flex-start; gap: 16px; margin: 16px 0px;">
+  <img src="app-screens/Appscren_7.png" alt="Bill page with barchart" width="300" >
+
 </div>
 
 Building and styling the bar chart and table was straightforward thanks to the `MUI and Recharts library`, but learning how to use the `fetch method` and collaborate intensly with BE took up most of our time. We also discovered that since we were running MongoDB locally on port 4000, the frontend team had to set up their own instance of MongoDB, which is not usually necessary when the backend team provides a server API. This added an extra layer of complexity, but we were able to overcome it.
+
+
+### Unimplemented Features** 
+
+- Our original plan was to implement `swipeable barcharts` so that users could view data from different time frames. However, due to time constraints, we were only able to work with data for a one time frame. The slider component remains a future project.
+- We intended to include `receipt cards` on the "Bill" page below the component with the barchart and the table to represent collected bills. Unfortunately, due to time limitations, we were unable to develop this feature.
+- We had planned to include a `calendar` to enable users to select and filter receipts from a specific time period. Regrettably, we were unable to implement this feature within the given timeframe.
+<div style="display: flex; justify-content: flex-start; gap: 16px; margin: 16px 0px;">
+    <img src="app-screens/Appscren_8.png" alt="receipt cards" width="300">
+    <img src="app-screens/Appscren_5.png" alt="calendar" width="300">
+</div>
 
 
 ### Key take aways for how the data flows between the DS, BE and FE:
