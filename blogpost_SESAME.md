@@ -12,7 +12,6 @@ In our project, we utilized a dataset created internally by Cristina, which incl
 
 ### raw data
 
-
 In Screenshot 1, you can see our raw data. To begin with, we converted the date column into datetime format. Then, we removed any errors or missing values, checked for duplicates, and rectified any errors that were spotted. This allowed us to ensure that our data was accurate and complete, which was essential for our analysis and visualization.
 
 ![](https://github.com/TechLabs-Berlin/wt23-sesame/blob/DS_Storytelling_FeatureDevelopment/images/DS/initial_dataframe.png)  
@@ -20,38 +19,39 @@ In Screenshot 1, you can see our raw data. To begin with, we converted the date 
 
 
 ### processed data
-Screenshot 2: After having a look at the raw data, we had a DS group meeting and decided on some hypotheses and settled on some interesting experiments that we could run to learn more about the bigger picture of the data. We categorized the data by grouping it based on the date column by week, month, or day of the week. This allowed us to explore the data further and identify new patterns and trends, and set the foundation to further understand the patterns and trends through visualisation in the next step.
-In the Insights section, you can see that we explored many different types of charts. Our favorites were the stacked bar chart and the donut pie chart. In the stacked bar chart, we were able to show a lot of information in a way that doesn’t feel overwhelming. We felt that this would be highly useful to the user, as they could better understand the contribution of each category to their spending habits, while comparing over time, the changes in spending overall. For example, you can see in the bar chart that over time, the user was spending less money on average, possibly thanks to the increased awareness of their spending habits. The donut pie chart, on the other hand, allowed us to easily see the distribution of spending across different categories. We found this particularly useful when we were analyzing the data by month or week, as we could quickly see which categories were consuming a larger percentage of the user’s expenses.![](https://github.com/TechLabs-Berlin/wt23-sesame/blob/DS_Storytelling_FeatureDevelopment/images/DS/processed_dataframe.png)  
+After having a look at the raw data, we had a DS group meeting and decided on some hypotheses and settled on some interesting experiments that we could run to learn more about the bigger picture of the data. We categorized the data by grouping it based on the date column by week, month, or day of the week. This allowed us to explore the data further and identify new patterns and trends, and set the foundation to further understand the patterns and trends through visualisation in the next step.
+
+ ![](https://github.com/TechLabs-Berlin/wt23-sesame/blob/DS_Storytelling_FeatureDevelopment/images/DS/processed_dataframe.png)  
 **final dataframe**
 
 ### insights
+In the Insights section, you can see that we explored many different types of charts. Our favorites were the stacked bar chart and the donut pie chart.
 
-barchart of the entire dataset 
+In the stacked bar chart, we were able to show a lot of information in a way that doesn’t feel overwhelming. We felt that this would be highly useful to the user, as they could better understand the contribution of each category to their spending habits, while comparing over time, the changes in spending overall. For example, you can see in the bar chart that over time, the user was spending less money on average, possibly thanks to the increased awareness of their spending habits. 
 
 ![](https://github.com/TechLabs-Berlin/wt23-sesame/blob/DS_Storytelling_FeatureDevelopment/images/DS/StackedBarchart.png)  
 
-
-how does it look for Jul/Aug ..
+The donut pie chart, on the other hand, allowed us to easily see the distribution of spending across different categories. We found this particularly useful when we were analyzing the data by month or week, as we could quickly see which categories were consuming a larger percentage of the user’s expenses.
 
 ![](https://github.com/TechLabs-Berlin/wt23-sesame/blob/DS_Storytelling_FeatureDevelopment/images/DS/PieChart_JulAug.png)  
-
 
 or Aug/Sep ..
 ![Spendings for September](https://github.com/TechLabs-Berlin/wt23-sesame/blob/DS_Storytelling_FeatureDevelopment/images/DS/PieChart_AugSep.png)  
 
 
+It is also interesting to look at the categories individually. A line chart is sufficient here. Superimposing all the lines does not give a clear picture, as the scales of the categories differ greatly from one another.
 
 chaotic view onto the different categories ..
 
 ![](https://github.com/TechLabs-Berlin/wt23-sesame/blob/DS_Storytelling_FeatureDevelopment/images/DS/Lineplot_Chaotic.png)  
 
-more ordered view ..
+Therefore, the line diagrams are shown as a subplot. Here, the user quickly gets an overview of the dynamics of his categories, are these fixed costs that always demand a similar or identical amount or is it a cost unit that is subject to strong dynamics? 
 
 ![](https://github.com/TechLabs-Berlin/wt23-sesame/blob/DS_Storytelling_FeatureDevelopment/images/DS/Lineplot_Ordered.png)  
 
 
 
-taking a closer look at the differentiation of spendings on weekdays vs. weekend ...
+An equally interesting consideration is breaking down the time into weekdays and weekends. The fixed costs already identified can theoretically be neglected here. Here it is noticeable that the majority of the costs arise within the week.
 
 ![](https://github.com/TechLabs-Berlin/wt23-sesame/blob/DS_Storytelling_FeatureDevelopment/images/DS/FacetGrid_WeekdaysWeekend.png)  
 
@@ -59,9 +59,37 @@ taking a closer look at the differentiation of spendings on weekdays vs. weekend
 ### OCR
 
 
-Introduction:
+In addition to dealing with the cristina dataset, a first analysis of receipts was carried out using optical character recognition. For this purpose, the python library pytesseract was used, which enables the specification of 14 psm (Page segmentation modes) and 4 oem (OCR Engine modes) for identifying and converting characters from an image to a string dataset. 
 
-Screenshots:
+In ***psm*** 14 modes are provided:
+
+- Orientation and script detection (OSD) only.
+- Automatic page segmentation with OSD.
+- Automatic page segmentation, but no OSD, or OCR. (not implemented)
+- Fully automatic page segmentation, but no OSD. (Default)
+- Assume a single column of text of variable sizes.
+- Assume a single uniform block of vertically aligned text.
+- Assume a single uniform block of text.
+- Treat the image as a single text line.
+- Treat the image as a single word.
+- Treat the image as a single word in a circle.
+- Treat the image as a single character.
+- Sparse text. Find as much text as possible in no particular order.
+- Sparse text with OSD.
+- Raw line. Treat the image as a single text line, bypassing hacks that are Tesseract-specific.
+
+
+In ***oem*** 4 modes are provided:
+
+- Legacy engine only.
+- Neural nets LSTM engine only.
+- Legacy + LSTM engines.
+- Default, based on what is available.
+
+The pytesseract setting were is adjusted to the best fit (***psm*** ), respectively kept at mode 3 (***oem*** default, based on what is available). 
+
+A set of 5 images were used to try the OCR in general 
+
 
 
 
