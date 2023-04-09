@@ -2,7 +2,7 @@ const express = require("express");
 const cors = require("cors");
 const addBillRoutes = require("./billsRoute");
 const viewExpenseBarChart = require("./expenseOverviewBarChart");
-const viewExpenseTopSpend = require("./expenseOverviewTopSpend");
+// const viewExpenseTopSpend = require("./expenseOverviewTopSpend");
 const viewExpenseBarChartMonth = require("./expenseOverviewBarChartMonth");
 const viewExpenseTopSpendMonth = require("./expenseOverviewTopSpendMonth");
 
@@ -23,6 +23,6 @@ app.listen(port, () => {
 
 addBillRoutes(app);
 viewExpenseBarChart(app);
-viewExpenseTopSpend(app);
+// viewExpenseTopSpend(app);
 viewExpenseBarChartMonth(app);
 viewExpenseTopSpendMonth(app);

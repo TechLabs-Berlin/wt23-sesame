@@ -1,14 +1,14 @@
-const expenseCat = require("./topexpenses");
+// const expenseCat = require("./topexpenses");
 
-function viewExpenseTopSpend(app) {
-  app.get("/expenseOverviewTopSpend", (req, res) => {
-    expenseCat
-      .findAllExpenseCats()
-      .then((rows) => {
-        res.send(rows);
-      })
-      .catch((err) => console.error(err));
-  });
+// function viewExpenseTopSpend(app) {
+//   app.get("/expenseOverviewTopSpend", (req, res) => {
+//     expenseCat
+//       .findAllExpenseCats()
+//       .then((rows) => {
+//         res.send(rows);
+//       })
+//       .catch((err) => console.error(err));
+//   });
 
   //*****/ IN CASE WE NEED TO CREAT NEW ENTRY
   // app.post("/expenseCat", (req, res) => {
@@ -33,5 +33,5 @@ function viewExpenseTopSpend(app) {
   //     amount: 1212,
   //   },
   // ];
-}
-module.exports = viewExpenseTopSpend;
+// }
+// module.exports = viewExpenseTopSpend;
