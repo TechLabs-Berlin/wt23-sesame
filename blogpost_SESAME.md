@@ -88,11 +88,14 @@ In ***oem*** 4 modes are provided:
 
 The pytesseract setting were is adjusted to the best fit (***psm*** ), respectively kept at mode 3 (***oem*** default, based on what is available). 
 
-A set of 5 images were used to try the OCR in general 
+A set of 5 images were used to try the OCR in general, for instance the following one:
 
 ![](https://github.com/TechLabs-Berlin/wt23-sesame/blob/DS_Storytelling_FeatureDevelopment/DS/Data/raw_data/sample_receipt/Edeka_1.jpg)  
 
+In the first step, the image quality was increased to enable better conversion of the information. the parameters brightness, contrast and sharpness were adjusted for this purpose:
 
+
+![](https://github.com/TechLabs-Berlin/wt23-sesame/blob/DS_Storytelling_FeatureDevelopment/DS/Data/raw_data/sample_receipt/Edeka_1_adjQuality.jpg)  
 
 ### open features/points to further improve
 Sesame as an app is at most an MVP at this point in time. The basic functionality can be expanded by a lot, which shows the generally great potential of this tool:
