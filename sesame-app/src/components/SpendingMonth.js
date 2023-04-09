@@ -1,6 +1,6 @@
 import React from 'react';
 import BarChartMonth from './BarChartMonth';
-import TopFiveSpendings from './TopSpendingsMonth';
+import TopSpendingsMonth from './TopSpendingsMonth';
 
 
 function MonthlySpendings() {
@@ -48,7 +48,7 @@ function MonthlySpendings() {
       </div>
 
       <div>
-        <TopFiveSpendings/>
+        <TopSpendingsMonth/>
       </div>
 
     </div>

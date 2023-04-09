@@ -4,7 +4,7 @@ Body{
   font-style: normal;
   background-color: #232D2F;
   color: white;
-  max-width: 1024px; /* Set a max width for desktop devices */
+  max-width: 600px; /* Set a max width for desktop devices */
   margin: 0 auto; /* Center the content */
   }
 
@@ -16,7 +16,6 @@ Body{
 }
 
 .SesameTextField {
-
   color: 'white';
 }
 /* Typography */ 

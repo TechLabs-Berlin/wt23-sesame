@@ -19,7 +19,7 @@ const createData = (name, expense) => {
   createData('Category 5', 356),
 ];*/
 
-function TopFiveSpendings() {
+function TopSpendingsMonth() {
 
   const [rows, setRows] = React.useState([]);
   const [error, setError] = React.useState(null);
@@ -88,4 +88,4 @@ function TopFiveSpendings() {
   );
 }
 
-export default TopFiveSpendings
+export default TopSpendingsMonth

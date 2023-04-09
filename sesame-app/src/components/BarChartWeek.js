@@ -11,10 +11,12 @@ import {
   ResponsiveContainer,
 } from "recharts";
 
-const BarChartComponent = () => {
+const BarChartWeek= () => {
+
   //using the useState hook to initialize the data state as an empty array.
   const [data, setData] = React.useState([]);
   const [error, setError] = React.useState(null);
+
   //in the useEffect hook, we are making an asynchronous call to fetch the data from the server using the fetch() method.
   React.useEffect(() => {
     const fetchData = async () => {
@@ -60,4 +62,4 @@ const BarChartComponent = () => {
   );
 };
 
-export default BarChartComponent;
+export default BarChartWeek;

@@ -85,13 +85,14 @@ The expenditure is tracked in such a way that the user is informed when it is ex
 
 ### Frontend: 
 
-**Preset arrangements** Due to our limited time, we decided to create a web application using technologies such as `React, HTML, CSS, JavaScript, and the Material UI and Recharts library`. We implemented a mobile-first approach during the design and development process to ensure that the web application looks and functions well on mobile devices, given the application's intended use case.
+**Preset arrangements** Sesame is a web application using technologies such as `React, HTML, CSS, JavaScript, and the Material UI and Recharts library`. Due to our limited time, we decided to implemented a mobile-first approach during the design and development process to ensure that the web application looks and functions well on mobile devices, given the application's intended use case.
 
-**File structuring:** After defining the pages that we wanted to include in the app, we created a separate JavaScript file for each page and linked them together in another file. Although we were unsure if it was the best approach, it allowed us to work on each page individually and keep the codes as simple and readable as possible.
+**File structuring:** After defining the pages that we wanted to include in the app, we set up page structure accordingly to design
+and created a separate JavaScript file for each page and linked them together in another file. Although we were unsure if it was the best approach, it allowed us to work on each page individually and keep the codes as simple and readable as possible.
 
-To **maintain visual consistency** throughout the app, we created an `App.css` file and defined the first set of `recurring components`, such as the app header and bottom navigation bar, to be implemented across all pages. By using these recurring components, we were able to ensure a consistent look and feel throughout the app, as well as achieve reusability, maintainability, and scalability.
+To **maintain visual consistency** throughout the app, we created an `App.css` file and defined the first set of `recurring components`, so that e.g. the app header and bottom navigation bar can be implemented across all pages. By using these recurring components, we were able to ensure a consistent look and feel throughout the app, as well as achieve reusability, maintainability, and scalability.
 
-**The Welcome Screen** allows users to go through a typical **login or registration process**. At this stage, we have decided to prioritize building other pages with features that are more relevant to the app. Therefore, we only focused on bulding the Welcome Screen and the Login/Registry page accordingly to the design, and functionality should be added later if time allows. To give users an opportunity to explore the app's main features without committing to creating an account, we include a guest access button that allows users to enter the app.
+**The Welcome Screen** allows users to go through a typical **login or registration process**. At this stage, we have decided to prioritize building other pages with features that are more relevant to the app. Therefore, we only focused on bulding the `Welcome Screen` and the `Login/Registry` page accordingly to the design, and functionality should be added later if time allows. To give users an opportunity to explore the app's main features without committing to creating an account, we include a guest access button that allows users to enter the app.
 <div style="display: flex; justify-content: flex-start; gap: 16px; margin: 16px 0px;">
   <img src="app-screens/Appscren_1.png" alt="Welcome Screen" width="300">
   <img src="app-screens/Appscren_3.png" alt="Second Image" width="300">
@@ -116,18 +117,6 @@ To **maintain visual consistency** throughout the app, we created an `App.css` f
 
 Building and styling the bar chart and table was straightforward thanks to the `MUI and Recharts library`, but learning how to use the `fetch method` and collaborate intensly with BE took up most of our time. We also discovered that since we were running MongoDB locally on port 4000, the frontend team had to set up their own instance of MongoDB, which is not usually necessary when the backend team provides a server API. This added an extra layer of complexity, but we were able to overcome it.
 
-
-### Unimplemented Features** 
-
-- Our original plan was to implement `swipeable barcharts` so that users could view data from different time frames. However, due to time constraints, we were only able to work with data for a one time frame. The slider component remains a future project.
-- We intended to include `receipt cards` on the "Bill" page below the component with the barchart and the table to represent collected bills. Unfortunately, due to time limitations, we were unable to develop this feature.
-- We had planned to include a `calendar` to enable users to select and filter receipts from a specific time period. Regrettably, we were unable to implement this feature within the given timeframe.
-<div style="display: flex; justify-content: flex-start; gap: 16px; margin: 16px 0px;">
-    <img src="app-screens/Appscren_8.png" alt="receipt cards" width="300">
-    <img src="app-screens/Appscren_5.png" alt="calendar" width="300">
-</div>
-
-
 ### Key take aways for how the data flows between the DS, BE and FE:
 1. The values displayed in the bar chart and table are based on a dataset curated by the DS team and provided to the BE team. 
 2. The BE team then creates an API to serve the data to the FE team, 
@@ -135,12 +124,18 @@ Building and styling the bar chart and table was straightforward thanks to the `
 
 This collaborative process has been essential in connecting the work of the different teams and helping us work together more closely.
 
+**Special thanks goes out to our mentor, Bogdan.** His competent support and guidance through complex processes have been invaluable to our team. He has kept us motivated and encouraged us throughout the project, always maintaining a patient and calming, even during stressful times. We truly appreciate his dedication and contributions to our project.
 
 
+### Unimplemented Features** 
 
-
-
-
+- Our original plan was to implement `swipeable barcharts` so that users could view data from different time frames. However, due to time constraints, we were only able to work with data for one time frame. The slider component remains a future project.
+- We intended to include `receipt cards` on the "Bill" page below the component with the barchart and the table to represent collected bills. Unfortunately, due to time limitations, we were unable to develop this feature.
+- We had planned to include a `calendar` to enable users to select and filter receipts from a specific time period. Regrettably, we were unable to implement this feature within the given timeframe.
+<div style="display: flex; justify-content: flex-start; gap: 16px; margin: 16px 0px;">
+    <img src="app-screens/Appscren_8.png" alt="receipt cards" width="300">
+    <img src="app-screens/Appscren_5.png" alt="calendar" width="300">
+</div>
 
 
 
