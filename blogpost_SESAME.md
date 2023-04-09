@@ -94,8 +94,18 @@ A set of 5 images were used to try the OCR in general, for instance the followin
 
 In the first step, the image quality was increased to enable better conversion of the information. the parameters brightness, contrast and sharpness were adjusted for this purpose:
 
-
 ![](https://github.com/TechLabs-Berlin/wt23-sesame/blob/DS_Storytelling_FeatureDevelopment/DS/Data/raw_data/sample_receipt/Edeka_1_adjQuality.jpg)  
+
+Specifying the OCR modes for this receipt, the image has been converted. There are three pieces of information of interest on the receipt:
+- the shopping location, 
+- the total spend and
+- the date. 
+
+All three pieces of information can be captured:
+
+![](https://github.com/TechLabs-Berlin/wt23-sesame/blob/DS_Storytelling_FeatureDevelopment/images/DS/OCR_resulting_Str.png)
+![](https://github.com/TechLabs-Berlin/wt23-sesame/blob/DS_Storytelling_FeatureDevelopment/images/DS/OCR_resulting_Str2.png)
+![](https://github.com/TechLabs-Berlin/wt23-sesame/blob/DS_Storytelling_FeatureDevelopment/images/DS/OCR_resulting_Str2a.png) 
 
 ### open features/points to further improve
 Sesame as an app is at most an MVP at this point in time. The basic functionality can be expanded by a lot, which shows the generally great potential of this tool:
