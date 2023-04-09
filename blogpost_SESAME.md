@@ -9,22 +9,39 @@ SESAME should help you to bundle your expenses in a structured way in one app. W
 
 ## Data Science
 
+In our project, we utilized a dataset created internally by Cristina, which included detailed information about her personal expenses such as the date, category, and other relevant details. By analyzing this dataset, we were able to identify the most useful features for a user tracking their expenses. To clean, process, and visualize the data, we used a combination of Jupyter Notebooks, Visual Studio Code, and Python. This allowed us to efficiently manipulate and analyze the data, as well as organize our code and present our findings to the rest of the team. Additionally, we used various visualization tools to gain further insights into the data and explain how the features should look to the front-end of our product. As the backend team required, we converted the relevant dataframes into CSV or JSON format. Below, we have included some screenshots with explanations of our data cleaning and visualization process.
+
 ### raw data
 
-the initial dataframe looked as follows ..
+In Screenshot 1, you can see our raw data. To begin with, we converted the date column into datetime format. Then, we removed any errors or missing values, checked for duplicates, and rectified any errors that were spotted. This allowed us to ensure that our data was accurate and complete, which was essential for our analysis and visualization.
 
 ![](https://github.com/TechLabs-Berlin/wt23-sesame/blob/DS_Storytelling_FeatureDevelopment/images/DS/initial_dataframe.png)  
-**initial dataframe**
-
-it included the following processing steps [...]
 
 ### processed data
+After having a look at the raw data, we had a DS group meeting and decided on some hypotheses and settled on some interesting experiments that we could run to learn more about the bigger picture of the data. We categorized the data by grouping it based on the date column by week, month, or day of the week. This allowed us to explore the data further and identify new patterns and trends, and set the foundation to further understand the patterns and trends through visualisation in the next step.
+
+ ![](https://github.com/TechLabs-Berlin/wt23-sesame/blob/DS_Storytelling_FeatureDevelopment/images/DS/processed_dataframe.png)  
+
 
 the final dataframe looks as follows ..  
 ![](https://github.com/TechLabs-Berlin/wt23-sesame/blob/DS_Storytelling_FeatureDevelopment/images/DS/processed_dataframe.png)  
-**final dataframe**
+
 
 ### insights
+In the Insights section, you can see that we explored many different types of charts. Our favorites were the stacked bar chart and the donut pie chart.
+
+In the stacked bar chart, we were able to show a lot of information in a way that doesn’t feel overwhelming. We felt that this would be highly useful to the user, as they could better understand the contribution of each category to their spending habits, while comparing over time, the changes in spending overall. For example, you can see in the bar chart that over time, the user was spending less money on average, possibly thanks to the increased awareness of their spending habits. 
+
+![](https://github.com/TechLabs-Berlin/wt23-sesame/blob/DS_Storytelling_FeatureDevelopment/images/DS/StackedBarchart.png)  
+
+The donut pie chart, on the other hand, allowed us to easily see the distribution of spending across different categories. We found this particularly useful when we were analyzing the data by month or week, as we could quickly see which categories were consuming a larger percentage of the user’s expenses.
+
+![](https://github.com/TechLabs-Berlin/wt23-sesame/blob/DS_Storytelling_FeatureDevelopment/images/DS/PieChart_JulAug.png)  
+
+![Spendings for September](https://github.com/TechLabs-Berlin/wt23-sesame/blob/DS_Storytelling_FeatureDevelopment/images/DS/PieChart_AugSep.png)  
+
+
+It is also interesting to look at the categories individually. A line chart is sufficient here. Superimposing all the lines does not give a clear picture, as the scales of the categories differ greatly from one another.
 
 barchart of the entire dataset
 
@@ -37,19 +54,73 @@ how does it look for Jul/Aug ..
 or Aug/Sep ..
 ![Spendings for September](https://github.com/TechLabs-Berlin/wt23-sesame/blob/DS_Storytelling_FeatureDevelopment/images/DS/PieChart_AugSep.png)
 
-chaotic view onto the different categories ..
 
 ![](https://github.com/TechLabs-Berlin/wt23-sesame/blob/DS_Storytelling_FeatureDevelopment/images/DS/Lineplot_Chaotic.png)
 
-more ordered view ..
+Therefore, the line diagrams are shown as a subplot. Here, the user quickly gets an overview of the dynamics of his categories, are these fixed costs that always demand a similar or identical amount or is it a cost unit that is subject to strong dynamics? 
 
 ![](https://github.com/TechLabs-Berlin/wt23-sesame/blob/DS_Storytelling_FeatureDevelopment/images/DS/Lineplot_Ordered.png)
 
-taking a closer look at the differentiation of spendings on weekdays vs. weekend ...
+An equally interesting consideration is breaking down the time into weekdays and weekends. The fixed costs already identified can theoretically be neglected here. Here it is noticeable that the majority of the costs arise within the week.
 
 ![](https://github.com/TechLabs-Berlin/wt23-sesame/blob/DS_Storytelling_FeatureDevelopment/images/DS/FacetGrid_WeekdaysWeekend.png)
 
 ### OCR
+
+
+In addition to dealing with the cristina dataset, a first analysis of receipts was carried out using optical character recognition. For this purpose, the python library pytesseract was used, which enables the specification of 14 psm (Page segmentation modes) and 4 oem (OCR Engine modes) for identifying and converting characters from an image to a string dataset. 
+
+In ***psm*** 14 modes are provided:
+
+- Orientation and script detection (OSD) only.
+- Automatic page segmentation with OSD.
+- Automatic page segmentation, but no OSD, or OCR. (not implemented)
+- Fully automatic page segmentation, but no OSD. (Default)
+- Assume a single column of text of variable sizes.
+- Assume a single uniform block of vertically aligned text.
+- Assume a single uniform block of text.
+- Treat the image as a single text line.
+- Treat the image as a single word.
+- Treat the image as a single word in a circle.
+- Treat the image as a single character.
+- Sparse text. Find as much text as possible in no particular order.
+- Sparse text with OSD.
+- Raw line. Treat the image as a single text line, bypassing hacks that are Tesseract-specific.
+
+
+In ***oem*** 4 modes are provided:
+
+- Legacy engine only.
+- Neural nets LSTM engine only.
+- Legacy + LSTM engines.
+- Default, based on what is available.
+
+The pytesseract setting were is adjusted to the best fit (***psm*** ), respectively kept at mode 3 (***oem*** default, based on what is available). 
+
+A set of 5 images were used to try the OCR in general, for instance the following one:
+
+![](https://github.com/TechLabs-Berlin/wt23-sesame/blob/DS_Storytelling_FeatureDevelopment/DS/Data/raw_data/sample_receipt/Edeka_1.jpg)  
+
+In the first step, the image quality was increased to enable better conversion of the information. the parameters brightness, contrast and sharpness were adjusted for this purpose:
+
+![](https://github.com/TechLabs-Berlin/wt23-sesame/blob/DS_Storytelling_FeatureDevelopment/DS/Data/raw_data/sample_receipt/Edeka_1_adjQuality.jpg)  
+
+Specifying the OCR modes for this receipt, the image has been converted. There are three pieces of information of interest on the receipt:
+- the shopping location, 
+- the total spend and
+- the date. 
+
+All three pieces of information can be captured:
+
+![](https://github.com/TechLabs-Berlin/wt23-sesame/blob/DS_Storytelling_FeatureDevelopment/images/DS/OCR_resulting_Str.png)
+![](https://github.com/TechLabs-Berlin/wt23-sesame/blob/DS_Storytelling_FeatureDevelopment/images/DS/OCR_resulting_Str2.png)
+![](https://github.com/TechLabs-Berlin/wt23-sesame/blob/DS_Storytelling_FeatureDevelopment/images/DS/OCR_resulting_Str2a.png) 
+
+Unfortunately, this is not always the case. of the five receipts examined, the necessary information could only be recorded for three receipts.
+
+In addition to the image quality, which can only slightly influence the OCR positively via adjustments, this depends in particular on the structure of the receipts. These do not follow a uniform pattern, neither with regard to the choice of words or characters, nor with regard to the arrangement on the qutting itself. Regular expression can capture a large number of combinations of character sequences, but since some letters and characters can be captured incorrectly or not at all by OCR, the results are mediocre to poor so far.
+
+OCR and the targeted capture of information from photos is a large project in its own right and has exceeded the scope of this paper and distracted a little from the actual topic. Therefore, only a few approaches have been shown here as to how information from photos can be captured, improved in terms of quality and transferred into a small data frame.  
 
 ### open features/points to further improve
 
