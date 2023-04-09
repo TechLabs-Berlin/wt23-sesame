@@ -1,11 +1,10 @@
 ![image](https://user-images.githubusercontent.com/117686913/230657445-ca11b5eb-4374-45e1-9b4a-0a99560ba38f.png)
 
-
 **SESAME** is an app that is designed to help the user to bundle their receipts in a structured way and to show them their spending behavior using key figures and statistics. Receipt informations can be entered by the user or captured manually via a scanning function combined with an optical character recognition algorithm. By assigning categories, the expenses can be grouped, statistics can be derived and a deeper understanding of one's own spending behavior can be obtained.
 
+## App Features:
 
-## App Features: 
-- Capture and store receipts with mobile camera using scan and OCR 
+- Capture and store receipts with mobile camera using scan and OCR
 - Receive receipts with a QR Code-reader
 - Manual receipt entry
 - Categorize expenses
@@ -15,11 +14,12 @@
 
 Please note that this is a prototype and some of the features are still a work in progress or not yet started in development.
 
-## Prototype: 
+## Prototype:
+
 //should we embed a video here that demonstrate our app?
 
-
 ## Technologies used:
+
 - Figma
 - NodeJS
 - ReactJS
@@ -29,55 +29,44 @@ Please note that this is a prototype and some of the features are still a work i
 - Python
 - Notebook
 
-
 ## How to:
 
-### Set up 
+### Set up
 
-1. Clone the repository `wt23-sesame` to your local repository: 
-`$ git clone https://github.com/TechLabs-Berlin/wt23-sesame.git`
+1. Clone the repository `wt23-sesame` to your local repository:
+   `$ git clone https://github.com/TechLabs-Berlin/wt23-sesame.git`
 
 2. Requirement
+
 - NodeJS
 - NPM
- 
 
 ### Run backend
 
-1. 
-2.
-3.
-
+1. Run npm i (add --legacy-peer-deps if necessary)
+2. Run node index.js
 
 ### Run sesame-app
 
-1. From the top-level directory  "wt23-sesame", change folder to access the React server by running `$ cd sesame-app` 
+1. From the top-level directory "wt23-sesame", change folder to access the React server by running `$ cd sesame-app`
 2. Run `$ npm install` to install the app and dependencies
-3. Run `$ npm start`to run the app 
+3. Run `$ npm start`to run the app
 
-
- 
-
-
-
-
-
-
-
-
-
-## Participants: 
+## Participants:
 
 ### Data Science
+
 - Cristina
 - Oliver
 
 ### Web Developement
+
 - Linh (BE)
 - Sneha (BE)
 - Shalva (FE)
 - Lu (FE)
 
 ### Mentors
-- Bogdan Ciobotaru 
+
+- Bogdan Ciobotaru
 - Lina
