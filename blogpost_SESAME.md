@@ -90,7 +90,7 @@ The pytesseract setting were is adjusted to the best fit (***psm*** ), respectiv
 
 A set of 5 images were used to try the OCR in general 
 
-![](https://github.com/TechLabs-Berlin/wt23-sesame/blob/DS_Storytelling_FeatureDevelopment/images/DS/Data/raw_data/sample_receipt/Edeka_1.jpg)  
+![](https://github.com/TechLabs-Berlin/wt23-sesame/blob/DS_Storytelling_FeatureDevelopment/DS/Data/raw_data/sample_receipt/Edeka_1.jpg)  
 
 
 
