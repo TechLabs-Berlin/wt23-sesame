@@ -16,7 +16,7 @@ Please note that this is a prototype and some of the features are still a work i
 
 ## Prototype:
 
-//should we embed a video here that demonstrate our app?
+https://drive.google.com/file/d/1UP-SVKw-xuTmclCz4X0vuqLFXO_lsBVO/view
 
 ## Technologies used:
 
@@ -39,12 +39,17 @@ Please note that this is a prototype and some of the features are still a work i
 2. Requirement
 
 - NodeJS
+- Express
+- MongoDB & Mongo Shell
+- Mongoose
 - NPM
 
 ### Run backend
 
-1. Run npm i (add --legacy-peer-deps if necessary)
-2. Run node index.js
+1. Run `npm i` (add --legacy-peer-deps if necessary)
+2. Run `npm express mongoose react` (if need)
+3. Run `mongosh` to start the MongoDB server
+4. Run `node index.js` to start Node.js sever
 
 ### Run sesame-app
 
