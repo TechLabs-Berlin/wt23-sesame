@@ -21,10 +21,13 @@ function TopFiveSpendings() {
   React.useEffect(() => {
     const fetchSpendings = async () => {
       try {
-        const response = await fetch('http://localhost:4000/expenseOverviewTopSpend');
+        const response = await fetch('http://localhost:4000/expenseOverviewBarChart');
         const data = await response.json();
-        const rows = data.map(item => createData(item.category, item.spending));
+        const rows = data.ExpenseCat.map((item) =>
+          createData(item.category, item.spending)
+        );
         console.log(data);
+        console.log(rows);
         setRows(rows);
       } 
       catch (error) {
