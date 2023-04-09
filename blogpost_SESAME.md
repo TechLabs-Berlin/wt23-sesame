@@ -107,6 +107,12 @@ All three pieces of information can be captured:
 ![](https://github.com/TechLabs-Berlin/wt23-sesame/blob/DS_Storytelling_FeatureDevelopment/images/DS/OCR_resulting_Str2.png)
 ![](https://github.com/TechLabs-Berlin/wt23-sesame/blob/DS_Storytelling_FeatureDevelopment/images/DS/OCR_resulting_Str2a.png) 
 
+Unfortunately, this is not always the case. of the five receipts examined, the necessary information could only be recorded for three receipts.
+
+In addition to the image quality, which can only slightly influence the OCR positively via adjustments, this depends in particular on the structure of the receipts. These do not follow a uniform pattern, neither with regard to the choice of words or characters, nor with regard to the arrangement on the qutting itself. Regular expression can capture a large number of combinations of character sequences, but since some letters and characters can be captured incorrectly or not at all by OCR, the results are mediocre to poor so far.
+
+OCR and the targeted capture of information from photos is a large project in its own right and has exceeded the scope of this paper and distracted a little from the actual topic. Therefore, only a few approaches have been shown here as to how information from photos can be captured, improved in terms of quality and transferred into a small data frame.  
+
 ### open features/points to further improve
 Sesame as an app is at most an MVP at this point in time. The basic functionality can be expanded by a lot, which shows the generally great potential of this tool:
 
