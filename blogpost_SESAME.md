@@ -8,18 +8,20 @@ SESAME should help you to bundle your expenses in a structured way in one app. W
 
 ## Data Science
 
+In our project, we utilized a dataset created internally by Cristina, which included detailed information about her personal expenses such as the date, category, and other relevant details. By analyzing this dataset, we were able to identify the most useful features for a user tracking their expenses. To clean, process, and visualize the data, we used a combination of Jupyter Notebooks, Visual Studio Code, and Python. This allowed us to efficiently manipulate and analyze the data, as well as organize our code and present our findings to the rest of the team. Additionally, we used various visualization tools to gain further insights into the data and explain how the features should look to the front-end of our product. As the backend team required, we converted the relevant dataframes into CSV or JSON format. Below, we have included some screenshots with explanations of our data cleaning and visualization process.
+
 ### raw data
 
-the initial dataframe looked as follows ..
+
+In Screenshot 1, you can see our raw data. To begin with, we converted the date column into datetime format. Then, we removed any errors or missing values, checked for duplicates, and rectified any errors that were spotted. This allowed us to ensure that our data was accurate and complete, which was essential for our analysis and visualization.
 
 ![](https://github.com/TechLabs-Berlin/wt23-sesame/blob/DS_Storytelling_FeatureDevelopment/images/DS/initial_dataframe.png)  
 **initial dataframe**
 
-it included the following processing steps [...]
 
 ### processed data
-the final dataframe looks as follows ..  
-![](https://github.com/TechLabs-Berlin/wt23-sesame/blob/DS_Storytelling_FeatureDevelopment/images/DS/processed_dataframe.png)  
+Screenshot 2: After having a look at the raw data, we had a DS group meeting and decided on some hypotheses and settled on some interesting experiments that we could run to learn more about the bigger picture of the data. We categorized the data by grouping it based on the date column by week, month, or day of the week. This allowed us to explore the data further and identify new patterns and trends, and set the foundation to further understand the patterns and trends through visualisation in the next step.
+In the Insights section, you can see that we explored many different types of charts. Our favorites were the stacked bar chart and the donut pie chart. In the stacked bar chart, we were able to show a lot of information in a way that doesn’t feel overwhelming. We felt that this would be highly useful to the user, as they could better understand the contribution of each category to their spending habits, while comparing over time, the changes in spending overall. For example, you can see in the bar chart that over time, the user was spending less money on average, possibly thanks to the increased awareness of their spending habits. The donut pie chart, on the other hand, allowed us to easily see the distribution of spending across different categories. We found this particularly useful when we were analyzing the data by month or week, as we could quickly see which categories were consuming a larger percentage of the user’s expenses.![](https://github.com/TechLabs-Berlin/wt23-sesame/blob/DS_Storytelling_FeatureDevelopment/images/DS/processed_dataframe.png)  
 **final dataframe**
 
 ### insights
@@ -55,6 +57,12 @@ taking a closer look at the differentiation of spendings on weekdays vs. weekend
 
 
 ### OCR
+
+
+Introduction:
+
+Screenshots:
+
 
 
 
