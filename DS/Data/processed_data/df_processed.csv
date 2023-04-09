@@ -1,0 +1,330 @@
+Category,Detail,Cost,Date,Month_period,WeekofYear,DayofWeek,Day_of_Week_Category,Month
+Eating Out,Brunch,15.0,2022-07-25,Jul - Aug 22,30,0,Weekday,7
+Shopping,Uniqlo,144.5,2022-07-25,Jul - Aug 22,30,0,Weekday,7
+Hobbies,Salsa Class,130.0,2022-07-27,Jul - Aug 22,30,2,Weekday,7
+Groceries,Groceries,6.78,2022-07-27,Jul - Aug 22,30,2,Weekday,7
+Eating Out,Ditsch,2.0,2022-07-27,Jul - Aug 22,30,2,Weekday,7
+Groceries,Groceries,45.27,2022-07-27,Jul - Aug 22,30,2,Weekday,7
+Rent + Bills,Shared Rent + Bills expenses,14.18,2022-07-28,Jul - Aug 22,30,3,Weekday,7
+Groceries,Groceries,10.89,2022-07-29,Jul - Aug 22,30,4,Weekday,7
+Groceries,Groceries,29.06,2022-07-29,Jul - Aug 22,30,4,Weekday,7
+Eating Out,Ditsch,2.2,2022-07-29,Jul - Aug 22,30,4,Weekday,7
+Rent + Bills,Moving,17.78,2022-07-31,Jul - Aug 22,30,6,Weekend,7
+Investment,Weekly ETH,6.0,2022-08-01,Jul - Aug 22,31,0,Weekday,8
+Groceries,Groceries,65.17,2022-08-01,Jul - Aug 22,31,0,Weekday,8
+Rent + Bills,Rent,500.0,2022-08-01,Jul - Aug 22,31,0,Weekday,8
+Transport,BVG,9.0,2022-08-01,Jul - Aug 22,31,0,Weekday,8
+Rent + Bills,Phone,20.0,2022-08-12,Jul - Aug 22,32,4,Weekday,8
+Investment,Weekly ETH,6.0,2022-07-25,Jul - Aug 22,30,0,Weekday,7
+Investment,Weekly ETH,10.0,2022-08-08,Jul - Aug 22,32,0,Weekday,8
+Investment,Weekly ETH,10.0,2022-08-15,Jul - Aug 22,33,0,Weekday,8
+Investment,Weekly ETH,10.0,2022-08-22,Jul - Aug 22,34,0,Weekday,8
+Rent + Bills,Postal re-route,30.9,2022-08-02,Jul - Aug 22,31,1,Weekday,8
+Groceries,Groceries,19.59,2022-08-03,Jul - Aug 22,31,2,Weekday,8
+Eating Out,Snacks,1.0,2022-08-03,Jul - Aug 22,31,2,Weekday,8
+Hobbies,Salsa Class,39.0,2022-08-05,Jul - Aug 22,31,4,Weekday,8
+Investment,Bi-Weekly ETF,50.0,2022-08-16,Jul - Aug 22,33,1,Weekday,8
+Investment,Stock,10.0,2022-08-16,Jul - Aug 22,33,1,Weekday,8
+Groceries,Groceries,19.49,2022-08-03,Jul - Aug 22,31,2,Weekday,8
+Groceries,Groceries,18.62,2022-08-06,Jul - Aug 22,31,5,Weekend,8
+Rent + Bills,Passport photos,10.0,2022-08-08,Jul - Aug 22,32,0,Weekday,8
+Eating Out,Restaurant + Drinks,25.3,2022-08-06,Jul - Aug 22,31,5,Weekend,8
+Hobbies,Salsa Festival Surcharge,5.34,2022-08-08,Jul - Aug 22,32,0,Weekday,8
+Rent + Bills,Driver license conversion,36.3,2022-08-08,Jul - Aug 22,32,0,Weekday,8
+Transport,BVG,11.5,2022-08-08,Jul - Aug 22,32,0,Weekday,8
+Groceries,Groceries,30.62,2022-08-09,Jul - Aug 22,32,1,Weekday,8
+Student Loan,Student Loan,86.4,2022-08-10,Jul - Aug 22,32,2,Weekday,8
+Groceries,Groceries,31.3,2022-08-11,Jul - Aug 22,32,3,Weekday,8
+Groceries,Groceries,18.99,2022-08-12,Jul - Aug 22,32,4,Weekday,8
+Eating Out,Sisyphos,38.0,2022-08-13,Jul - Aug 22,32,5,Weekend,8
+Rent + Bills,Google,1.88,2022-08-04,Jul - Aug 22,31,3,Weekday,8
+Rent + Bills,Patreon,1.77,2022-08-01,Jul - Aug 22,31,0,Weekday,8
+Rent + Bills,Insurance,4.94,2022-07-29,Jul - Aug 22,30,4,Weekday,7
+Groceries,Groceries,6.72,2022-08-15,Jul - Aug 22,33,0,Weekday,8
+Groceries,Groceries,8.04,2022-08-15,Jul - Aug 22,33,0,Weekday,8
+Eating Out,Post salsa pizza,2.7,2022-08-15,Jul - Aug 22,33,0,Weekday,8
+Groceries,Groceries,5.16,2022-08-16,Jul - Aug 22,33,1,Weekday,8
+Eating Out,Pub Quiz,10.0,2022-08-17,Jul - Aug 22,33,2,Weekday,8
+Groceries,Groceries,1.43,2022-08-18,Jul - Aug 22,33,3,Weekday,8
+Groceries,Groceries,11.21,2022-08-19,Jul - Aug 22,33,4,Weekday,8
+Eating Out,Brunch,15.0,2022-08-21,Jul - Aug 22,33,6,Weekend,8
+Groceries,Groceries,33.73,2022-08-20,Jul - Aug 22,33,5,Weekend,8
+Shopping,Flea market,31.0,2022-08-21,Jul - Aug 22,33,6,Weekend,8
+Eating Out,Juice,5.2,2022-08-21,Jul - Aug 22,33,6,Weekend,8
+Travel,Poland Bus,1.0,2022-08-22,Jul - Aug 22,34,0,Weekday,8
+Shopping,Birthday present,25.79,2022-08-23,Jul - Aug 22,34,1,Weekday,8
+Travel,Train castellvi,5.5,2022-08-24,Jul - Aug 22,34,2,Weekday,8
+Travel,YEGO,3.9,2022-08-24,Jul - Aug 22,34,2,Weekday,8
+Healthcare,Pills pills pills ,17.72,2022-08-24,Jul - Aug 22,34,2,Weekday,8
+Investment,Weekly ETH,10.0,2022-08-29,Aug - Sep 22,35,0,Weekday,8
+Investment,Weekly ETH,10.0,2022-09-05,Aug - Sep 22,36,0,Weekday,9
+Investment,Weekly ETH,10.0,2022-09-12,Aug - Sep 22,37,0,Weekday,9
+Investment,Weekly ETH,10.0,2022-09-19,Aug - Sep 22,38,0,Weekday,9
+Investment,Bi-Weekly ETF,50.0,2022-09-02,Aug - Sep 22,35,4,Weekday,9
+Investment,Bi-Weekly ETF,50.0,2022-09-16,Aug - Sep 22,37,4,Weekday,9
+Investment,Bi-Weekly Stock,10.0,2022-08-30,Aug - Sep 22,35,1,Weekday,8
+Investment,Bi-Weekly Stock,10.0,2022-09-13,Aug - Sep 22,37,1,Weekday,9
+Rent + Bills,Rent,500.0,2022-09-01,Aug - Sep 22,35,3,Weekday,9
+Rent + Bills,Phone,25.19,2022-09-12,Aug - Sep 22,37,0,Weekday,9
+Rent + Bills,Google,1.88,2022-09-04,Aug - Sep 22,35,6,Weekend,9
+Rent + Bills,Patreon,1.77,2022-09-01,Aug - Sep 22,35,3,Weekday,9
+Rent + Bills,Insurance,4.94,2022-08-29,Aug - Sep 22,35,0,Weekday,8
+Student Loan,Student Loan,86.4,2022-09-10,Aug - Sep 22,36,5,Weekend,9
+Transport,BVG,63.42,2022-09-01,Aug - Sep 22,35,3,Weekday,9
+Healthcare,Pills pills pills,82.35,2022-08-25,Aug - Sep 22,34,3,Weekday,8
+Healthcare,Tampons,7.65,2022-08-26,Aug - Sep 22,34,4,Weekday,8
+Groceries,Olive oil,37.0,2022-08-26,Aug - Sep 22,34,4,Weekday,8
+Shopping,Libro de la abuela,25.75,2022-08-26,Aug - Sep 22,34,4,Weekday,8
+Groceries,Spanish foooood,43.28,2022-08-30,Aug - Sep 22,35,1,Weekday,8
+Travel,Taxi airport,26.15,2022-08-31,Aug - Sep 22,35,2,Weekday,8
+Hobbies,Salsa,120.0,2022-09-06,Aug - Sep 22,36,1,Weekday,9
+Travel,Travel,64.75,2022-09-04,Aug - Sep 22,35,6,Weekend,9
+Healthcare,Finger cut,12.5,2022-09-03,Aug - Sep 22,35,5,Weekend,9
+Groceries,Groceries,20.94,2022-09-03,Aug - Sep 22,35,5,Weekend,9
+Eating Out,Thai park,13.5,2022-09-04,Aug - Sep 22,35,6,Weekend,9
+Groceries,Groceries,8.79,2022-09-05,Aug - Sep 22,36,0,Weekday,9
+Travel,Baptism flight,61.49,2022-09-05,Aug - Sep 22,36,0,Weekday,9
+Travel,Train tickets to visit Fran,67.3,2022-09-05,Aug - Sep 22,36,0,Weekday,9
+Healthcare,Teeth cleaning,65.0,2022-09-14,Aug - Sep 22,37,2,Weekday,9
+Travel,Poland hotel,56.0,2022-09-09,Aug - Sep 22,36,4,Weekday,9
+Rent + Bills,UK Phone,10.0,2022-09-13,Aug - Sep 22,37,1,Weekday,9
+Eating Out,Date,18.5,2022-09-08,Aug - Sep 22,36,3,Weekday,9
+Travel,Salsa Festival,62.02,2022-09-09,Aug - Sep 22,36,4,Weekday,9
+Transport,Extension ticket BVG,1.8,2022-09-12,Aug - Sep 22,37,0,Weekday,9
+Groceries,Groceries,16.97,2022-09-12,Aug - Sep 22,37,0,Weekday,9
+Transport,Extension ticket,1.8,2022-09-13,Aug - Sep 22,37,1,Weekday,9
+Shopping,Avanico,1.5,2022-09-14,Aug - Sep 22,37,2,Weekday,9
+Rent + Bills,Phone surcharge,4.0,2022-09-14,Aug - Sep 22,37,2,Weekday,9
+Groceries,Fruit,0.72,2022-09-19,Aug - Sep 22,38,0,Weekday,9
+Shopping,Hot water bottle,6.75,2022-09-20,Aug - Sep 22,38,1,Weekday,9
+Shopping,DM,25.25,2022-09-21,Aug - Sep 22,38,2,Weekday,9
+Shopping,Vase and tea spoon,7.9,2022-09-21,Aug - Sep 22,38,2,Weekday,9
+Groceries,Groceries,22.06,2022-09-21,Aug - Sep 22,38,2,Weekday,9
+Groceries,Groceries,0.64,2022-09-22,Aug - Sep 22,38,3,Weekday,9
+Groceries,Groceries,6.24,2022-09-23,Aug - Sep 22,38,4,Weekday,9
+Eating Out,Drinks,14.8,2022-09-23,Aug - Sep 22,38,4,Weekday,9
+Healthcare,Moisturiser,8.69,2022-09-24,Aug - Sep 22,38,5,Weekend,9
+Groceries,Groceries,10.86,2022-09-24,Aug - Sep 22,38,5,Weekend,9
+Investment,Weekly ETH,10.0,2022-09-26,Sep - Oct 22,39,0,Weekday,9
+Investment,Weekly ETH,10.0,2022-10-03,Sep - Oct 22,40,0,Weekday,10
+Investment,Weekly ETH,10.0,2022-10-10,Sep - Oct 22,41,0,Weekday,10
+Investment,Weekly ETH,10.0,2022-10-17,Sep - Oct 22,42,0,Weekday,10
+Investment,Bi-Weekly ETF,50.0,2022-10-03,Sep - Oct 22,40,0,Weekday,10
+Investment,Bi-Weekly ETF,105.0,2022-10-17,Sep - Oct 22,42,0,Weekday,10
+Investment,Bi-Weekly Stock,10.0,2022-10-03,Sep - Oct 22,40,0,Weekday,10
+Investment,Bi-Weekly Stock,10.0,2022-10-17,Sep - Oct 22,42,0,Weekday,10
+Rent + Bills,Rent,500.0,2022-10-01,Sep - Oct 22,39,5,Weekend,10
+Rent + Bills,Phone,25.19,2022-10-12,Sep - Oct 22,41,2,Weekday,10
+Rent + Bills,Google,1.88,2022-10-04,Sep - Oct 22,40,1,Weekday,10
+Rent + Bills,Patreon,1.77,2022-10-01,Sep - Oct 22,39,5,Weekend,10
+Rent + Bills,Insurance,4.94,2022-09-29,Sep - Oct 22,39,3,Weekday,9
+Student Loan,Student Loan,86.4,2022-10-10,Sep - Oct 22,41,0,Weekday,10
+Transport,BVG,29.0,2022-10-01,Sep - Oct 22,39,5,Weekend,10
+Rent + Bills,UK Phone,10.0,2022-10-13,Sep - Oct 22,41,3,Weekday,10
+Shopping,Shoes + jacket,100.0,2022-09-25,Sep - Oct 22,38,6,Weekend,9
+Groceries,Groceries,40.0,2022-09-26,Sep - Oct 22,39,0,Weekday,9
+Eating Out,Lunch,10.0,2022-09-27,Sep - Oct 22,39,1,Weekday,9
+Groceries,Groceries,8.69,2022-09-28,Sep - Oct 22,39,2,Weekday,9
+Transport,BVG extension ticket ,1.8,2022-09-28,Sep - Oct 22,39,2,Weekday,9
+Travel,Copenhagen,143.0,2022-10-02,Sep - Oct 22,39,6,Weekend,10
+Transport,BVG from airport,4.15,2022-10-02,Sep - Oct 22,39,6,Weekend,10
+Groceries,Groceries,54.87,2022-10-05,Sep - Oct 22,40,2,Weekday,10
+Travel,Flight back from BCN,46.99,2022-10-05,Sep - Oct 22,40,2,Weekday,10
+Transport,Train to Stratford,10.5,2022-10-05,Sep - Oct 22,40,2,Weekday,10
+Transport,Bus to airport,11.47,2022-10-05,Sep - Oct 22,40,2,Weekday,10
+Shopping,iPhone case,11.36,2022-10-06,Sep - Oct 22,40,3,Weekday,10
+Eating Out,Drinks,15.3,2022-10-07,Sep - Oct 22,40,4,Weekday,10
+Eating Out,Burger,10.0,2022-10-07,Sep - Oct 22,40,4,Weekday,10
+Shopping,Market,30.0,2022-10-08,Sep - Oct 22,40,5,Weekend,10
+Groceries,Groceries,26.34,2022-10-08,Sep - Oct 22,40,5,Weekend,10
+Groceries,Groceries,14.11,2022-10-08,Sep - Oct 22,40,5,Weekend,10
+Eating Out,Lunch,14.5,2022-10-11,Sep - Oct 22,41,1,Weekday,10
+Groceries,Groceries,24.85,2022-10-12,Sep - Oct 22,41,2,Weekday,10
+Transport,Airport BVG,3.45,2022-10-13,Sep - Oct 22,41,3,Weekday,10
+Shopping,Sweater,39.9,2022-10-14,Sep - Oct 22,41,4,Weekday,10
+Shopping,Eyebrows + cash,11.5,2022-10-15,Sep - Oct 22,41,5,Weekend,10
+Groceries,Groceries,3.16,2022-10-15,Sep - Oct 22,41,5,Weekend,10
+Transport,Train,1.8,2022-10-19,Sep - Oct 22,42,2,Weekday,10
+Eating Out,Boots meal deal,5.84,2022-10-19,Sep - Oct 22,42,2,Weekday,10
+Investment,Weekly ETH,10.0,2022-10-24,Sep - Oct 22,43,0,Weekday,10
+Healthcare,Pharmacy,15.44,2022-10-20,Sep - Oct 22,42,3,Weekday,10
+Groceries,Groceries,43.34,2022-10-20,Sep - Oct 22,42,3,Weekday,10
+Groceries,Groceries,8.06,2022-10-21,Sep - Oct 22,42,4,Weekday,10
+Groceries,Groceries,28.72,2022-10-22,Sep - Oct 22,42,5,Weekend,10
+Rent + Bills,Legal Insurance,7.9,2022-10-24,Sep - Oct 22,43,0,Weekday,10
+Rent + Bills,Rent,500.0,2022-11-01,Oct - Nov 22,44,1,Weekday,11
+Rent + Bills,Phone,25.19,2022-11-12,Oct - Nov 22,45,5,Weekend,11
+Rent + Bills,Google,1.88,2022-11-04,Oct - Nov 22,44,4,Weekday,11
+Rent + Bills,Personal Liability Insurance,4.94,2022-11-01,Oct - Nov 22,44,1,Weekday,11
+Student Loan,Student Loan,86.4,2022-11-10,Oct - Nov 22,45,3,Weekday,11
+Transport,BVG,28.58,2022-11-01,Oct - Nov 22,44,1,Weekday,11
+Rent + Bills,UK Phone,10.0,2022-11-13,Oct - Nov 22,45,6,Weekend,11
+Rent + Bills,Legal Insurance,35.0,2022-11-01,Oct - Nov 22,44,1,Weekday,11
+Eating Out,Lunch,6.0,2022-10-25,Oct - Nov 22,43,1,Weekday,10
+Eating Out,Lunch,10.0,2022-10-26,Oct - Nov 22,43,2,Weekday,10
+Transport,Train to airport ,3.8,2022-10-27,Oct - Nov 22,43,3,Weekday,10
+Transport,Train to airport ,1.8,2022-10-30,Oct - Nov 22,43,6,Weekend,10
+Transport,Train to potsdam,7.6,2022-11-02,Oct - Nov 22,44,2,Weekday,11
+Eating Out,Lunch in Potsdam,14.25,2022-11-02,Oct - Nov 22,44,2,Weekday,11
+Groceries,Supermarket,1.72,2022-11-02,Oct - Nov 22,44,2,Weekday,11
+Eating Out,Bubble Tea Ido,5.1,2022-11-04,Oct - Nov 22,44,4,Weekday,11
+Eating Out,"Drinks, Dinner, Comedy",42.8,2022-11-04,Oct - Nov 22,44,4,Weekday,11
+Eating Out,Bunker tour Mom visit,28.0,2022-11-04,Oct - Nov 22,44,4,Weekday,11
+Groceries,Groceries,23.59,2022-11-06,Oct - Nov 22,44,6,Weekend,11
+Eating Out,Snack,1.0,2022-11-08,Oct - Nov 22,45,1,Weekday,11
+Eating Out,Drinks with mom,10.0,2022-11-08,Oct - Nov 22,45,1,Weekday,11
+Groceries,Groceries,21.08,2022-11-10,Oct - Nov 22,45,3,Weekday,11
+Eating Out,Tacos and drinks,28.3,2022-11-11,Oct - Nov 22,45,4,Weekday,11
+Groceries,Groceries,24.66,2022-11-12,Oct - Nov 22,45,5,Weekend,11
+Eating Out,Cocktail,6.2,2022-11-15,Oct - Nov 22,46,1,Weekday,11
+Groceries,Groceries,11.82,2022-11-17,Oct - Nov 22,46,3,Weekday,11
+Groceries,Groceries,7.34,2022-11-18,Oct - Nov 22,46,4,Weekday,11
+Rent + Bills,Tape,3.19,2022-11-18,Oct - Nov 22,46,4,Weekday,11
+Rent + Bills,Car,25.0,2022-11-18,Oct - Nov 22,46,4,Weekday,11
+Transport,Train airport,1.8,2022-11-20,Oct - Nov 22,46,6,Weekend,11
+Eating Out,Sandwich,7.95,2022-11-21,Oct - Nov 22,47,0,Weekday,11
+Transport,Train Tonya,8.0,2022-11-21,Oct - Nov 22,47,0,Weekday,11
+Shopping,Wax,22.0,2022-11-22,Oct - Nov 22,47,1,Weekday,11
+Healthcare,Pill,10.0,2022-11-22,Oct - Nov 22,47,1,Weekday,11
+Groceries,Groceries,6.65,2022-11-22,Oct - Nov 22,47,1,Weekday,11
+Transport,Metro,7.95,2022-11-22,Oct - Nov 22,47,1,Weekday,11
+Groceries,Groceries,2.49,2022-11-23,Oct - Nov 22,47,2,Weekday,11
+Eating Out,Andreu,23.85,2022-11-24,Oct - Nov 22,47,3,Weekday,11
+Shopping,Books,5.0,2022-11-24,Oct - Nov 22,47,3,Weekday,11
+Eating Out,Lunch,15.38,2022-11-25,Nov - Dec 22,47,4,Weekday,11
+Rent + Bills,Phone,27.6,2022-11-12,Oct - Nov 22,45,5,Weekend,11
+Rent + Bills,Google,1.88,2022-12-04,Nov - Dec 22,48,6,Weekend,12
+Rent + Bills,Personal Liability Insurance,4.94,2022-12-01,Nov - Dec 22,48,3,Weekday,12
+Student Loan,Student Loan,86.4,2022-12-10,Nov - Dec 22,49,5,Weekend,12
+Transport,BVG,28.58,2022-12-01,Nov - Dec 22,48,3,Weekday,12
+Rent + Bills,UK Phone,10.0,2022-12-13,Nov - Dec 22,50,1,Weekday,12
+Rent + Bills,Legal Insurance,35.0,2022-12-01,Nov - Dec 22,48,3,Weekday,12
+Shopping,Clothes,49.59,2022-11-25,Nov - Dec 22,47,4,Weekday,11
+Groceries,Groceries,22.29,2022-11-26,Nov - Dec 22,47,5,Weekend,11
+Groceries,Groceries,31.85,2022-11-26,Nov - Dec 22,47,5,Weekend,11
+Transport,Metro BCN,7.95,2022-11-26,Nov - Dec 22,47,5,Weekend,11
+Eating Out,McDs,5.5,2022-11-28,Nov - Dec 22,48,0,Weekday,11
+Groceries,Groceries,23.05,2022-11-28,Nov - Dec 22,48,0,Weekday,11
+Groceries,Groceries,39.01,2022-11-29,Nov - Dec 22,48,1,Weekday,11
+Healthcare,Pill,49.97,2022-11-29,Nov - Dec 22,48,1,Weekday,11
+Transport,Airport train,1.8,2022-11-30,Nov - Dec 22,48,2,Weekday,11
+Groceries,Groceries,17.51,2022-12-03,Nov - Dec 22,48,5,Weekend,12
+Eating Out,Comedy,10.0,2022-12-03,Nov - Dec 22,48,5,Weekend,12
+Groceries,Groceries,48.6,2022-12-06,Nov - Dec 22,49,1,Weekday,12
+Eating Out,Christmas market,10.0,2022-12-07,Nov - Dec 22,49,2,Weekday,12
+Eating Out,Bubble tea and Indian,15.8,2022-12-08,Nov - Dec 22,49,3,Weekday,12
+Eating Out,Coffee,2.8,2022-12-09,Nov - Dec 22,49,4,Weekday,12
+Groceries,Groceries,12.52,2022-12-09,Nov - Dec 22,49,4,Weekday,12
+Eating Out,Ikea Lunch,6.95,2022-12-10,Nov - Dec 22,49,5,Weekend,12
+Shopping,Ikea things,6.26,2022-12-10,Nov - Dec 22,49,5,Weekend,12
+Groceries,Groceries,11.46,2022-12-10,Nov - Dec 22,49,5,Weekend,12
+Eating Out,Brunch,12.0,2022-12-11,Nov - Dec 22,49,6,Weekend,12
+Eating Out,Glühwein,7.5,2022-12-11,Nov - Dec 22,49,6,Weekend,12
+Eating Out,Lunch,16.0,2022-12-12,Nov - Dec 22,50,0,Weekday,12
+Rent + Bills,Printing,9.16,2022-12-12,Nov - Dec 22,50,0,Weekday,12
+Groceries,Groceries ,28.95,2022-12-14,Nov - Dec 22,50,2,Weekday,12
+Shopping,Christmas presents + shoes,126.91,2022-12-15,Nov - Dec 22,50,3,Weekday,12
+Eating Out,Lunch,10.0,2022-12-16,Nov - Dec 22,50,4,Weekday,12
+Groceries,Groceries,8.7,2022-12-17,Nov - Dec 22,50,5,Weekend,12
+Groceries,Groceries,16.68,2022-12-17,Nov - Dec 22,50,5,Weekend,12
+Rent + Bills,Rent,500.0,2022-12-01,Nov - Dec 22,48,3,Weekday,12
+Rent + Bills,Car,20.15,2022-12-21,Nov - Dec 22,51,2,Weekday,12
+Transport,BVG,1.8,2022-12-22,Nov - Dec 22,51,3,Weekday,12
+Eating Out,McD,4.79,2022-12-23,Nov - Dec 22,51,4,Weekday,12
+Transport,BVG Airport,1.8,2022-12-23,Nov - Dec 22,51,4,Weekday,12
+Groceries,Toogoodtogo,3.5,2022-12-23,Nov - Dec 22,51,4,Weekday,12
+Groceries,Xmas food,23.51,2022-12-23,Nov - Dec 22,51,4,Weekday,12
+Shopping,Xmas presents,27.55,2022-12-24,Nov - Dec 22,51,5,Weekend,12
+Rent + Bills,Phone,25.0,2022-12-25,Dec - Jan 22,51,6,Weekend,12
+Rent + Bills,Google,1.88,2023-01-04,Dec - Jan 22,1,2,Weekday,1
+Rent + Bills,Personal Liability Insurance,4.94,2023-01-01,Dec - Jan 22,52,6,Weekend,1
+Student Loan,Student Loan,82.95,2023-01-10,Dec - Jan 22,2,1,Weekday,1
+Rent + Bills,UK Phone,14.68,2023-01-13,Dec - Jan 22,2,4,Weekday,1
+Rent + Bills,Legal Insurance,35.0,2023-01-01,Dec - Jan 22,52,6,Weekend,1
+Shopping,Xmas presents,18.53,2022-12-25,Dec - Jan 22,51,6,Weekend,12
+Eating Out,Beers,10.0,2022-12-25,Dec - Jan 22,51,6,Weekend,12
+Hobbies,Pádel,14.0,2022-12-26,Dec - Jan 22,52,0,Weekday,12
+Hobbies,Cards,5.0,2022-12-26,Dec - Jan 22,52,0,Weekday,12
+Hobbies,Norwegian,18.82,2022-12-27,Dec - Jan 22,52,1,Weekday,12
+Groceries,Groceries,4.02,2022-12-27,Dec - Jan 22,52,1,Weekday,12
+Rent + Bills,Rent,500.0,2023-01-01,Dec - Jan 22,52,6,Weekend,1
+Groceries,Groceries,7.5,2023-01-03,Dec - Jan 22,1,1,Weekday,1
+Groceries,Groceries,4.66,2023-01-08,Dec - Jan 22,1,6,Weekend,1
+Selfcare,Douglas,32.76,2023-01-11,Dec - Jan 22,2,2,Weekday,1
+Selfcare,PromoFarma,52.36,2023-01-11,Dec - Jan 22,2,2,Weekday,1
+Selfcare,Haircut,24.0,2023-01-13,Dec - Jan 22,2,4,Weekday,1
+Rent + Bills,Ethernet,5.0,2023-01-13,Dec - Jan 22,2,4,Weekday,1
+Groceries,Bread,3.17,2023-01-14,Dec - Jan 22,2,5,Weekend,1
+Groceries,Vegetables,4.5,2023-01-14,Dec - Jan 22,2,5,Weekend,1
+Hobbies,Crossfit,35.0,2023-01-19,Dec - Jan 22,3,3,Weekday,1
+Selfcare,Waxing,39.0,2023-01-20,Dec - Jan 22,3,4,Weekday,1
+Healthcare,Medicine,3.62,2023-01-20,Dec - Jan 22,3,4,Weekday,1
+Groceries,Groceries,14.25,2023-01-20,Dec - Jan 22,3,4,Weekday,1
+Transport,Parking,0.2,2023-01-21,Dec - Jan 22,3,5,Weekend,1
+Transport,Metro,22.7,2023-01-21,Dec - Jan 22,3,5,Weekend,1
+Eating Out,Drinks,7.0,2023-01-21,Dec - Jan 22,3,5,Weekend,1
+Groceries,Groceries,12.15,2023-01-22,Dec - Jan 22,3,6,Weekend,1
+Eating Out,Churros,4.0,2023-01-22,Dec - Jan 22,3,6,Weekend,1
+Shopping,Gift for mom,24.5,2023-01-22,Dec - Jan 22,3,6,Weekend,1
+Groceries,Groceries,11.36,2023-01-22,Dec - Jan 22,3,6,Weekend,1
+Transport,Fuel,20.01,2023-01-22,Dec - Jan 22,3,6,Weekend,1
+Transport,Fuel,79.86,2023-01-23,Dec - Jan 22,4,0,Weekday,1
+Selfcare,Druni,36.05,2023-01-23,Dec - Jan 22,4,0,Weekday,1
+Rent + Bills,Phone,25.0,2023-01-25,Jan - Feb 23,4,2,Weekday,1
+Rent + Bills,Google,1.88,2023-02-04,Jan - Feb 23,5,5,Weekend,2
+Rent + Bills,Personal Liability Insurance,4.94,2023-02-01,Jan - Feb 23,5,2,Weekday,2
+Student Loan,Student Loan,82.43,2023-02-10,Jan - Feb 23,6,4,Weekday,2
+Rent + Bills,UK Phone,10.0,2023-02-13,Jan - Feb 23,7,0,Weekday,2
+Rent + Bills,Legal Insurance,35.0,2023-02-01,Jan - Feb 23,5,2,Weekday,2
+Hobbies,Norwegian,18.82,2023-01-27,Jan - Feb 23,4,4,Weekday,1
+Groceries,Groceries,29.45,2023-01-25,Jan - Feb 23,4,2,Weekday,1
+Shopping,Chino,5.7,2023-01-25,Jan - Feb 23,4,2,Weekday,1
+Travel,Flights,33.98,2023-01-27,Jan - Feb 23,4,4,Weekday,1
+Travel,Flights,40.65,2023-01-27,Jan - Feb 23,4,4,Weekday,1
+Groceries,Bread,4.18,2023-01-27,Jan - Feb 23,4,4,Weekday,1
+Transport,Car wash,9.95,2023-01-27,Jan - Feb 23,4,4,Weekday,1
+Healthcare,Pharmacy,13.52,2023-01-27,Jan - Feb 23,4,4,Weekday,1
+Shopping,IKEA,60.0,2023-01-29,Jan - Feb 23,4,6,Weekend,1
+Shopping,Decathlon,15.97,2023-01-29,Jan - Feb 23,4,6,Weekend,1
+Groceries,Groceries,18.96,2023-01-31,Jan - Feb 23,5,1,Weekday,1
+Shopping,IKEA,29.91,2023-02-01,Jan - Feb 23,5,2,Weekday,2
+Shopping,IKEA,5.49,2023-02-01,Jan - Feb 23,5,2,Weekday,2
+Shopping,Hollister,17.28,2023-02-01,Jan - Feb 23,5,2,Weekday,2
+Shopping,Druni,21.15,2023-02-01,Jan - Feb 23,5,2,Weekday,2
+Eating Out,Morrysom,25.7,2023-02-01,Jan - Feb 23,5,2,Weekday,2
+Eating Out,McDonald's,6.1,2023-02-01,Jan - Feb 23,5,2,Weekday,2
+Transport,Car,79.41,2023-02-02,Jan - Feb 23,5,3,Weekday,2
+Healthcare,Pill,53.59,2023-02-02,Jan - Feb 23,5,3,Weekday,2
+Shopping,Bonet,25.5,2023-02-02,Jan - Feb 23,5,3,Weekday,2
+Shopping,Boots,69.0,2023-02-02,Jan - Feb 23,5,3,Weekday,2
+Groceries,Bread,1.44,2023-02-02,Jan - Feb 23,5,3,Weekday,2
+Travel,Girona Lockers,8.0,2023-02-03,Jan - Feb 23,5,4,Weekday,2
+Eating Out,Lunch,32.0,2023-02-03,Jan - Feb 23,5,4,Weekday,2
+Travel,Train,26.5,2023-02-03,Jan - Feb 23,5,4,Weekday,2
+Groceries,Groceries,8.94,2023-02-03,Jan - Feb 23,5,4,Weekday,2
+Shopping,Amarula,15.7,2023-02-04,Jan - Feb 23,5,5,Weekend,2
+Transport,Oslo ticket,30.19,2023-02-06,Jan - Feb 23,6,0,Weekday,2
+Transport,Oslo ticket,30.5,2023-02-13,Jan - Feb 23,7,0,Weekday,2
+Groceries,Groceries,10.0,2023-02-11,Jan - Feb 23,6,5,Weekend,2
+Shopping,Vday gift,4.39,2023-02-14,Jan - Feb 23,7,1,Weekday,2
+Groceries,Granola,2.51,2023-02-14,Jan - Feb 23,7,1,Weekday,2
+Rent + Bills,Deutsche Post,30.9,2023-02-16,Jan - Feb 23,7,3,Weekday,2
+Shopping,Vday gift,17.41,2023-02-14,Jan - Feb 23,7,1,Weekday,2
+Eating Out,Beer,7.29,2023-02-19,Jan - Feb 23,7,6,Weekend,2
+Groceries,Toiletries,22.05,2023-02-18,Jan - Feb 23,7,5,Weekend,2
+Groceries,Cleaning materials,46.83,2023-02-18,Jan - Feb 23,7,5,Weekend,2
+Eating Out,Burger,15.85,2023-02-16,Jan - Feb 23,7,3,Weekday,2
+Travel,Flights,181.49,2023-02-19,Jan - Feb 23,7,6,Weekend,2
+Eating Out,OJ,4.2,2023-02-19,Jan - Feb 23,7,6,Weekend,2
+Transport,Oslo ticket,30.72,2023-02-20,Jan - Feb 23,8,0,Weekday,2
+Groceries,Groceries,27.14,2023-02-20,Jan - Feb 23,8,0,Weekday,2
+Groceries,Groceries,4.07,2023-02-20,Jan - Feb 23,8,0,Weekday,2
+Eating Out,Lunch,1.92,2023-02-20,Jan - Feb 23,8,0,Weekday,2
+Shopping,Ikea,74.78,2023-02-21,Jan - Feb 23,8,1,Weekday,2
+Eating Out,Ikea,9.59,2023-02-21,Jan - Feb 23,8,1,Weekday,2
+Shopping,Furniture,147.48,2023-02-21,Jan - Feb 23,8,1,Weekday,2
+Groceries,Groceries,8.26,2023-02-21,Jan - Feb 23,8,1,Weekday,2
+Groceries,Groceries,27.25,2023-02-22,Jan - Feb 23,8,2,Weekday,2
+Groceries,Groceries,13.69,2023-02-23,Jan - Feb 23,8,3,Weekday,2
+Rent + Bills,Phone Norway,4.5,2023-02-24,Jan - Feb 23,8,4,Weekday,2
+Eating Out,Coffee,4.31,2023-02-24,Jan - Feb 23,8,4,Weekday,2

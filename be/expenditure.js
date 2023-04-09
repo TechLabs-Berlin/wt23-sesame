@@ -3,7 +3,7 @@ main().catch((err) => console.log("Mongo connection ERROR", err));
 
 async function main() {
   await mongoose.connect("mongodb://127.0.0.1:27017/sesame");
-  console.log("Mongo connection OPENED");
+  console.log("Mongo connection OPENED - from expenditure.js");
 }
 
 const expenditureSchema = new mongoose.Schema({
@@ -25,4 +25,4 @@ const findAllExpenditures = async () => {
   return await Expenditure.find();
 };
 
-module.exports = { findAllExpenditures };
+module.exports = { Expenditure, findAllExpenditures };

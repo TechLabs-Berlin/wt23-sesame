@@ -1,20 +1,102 @@
-.App {
-  text-align: left;
+Body{
+  margin-bottom: 120px;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
   background-color: #232D2F;
+  color: white;
+  max-width: 600px; /* Set a max width for desktop devices */
+  margin: 0 auto; /* Center the content */
+  }
+
+
+:-webkit-any(article, aside, nav, section) {
+    margin: 0;
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+
+.SesameTextField {
+  color: 'white';
+}
+/* Typography */ 
+
+h1 {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 140%;
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+
+h2 {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 140px;
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+
+p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+
+.label {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+
+.label-dark {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  color: #232D2F;
+}
+
+.display {
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 44px;
+  margin-block-start: 0;
+  margin-block-end: 0;
 }
 
 
-.App-header {
+.app-header {
   display: flex;
-  font-size: calc(10px + 2vmin);
-  color: white;
   text-align: left;
   align-items: center;
   width: auto;
   height: 56px;
   padding: 8px 24px;
+  color: #A0A1A5;
+  display: flex;
+  align-items: center; 
+  justify-content: space-between;
 }
 
-.App-link {
-  color: #61dafb;
+.app-link {
+  color: #37FAD3;
+}
+
+
+.welcome-splash-container {
+  background-color: #232D2F;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  max-width: 100%;
+  height: auto;
 }

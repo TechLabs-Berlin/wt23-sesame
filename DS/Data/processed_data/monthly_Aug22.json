@@ -1,0 +1,7 @@
+{"Month_Aug": {
+    "Month": "08.2022 - 12.2022", 
+    "Month_val": [
+        ["Aug", 1547.39], ["Sep", 1704.86],["Oct", 1477.39], ["Nov", 1323.32], ["Dec", 1223.07]], 
+    "Month_Top5": [["Rent + Bills", 2976.14], ["Groceries", 1172.71], ["Shopping", 717.04], ["Travel", 538.1], ["Eating Out", 529.01]], 
+    "Month_Sum": 7276.03, 
+    "Month_Avg": 1455.206}}

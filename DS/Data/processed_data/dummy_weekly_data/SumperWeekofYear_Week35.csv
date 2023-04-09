@@ -1,0 +1,14 @@
+Date,WeekofYear,DayofWeek,Category,Cost,Weekday
+2022-08-29,35,Monday,Investment,10.0,Monday
+2022-08-29,35,Monday,Rent + Bills,4.94,Monday
+2022-08-30,35,Tuesday,Groceries,43.28,Tuesday
+2022-08-30,35,Tuesday,Investment,10.0,Tuesday
+2022-08-31,35,Wednesday,Travel,26.15,Wednesday
+2022-09-01,35,Thursday,Rent + Bills,501.77,Thursday
+2022-09-01,35,Thursday,Transport,63.42,Thursday
+2022-09-02,35,Friday,Investment,50.0,Friday
+2022-09-03,35,Saturday,Groceries,20.94,Saturday
+2022-09-03,35,Saturday,Healthcare,12.5,Saturday
+2022-09-04,35,Sunday,Eating Out,13.5,Sunday
+2022-09-04,35,Sunday,Rent + Bills,1.88,Sunday
+2022-09-04,35,Sunday,Travel,64.75,Sunday
