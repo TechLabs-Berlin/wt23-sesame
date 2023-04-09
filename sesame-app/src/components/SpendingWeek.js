@@ -1,6 +1,7 @@
 import React from "react";
-import BarChartComponent from "./BarChartWeek";
-import TopFiveSpendings from "./TopSpendingsWeek";
+import BarChartWeek from "./BarChartWeek";
+import TopSpendingsWeek from "./TopSpendingsWeek";
+
 
 function WeeklySpendings() {
   const boxStyles = {
@@ -39,10 +40,10 @@ function WeeklySpendings() {
       <p className='display'>{totalSpending} €</p>
       <p style={{ opacity: 0.6 }}>Ø{dailyAverage} € per day </p>
       <div style={{ padding: "24px 0px 0px" }}>
-        <BarChartComponent />
+        <BarChartWeek />
       </div>
       <div>
-        <TopFiveSpendings />
+        <TopSpendingsWeek />
       </div>
     </div>
   );
