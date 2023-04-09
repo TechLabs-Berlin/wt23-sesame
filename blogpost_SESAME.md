@@ -15,14 +15,11 @@ In our project, we utilized a dataset created internally by Cristina, which incl
 In Screenshot 1, you can see our raw data. To begin with, we converted the date column into datetime format. Then, we removed any errors or missing values, checked for duplicates, and rectified any errors that were spotted. This allowed us to ensure that our data was accurate and complete, which was essential for our analysis and visualization.
 
 ![](https://github.com/TechLabs-Berlin/wt23-sesame/blob/DS_Storytelling_FeatureDevelopment/images/DS/initial_dataframe.png)  
-**initial dataframe**
-
 
 ### processed data
 After having a look at the raw data, we had a DS group meeting and decided on some hypotheses and settled on some interesting experiments that we could run to learn more about the bigger picture of the data. We categorized the data by grouping it based on the date column by week, month, or day of the week. This allowed us to explore the data further and identify new patterns and trends, and set the foundation to further understand the patterns and trends through visualisation in the next step.
 
  ![](https://github.com/TechLabs-Berlin/wt23-sesame/blob/DS_Storytelling_FeatureDevelopment/images/DS/processed_dataframe.png)  
-**final dataframe**
 
 ### insights
 In the Insights section, you can see that we explored many different types of charts. Our favorites were the stacked bar chart and the donut pie chart.
@@ -35,13 +32,11 @@ The donut pie chart, on the other hand, allowed us to easily see the distributio
 
 ![](https://github.com/TechLabs-Berlin/wt23-sesame/blob/DS_Storytelling_FeatureDevelopment/images/DS/PieChart_JulAug.png)  
 
-or Aug/Sep ..
 ![Spendings for September](https://github.com/TechLabs-Berlin/wt23-sesame/blob/DS_Storytelling_FeatureDevelopment/images/DS/PieChart_AugSep.png)  
 
 
 It is also interesting to look at the categories individually. A line chart is sufficient here. Superimposing all the lines does not give a clear picture, as the scales of the categories differ greatly from one another.
 
-chaotic view onto the different categories ..
 
 ![](https://github.com/TechLabs-Berlin/wt23-sesame/blob/DS_Storytelling_FeatureDevelopment/images/DS/Lineplot_Chaotic.png)  
 
