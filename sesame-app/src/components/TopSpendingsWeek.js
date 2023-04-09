@@ -9,7 +9,7 @@ import TableRow from '@mui/material/TableRow';
 
 
 
-function TopFiveSpendings() {
+function TopSpendingsWeek() {
 
   const createData = (name, expense) => {
     return {name, expense};
@@ -80,4 +80,4 @@ function TopFiveSpendings() {
   );
 }
 
-export default TopFiveSpendings
+export default TopSpendingsWeek
