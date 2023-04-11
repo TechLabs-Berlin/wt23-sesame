@@ -1,4 +1,4 @@
-//Parse data from data_Week35_Test.json
+//Parse data from data_weeklyview_Week35.json
 
 const fs = require("fs");
 const path = require("path");
@@ -21,7 +21,7 @@ const findAllExpenditures = async () => {
       "DS",
       "Data",
       "processed_data",
-      "data_Week35_Test.json"
+      "data_weeklyview_Week35.json"
     );
     const fileContents = await fs.promises.readFile(filePath, "utf-8");
     const jsonData = JSON.parse(fileContents);
@@ -35,6 +35,7 @@ const findAllExpenditures = async () => {
       };
     });
 
+        const timePeriod = jsonData.Week_35.Week;
     const totalSpending = jsonData.Week_35.Week_Sum;
     const dailyAverage = jsonData.Week_35.Week_Avg;
     const ExpenseCat = jsonData.Week_35.Week_Top5.map((value, index) => {
@@ -52,6 +53,7 @@ const findAllExpenditures = async () => {
       totalSpending,
       dailyAverage,
       ExpenseCat,
+      timePeriod
     };
   } catch (error) {
     console.error(error);
