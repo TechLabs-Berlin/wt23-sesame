@@ -14,10 +14,11 @@ async function main() {
 
 // Define schema
 const MonthlyExpenditureSchema = new mongoose.Schema({
-  date: { type: Date },
+  month: { type: String },
   spending: { type: Number },
 });
 
+//please check this const value
 const MonthlyExpenseCatSchema = new mongoose.Schema({
   category: { type: String },
   spending: { type: Number },
@@ -26,8 +27,8 @@ const MonthlyExpenseCatSchema = new mongoose.Schema({
 const MonthlyExpendituresSchema = new mongoose.Schema({
   expenditures: [MonthlyExpenditureSchema],
   totalSpending: { type: Number },
-  dailyAverage: { type: Number },
-  expenseCat: [MonthlyExpenseCatSchema],
+  MonthlyAverage: { type: Number },
+  MonthlyExpenseCat: [monthlyExpenseCatSchema],
 });
 
 // Create model
@@ -42,7 +43,7 @@ const filePath = path.join(
   "DS",
   "Data",
   "processed_data",
-  "data_monthly_Aug22_Test.json"
+  "Monthly_View.json"
 );
 
 fs.readFile(filePath, "utf-8", async (err, data) => {
@@ -54,16 +55,17 @@ fs.readFile(filePath, "utf-8", async (err, data) => {
   const parsedData = JSON.parse(data);
 
   // Create instance
-  const monthlyAug22 = {
-    expenditures: parsedData.monthly_Aug22.Month_val.map(
-      ([date, spending]) => ({
-        date: new Date(date),
+  // please check this const value
+  const monthlyView = {
+    MonthlyExpenditures: parsedData.Monthly_View.Month_val.map(
+      ([month, spending]) => ({
+        month,
         spending,
       })
     ),
-    totalSpending: parsedData.monthly_Aug22.Month_Sum,
-    dailyAverage: parsedData.monthly_Aug22.Month_Avg,
-    expenseCat: parsedData.monthly_Aug22.Month_Top5.map(
+    totalSpending: parsedData.Monthly_View.Month_Sum,
+    dailyAverage: parsedData.Monthly_View.Month_Avg,
+    expenseCat: parsedData.Monthly_View.Month_Top5.map(
       ([category, spending]) => ({
         category,
         spending,
@@ -76,7 +78,7 @@ fs.readFile(filePath, "utf-8", async (err, data) => {
     await MonthlyExpenditures.deleteMany({});
 
     // Save instance to MongoDB
-    const monthlyExpendituresInstance = new MonthlyExpenditures(monthlyAug22);
+    const monthlyExpendituresInstance = new MonthlyExpenditures(Monthly_View);
     await monthlyExpendituresInstance.save();
     console.log("Monthly expenditures saved successfully!");
   } catch (err) {
