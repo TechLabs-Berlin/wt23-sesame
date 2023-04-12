@@ -3,14 +3,14 @@ const path = require("path");
 const fs = require("fs");
 
 // Connect to MongoDB
-main().catch((err) =>
-  console.log("Mongo connection ERROR to import data", err)
-);
-
 async function main() {
   await mongoose.connect("mongodb://127.0.0.1:27017/sesame");
   console.log("Mongo connection OPENED - to import data");
 }
+
+main().catch((err) => {
+  console.log("Mongo connection ERROR to import data", err);
+});
 
 // Define schema
 const MonthlyExpenditureSchema = new mongoose.Schema({
@@ -18,17 +18,18 @@ const MonthlyExpenditureSchema = new mongoose.Schema({
   spending: { type: Number },
 });
 
-//please check this const value
+// Define schema for MonthlyExpenseCatSchema
 const MonthlyExpenseCatSchema = new mongoose.Schema({
   category: { type: String },
   spending: { type: Number },
 });
 
+// Define schema for MonthlyExpenditures
 const MonthlyExpendituresSchema = new mongoose.Schema({
   expenditures: [MonthlyExpenditureSchema],
   totalSpending: { type: Number },
-  MonthlyAverage: { type: Number },
-  MonthlyExpenseCat: [monthlyExpenseCatSchema],
+  dailyAverage: { type: Number },
+  expenseCat: [MonthlyExpenseCatSchema],
 });
 
 // Create model
@@ -43,7 +44,7 @@ const filePath = path.join(
   "DS",
   "Data",
   "processed_data",
-  "Monthly_View.json"
+  "data_monthlyview.json"
 );
 
 fs.readFile(filePath, "utf-8", async (err, data) => {
@@ -55,17 +56,16 @@ fs.readFile(filePath, "utf-8", async (err, data) => {
   const parsedData = JSON.parse(data);
 
   // Create instance
-  // please check this const value
-  const monthlyView = {
-    MonthlyExpenditures: parsedData.Monthly_View.Month_val.map(
+  const Monthly_View = {
+    expenditures: parsedData.Monthly_View.Month_val.map(
       ([month, spending]) => ({
         month,
         spending,
       })
     ),
-    totalSpending: parsedData.Monthly_View.Month_Sum,
-    dailyAverage: parsedData.Monthly_View.Month_Avg,
-    expenseCat: parsedData.Monthly_View.Month_Top5.map(
+    totalSpending: parsedData.Monthly_View.Months_Sum,
+    dailyAverage: parsedData.Monthly_View.Months_Avg,
+    expenseCat: parsedData.Monthly_View.Months_Top5.map(
       ([category, spending]) => ({
         category,
         spending,
