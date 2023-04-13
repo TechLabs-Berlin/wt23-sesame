@@ -35,7 +35,7 @@ const findAllExpenditures = async () => {
       };
     });
 
-        const timePeriod = jsonData.Week_35.Week;
+    const timePeriod = jsonData.Week_35.Week;
     const totalSpending = jsonData.Week_35.Week_Sum;
     const dailyAverage = jsonData.Week_35.Week_Avg;
     const ExpenseCat = jsonData.Week_35.Week_Top5.map((value, index) => {
@@ -47,13 +47,12 @@ const findAllExpenditures = async () => {
       };
     });
 
-
     return {
       expenditures: dailyExpenditures,
       totalSpending,
       dailyAverage,
       ExpenseCat,
-      timePeriod
+      timePeriod,
     };
   } catch (error) {
     console.error(error);
